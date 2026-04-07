@@ -1,33 +1,18 @@
 """
-SIR Model Fitting
-Engineering Mathematics Year 3 Group Project
+SIR Model Fitting - MDM3 Fashion Trends Project
+Run after data_processing.py (needs output/processed_trends.csv)
 
-Run after section2_preprocessing.py (needs output/processed_trends.csv).
+SIR model applied to fashion diffusion:
+    S = susceptible  (potential adopters not yet into the trend)
+    I = infected     (people currently into the trend, proxied by Google Trends)
+    R = recovered    (people who have moved on)
 
-    python section3_sir_fitting.py
+    dS/dt = -beta * S * I
+    dI/dt =  beta * S * I - gamma * I
+    dR/dt =  gamma * I
 
-SIR model (fashion diffusion interpretation):
-    S = susceptible  -- potential adopters not yet into the trend
-    I = infected     -- people currently into the trend (= Google Trends signal)
-    R = recovered    -- people who have moved on from the trend
-
-    dS/dt = -β * S * I      (adoption: β controls spread rate)
-    dI/dt =  β * S * I - γ * I  (interest rises then falls)
-    dR/dt =  γ * I          (recovery: γ controls how fast interest fades)
-
-    S + I + R = 1  (normalised population)
-
-Fitting: L-BFGS-B minimisation of sum-of-squared residuals with
-         multi-start initialisation to avoid local minima.
-
-Parameters fitted per trend:
-    β   -- transmission rate  (adoptions per infected-susceptible pair per period)
-    γ   -- recovery rate      (departures from trend per infected per period)
-    I₀  -- initial infected fraction at t=0
-
-Derived output:
-    R₀ = β / γ   (basic reproduction number -- trend 'virality')
-    R₀ > 1 --> trend spreads; R₀ < 1 --> trend fades immediately
+Fitted parameters per trend: beta, gamma, I0
+Derived: R0 = beta / gamma (trend virality index)
 """
 
 import os
@@ -58,23 +43,18 @@ TREND_COLORS = {
 }
 
 
-# 1. LOAD PROCESSED DATA
+# load data
 
 print("Loading output/processed_trends.csv ...")
 df = pd.read_csv("output/processed_trends.csv")
 df['date'] = pd.to_datetime(df['date'])
-
 trends = list(df['trend'].unique())
 print(f"  Trends: {trends}")
 
 
-# 2. SIR MODEL FUNCTIONS
+# SIR solver - RK4 with 4 sub-steps per period, fully inlined for speed
 
 def solve_sir(beta, gamma, I0, n_periods, sub=4):
-    """
-    Fully inlined RK4 -- no function calls inside the loop.
-    sub=4 sub-steps per period. Returns I(t) of length n_periods.
-    """
     dt    = 1.0 / sub
     total = (n_periods - 1) * sub + 1
     h6    = dt / 6.0
@@ -86,18 +66,14 @@ def solve_sir(beta, gamma, I0, n_periods, sub=4):
     out_idx  = 1
 
     for step in range(1, total):
-        # k1
         bSI = beta * S * I
         k1s = -bSI;              k1i = bSI - gamma * I
-        # k2
         S2  = S + h2 * k1s;     I2  = I + h2 * k1i
         bSI = beta * S2 * I2
         k2s = -bSI;              k2i = bSI - gamma * I2
-        # k3
         S3  = S + h2 * k2s;     I3  = I + h2 * k2i
         bSI = beta * S3 * I3
         k3s = -bSI;              k3i = bSI - gamma * I3
-        # k4
         S4  = S + dt * k3s;     I4  = I + dt * k3i
         bSI = beta * S4 * I4
         k4s = -bSI;              k4i = bSI - gamma * I4
@@ -115,7 +91,7 @@ def solve_sir(beta, gamma, I0, n_periods, sub=4):
 
 
 def solve_sir_full(beta, gamma, I0, n_periods, sub=4):
-    """Fully inlined RK4, returns (S, I, R) arrays for plotting."""
+    """Returns (S, I, R) arrays - used for compartment plots."""
     dt    = 1.0 / sub
     total = (n_periods - 1) * sub + 1
     h6    = dt / 6.0
@@ -156,43 +132,32 @@ def solve_sir_full(beta, gamma, I0, n_periods, sub=4):
 
 
 def objective(params, observed):
-    """
-    Sum of squared residuals between SIR I(t) and observed series.
-    Uses log/logit transforms so L-BFGS-B operates unconstrained.
-    """
+    """Sum of squared residuals. Log/logit transforms keep params positive."""
     log_beta, log_gamma, logit_I0 = params
     beta  = np.exp(log_beta)
     gamma = np.exp(log_gamma)
-    I0    = 1.0 / (1.0 + np.exp(-logit_I0))   # sigmoid: maps R -> (0,1)
-
+    I0    = 1.0 / (1.0 + np.exp(-logit_I0))
     I_pred = solve_sir(beta, gamma, I0, len(observed))
     if I_pred is None or np.any(~np.isfinite(I_pred)):
         return 1e10
     return float(np.sum((I_pred - observed) ** 2))
 
 
-
-# 3. MULTI-START FITTING
+# multi-start fitting - 6 deterministic starts + 20 random
 
 def fit_sir(observed, n_random_starts=20, seed=42):
-    """
-    Fit SIR to an observed normalised series using multi-start L-BFGS-B.
-    Returns dict with best β, γ, I₀, R₀, RMSE, and fitted I(t).
-    """
     rng = np.random.default_rng(seed)
     n   = len(observed)
-
     logit = lambda p: np.log(p / (1 - p))
-    # Deterministic starting points covering slow / moderate / fast dynamics
+
     starts = [
         [np.log(0.05), np.log(0.02), logit(0.01)],
         [np.log(0.15), np.log(0.06), logit(0.01)],
         [np.log(0.40), np.log(0.15), logit(0.01)],
         [np.log(0.80), np.log(0.30), logit(0.01)],
         [np.log(0.20), np.log(0.08), logit(0.15)],
-        [np.log(0.20), np.log(0.20), logit(0.01)],   # R₀=1 boundary
+        [np.log(0.20), np.log(0.20), logit(0.01)],
     ]
-    # Random restarts
     for _ in range(n_random_starts):
         starts.append([
             rng.uniform(np.log(0.01), np.log(3.0)),
@@ -204,13 +169,8 @@ def fit_sir(observed, n_random_starts=20, seed=42):
     best_params = None
 
     for x0 in starts:
-        res = minimize(
-            objective,
-            x0=x0,
-            args=(observed,),
-            method='L-BFGS-B',
-            options={'maxiter': 1000, 'ftol': 1e-12, 'gtol': 1e-8},
-        )
+        res = minimize(objective, x0=x0, args=(observed,), method='L-BFGS-B',
+                       options={'maxiter': 1000, 'ftol': 1e-12, 'gtol': 1e-8})
         if res.fun < best_loss:
             best_loss   = res.fun
             best_params = res.x
@@ -223,21 +183,13 @@ def fit_sir(observed, n_random_starts=20, seed=42):
     rmse  = np.sqrt(best_loss / n)
     I_fit = solve_sir(beta, gamma, I0, n)
 
-    return {
-        "beta":  beta,
-        "gamma": gamma,
-        "I0":    I0,
-        "R0":    R0,
-        "rmse":  rmse,
-        "fit":   I_fit,
-    }
+    return {"beta": beta, "gamma": gamma, "I0": I0, "R0": R0, "rmse": rmse, "fit": I_fit}
 
 
-print("\nFitting SIR model (30 starts x 4 trends, ~20 seconds)...")
+print("\nFitting SIR model...")
 print("=" * 65)
 
 RESULTS = {}
-
 for name in trends:
     sub      = df[df['trend'] == name].sort_values('period')
     observed = sub['normalised'].values.astype(float)
@@ -251,23 +203,18 @@ for name in trends:
     RESULTS[name]   = res
 
     print(f"\n  {name}  [{res['era']}]")
-    print(f"    β  (transmission) : {res['beta']:.4f} per {freq[:-2]}")
-    print(f"    γ  (recovery)     : {res['gamma']:.4f} per {freq[:-2]}")
-    print(f"    I₀ (initial)      : {res['I0']:.4f}")
-    print(f"    R₀ = β/γ          : {res['R0']:.3f}")
-    print(f"    RMSE              : {res['rmse']:.4f}")
+    print(f"    beta  : {res['beta']:.4f}")
+    print(f"    gamma : {res['gamma']:.4f}")
+    print(f"    I0    : {res['I0']:.4f}")
+    print(f"    R0    : {res['R0']:.3f}")
+    print(f"    RMSE  : {res['rmse']:.4f}")
 
 print("\n" + "=" * 65)
 
 
-#
-# 4. BOOTSTRAP CONFIDENCE INTERVALS
-#
-#    Resample each observed series 500 times with replacement.
-#    Refit SIR to each resample. Take 2.5th / 97.5th percentiles.
-#    Gives 95% CIs on β, γ, R₀ without distributional assumptions.
+# bootstrap confidence intervals - 300 resamples, warm-start from fitted params
 
-print("\nBootstrap confidence intervals (300 resamples, warm-start per trend)...")
+print("\nBootstrap confidence intervals (300 resamples)...")
 N_BOOT = 300
 rng    = np.random.default_rng(0)
 
@@ -276,9 +223,6 @@ for name, res in RESULTS.items():
     n        = res["n"]
     boot_beta, boot_gamma, boot_R0 = [], [], []
 
-    # Warm start: begin each bootstrap optimisation at the fitted parameters.
-    # Much faster than cold multi-start -- the resample optimum is always
-    # close to the full-data optimum, so one tight optimisation suffices.
     logit = lambda p: np.log(p / (1.0 - p))
     x0_warm = np.array([
         np.log(res["beta"]),
@@ -290,13 +234,8 @@ for name, res in RESULTS.items():
         idx      = rng.integers(0, n, size=n)
         resample = observed[idx]
         try:
-            r = minimize(
-                objective,
-                x0=x0_warm,
-                args=(resample,),
-                method='L-BFGS-B',
-                options={'maxiter': 200, 'ftol': 1e-8, 'gtol': 1e-6},
-            )
+            r = minimize(objective, x0=x0_warm, args=(resample,), method='L-BFGS-B',
+                         options={'maxiter': 200, 'ftol': 1e-8, 'gtol': 1e-6})
             b_beta  = np.exp(r.x[0])
             b_gamma = np.exp(r.x[1])
             boot_beta.append(b_beta)
@@ -310,19 +249,12 @@ for name, res in RESULTS.items():
     res["ci_R0"]    = (np.percentile(boot_R0,    2.5), np.percentile(boot_R0,    97.5))
 
     print(f"  {name}")
-    print(f"    β  = {res['beta']:.4f}  95% CI [{res['ci_beta'][0]:.4f}, {res['ci_beta'][1]:.4f}]")
-    print(f"    γ  = {res['gamma']:.4f}  95% CI [{res['ci_gamma'][0]:.4f}, {res['ci_gamma'][1]:.4f}]")
-    print(f"    R₀ = {res['R0']:.3f}   95% CI [{res['ci_R0'][0]:.3f}, {res['ci_R0'][1]:.3f}]")
+    print(f"    beta = {res['beta']:.4f}  95% CI [{res['ci_beta'][0]:.4f}, {res['ci_beta'][1]:.4f}]")
+    print(f"    gamma = {res['gamma']:.4f}  95% CI [{res['ci_gamma'][0]:.4f}, {res['ci_gamma'][1]:.4f}]")
+    print(f"    R0 = {res['R0']:.3f}   95% CI [{res['ci_R0'][0]:.3f}, {res['ci_R0'][1]:.3f}]")
 
 
-
-# 5. RESIDUAL ANALYSIS
-#
-#    Residuals = observed - fitted I(t).
-#    Good model: residuals should be white noise (no autocorrelation).
-#    Ljung-Box test: H0 = residuals are white noise.
-#    p > 0.05 --> fail to reject H0 --> residuals are white noise --> good fit.
-
+# residual analysis - Ljung-Box test for autocorrelation in residuals
 
 from statsmodels.stats.diagnostic import acorr_ljungbox
 from statsmodels.tsa.stattools import acf as acf_fn
@@ -334,14 +266,13 @@ for name, res in RESULTS.items():
     RESIDUALS[name] = resid
     lb = acorr_ljungbox(resid, lags=[10], return_df=True)
     p  = lb['lb_pvalue'].values[0]
-    verdict = "white noise (good)" if p > 0.05 else "autocorrelated (model misfit)"
+    verdict = "white noise" if p > 0.05 else "autocorrelated (model misfit)"
     print(f"  {name}: Ljung-Box p = {p:.4f}  --> {verdict}")
 
 print("\nFigure 9: Residuals...")
 names_ord = list(RESIDUALS.keys())
 fig, axes = plt.subplots(2, 4, figsize=(16, 8))
 
-# Top row: residual bar charts
 for ax, name in zip(axes[0], names_ord):
     resid = RESIDUALS[name]
     color = TREND_COLORS[name]
@@ -350,9 +281,8 @@ for ax, name in zip(axes[0], names_ord):
     ax.axhline(0, color='black', lw=0.9)
     ax.set_title(f'{name}', fontweight='bold', fontsize=10)
     ax.set_xlabel("Period")
-    ax.set_ylabel("Residual (observed − fit)")
+    ax.set_ylabel("Residual (observed - fit)")
 
-# Bottom row: residual ACF plots
 for ax, name in zip(axes[1], names_ord):
     resid  = RESIDUALS[name]
     color  = TREND_COLORS[name]
@@ -364,13 +294,12 @@ for ax, name in zip(axes[1], names_ord):
     ax.axhline( conf, color='black', lw=1.0, linestyle='--', label='95% CI')
     ax.axhline(-conf, color='black', lw=1.0, linestyle='--')
     ax.axhline(0,     color='black', lw=0.5)
-    ax.set_title(f'{name} — Residual ACF', fontsize=9, fontweight='bold')
+    ax.set_title(f'{name} - Residual ACF', fontsize=9, fontweight='bold')
     ax.set_xlabel("Lag")
     ax.set_ylabel("Autocorrelation")
     ax.legend(fontsize=7, loc='upper right')
 
-fig.suptitle("SIR model residual analysis\n"
-             "Top: residuals (observed − fit)    Bottom: ACF of residuals (flat = white noise)",
+fig.suptitle("SIR model residual analysis\nTop: residuals    Bottom: ACF (flat = white noise)",
              fontsize=11, fontweight='bold')
 plt.tight_layout(rect=[0, 0, 1, 0.93])
 plt.savefig("output/fig9_residuals.png", dpi=150, bbox_inches='tight')
@@ -379,8 +308,7 @@ plt.close()
 print("  Saved: output/fig9_residuals.png")
 
 
-# 6. FIGURE 6 -- SIR FITS
-
+# figure 6 - SIR fits
 
 print("\nFigure 6: SIR fits...")
 fig, axes = plt.subplots(2, 2, figsize=(14, 9))
@@ -391,18 +319,14 @@ for ax, (name, res) in zip(axes, RESULTS.items()):
     t     = np.arange(res["n"], dtype=float)
     unit  = "Months" if res["freq"] == "monthly" else "Weeks"
 
-    ax.plot(t, res["observed"],
-            color=color, lw=1.5, alpha=0.65, label="Observed (normalised)")
-
+    ax.plot(t, res["observed"], color=color, lw=1.5, alpha=0.65, label="Observed (normalised)")
     if res["fit"] is not None:
-        ax.plot(t, res["fit"],
-                color='black', lw=2.5, linestyle='--',
-                label=f"SIR fit  (R₀ = {res['R0']:.2f},  RMSE = {res['rmse']:.3f})")
+        ax.plot(t, res["fit"], color='black', lw=2.5, linestyle='--',
+                label=f"SIR fit  (R0 = {res['R0']:.2f},  RMSE = {res['rmse']:.3f})")
 
     ax.text(0.03, 0.03,
-            f"β = {res['beta']:.3f}\nγ = {res['gamma']:.3f}\nR₀ = {res['R0']:.2f}\nI₀ = {res['I0']:.3f}",
-            transform=ax.transAxes,
-            fontsize=8, va='bottom', ha='left',
+            f"beta = {res['beta']:.3f}\ngamma = {res['gamma']:.3f}\nR0 = {res['R0']:.2f}\nI0 = {res['I0']:.3f}",
+            transform=ax.transAxes, fontsize=8, va='bottom', ha='left',
             bbox=dict(boxstyle='round,pad=0.3', facecolor='white', alpha=0.8))
 
     ax.set_title(f'{name}  [{res["era"]}]', fontweight='bold', fontsize=10)
@@ -420,29 +344,23 @@ plt.close()
 print("  Saved: output/fig6_sir_fits.png")
 
 
+# figure 7 - R0 comparison
 
-# 5. FIGURE 7 -- R₀ COMPARISON BAR CHART
-
-print("\nFigure 7: R₀ comparison...")
+print("\nFigure 7: R0 comparison...")
 fig, ax = plt.subplots(figsize=(9, 5))
 
 names  = list(RESULTS.keys())
-R0s    = [RESULTS[n]["R0"]    for n in names]
-betas  = [RESULTS[n]["beta"]  for n in names]
-gammas = [RESULTS[n]["gamma"] for n in names]
-colors = [TREND_COLORS[n]     for n in names]
+R0s    = [RESULTS[n]["R0"]   for n in names]
+colors = [TREND_COLORS[n]    for n in names]
 
 bars = ax.barh(names, R0s, color=colors, alpha=0.85, height=0.45)
-ax.axvline(1.0, color='black', lw=1.2, linestyle='--', alpha=0.6,
-           label='R₀ = 1  (epidemic threshold)')
+ax.axvline(1.0, color='black', lw=1.2, linestyle='--', alpha=0.6, label='R0 = 1 (epidemic threshold)')
 
 for bar, val in zip(bars, R0s):
-    ax.text(val + 0.03,
-            bar.get_y() + bar.get_height() / 2,
-            f'R₀ = {val:.2f}',
-            va='center', fontsize=10, fontweight='bold')
+    ax.text(val + 0.03, bar.get_y() + bar.get_height() / 2,
+            f'R0 = {val:.2f}', va='center', fontsize=10, fontweight='bold')
 
-ax.set_xlabel("Basic reproduction number  R₀ = β / γ", fontsize=11)
+ax.set_xlabel("Basic reproduction number  R0 = beta / gamma", fontsize=11)
 ax.set_title("Fashion trend virality across platform eras", fontweight='bold')
 ax.legend(fontsize=9)
 ax.set_xlim(0, max(R0s) * 1.25)
@@ -453,7 +371,7 @@ plt.close()
 print("  Saved: output/fig7_R0_comparison.png")
 
 
-# 6. FIGURE 8 -- FULL SIR COMPARTMENTS (S, I, R) FOR EACH TREND
+# figure 8 - S, I, R compartments over time
 
 print("\nFigure 8: SIR compartments...")
 fig, axes = plt.subplots(2, 2, figsize=(14, 9))
@@ -465,22 +383,19 @@ for ax, (name, res) in zip(axes, RESULTS.items()):
     unit  = "Months" if res["freq"] == "monthly" else "Weeks"
     t     = np.arange(n, dtype=float)
 
-    # Re-solve to get all three compartments using the same numpy RK4
     S_t, I_t, R_t = solve_sir_full(res["beta"], res["gamma"], res["I0"], n)
-    ax.plot(t, S_t, color='steelblue', lw=2,   label='S  (susceptible)')
-    ax.plot(t, I_t, color=color,       lw=2.5, label='I  (infected / interested)')
-    ax.plot(t, R_t, color='#888780',   lw=2,   label='R  (recovered / moved on)')
-    ax.plot(t, res["observed"],
-            color=color, lw=1.2, alpha=0.4, linestyle=':', label='Observed')
+    ax.plot(t, S_t, color='steelblue', lw=2,   label='S (susceptible)')
+    ax.plot(t, I_t, color=color,       lw=2.5, label='I (infected / interested)')
+    ax.plot(t, R_t, color='#888780',   lw=2,   label='R (recovered / moved on)')
+    ax.plot(t, res["observed"], color=color, lw=1.2, alpha=0.4, linestyle=':', label='Observed')
 
-    ax.set_title(f'{name}  R₀={res["R0"]:.2f}', fontweight='bold', fontsize=10)
+    ax.set_title(f'{name}  R0={res["R0"]:.2f}', fontweight='bold', fontsize=10)
     ax.set_xlabel(f"{unit} from series start")
     ax.set_ylabel("Population fraction")
     ax.set_ylim(-0.05, 1.05)
     ax.legend(fontsize=7, loc='center right')
 
-fig.suptitle("SIR compartment trajectories -- S, I, R over time",
-             fontsize=12, fontweight='bold')
+fig.suptitle("SIR compartment trajectories", fontsize=12, fontweight='bold')
 plt.tight_layout(rect=[0, 0, 1, 0.96])
 plt.savefig("output/fig8_sir_compartments.png", dpi=150, bbox_inches='tight')
 plt.show()
@@ -488,38 +403,7 @@ plt.close()
 print("  Saved: output/fig8_sir_compartments.png")
 
 
-# 7. SUMMARY TABLE + EXPORT
-
-
-print("\n" + "=" * 95)
-print(f"{'Trend':<18} {'β':>7} {'β 95% CI':<18} {'γ':>7} {'γ 95% CI':<18} {'R₀':>7} {'R₀ 95% CI':<18} {'RMSE':>7}")
-print("-" * 95)
-for name, res in RESULTS.items():
-    print(f"{name:<18} "
-          f"{res['beta']:>7.3f} [{res['ci_beta'][0]:.3f},{res['ci_beta'][1]:.3f}]{'':>6}"
-          f"{res['gamma']:>7.3f} [{res['ci_gamma'][0]:.3f},{res['ci_gamma'][1]:.3f}]{'':>6}"
-          f"{res['R0']:>7.2f} [{res['ci_R0'][0]:.2f},{res['ci_R0'][1]:.2f}]{'':>8}"
-          f"{res['rmse']:>7.4f}")
-print("=" * 95)
-
-print("""
-Parameter interpretation:
-  β  : adoption rate -- higher β means the trend spread faster through the
-       susceptible population (viral amplification by social media)
-  γ  : recovery rate -- higher γ means people lost interest more quickly
-       (shorter trend lifespan)
-  R₀ : virality index -- average new adopters recruited by one current fan
-       R₀ > 1: trend can spread epidemically
-       R₀ < 1: trend cannot sustain itself (already past peak when data starts)
-  I₀ : initial infected fraction -- large value for Soft grunge reflects
-       the data series starting mid-trend (limitation: pre-peak phase missing)
-
-Report notes:
-  Cottagecore / Dark academia: series ends before full recovery to zero,
-    so γ is estimated from partial decline -- may be underestimated.
-  Dark academia: double-peak structure may reduce fit quality --
-    single-wave SIR cannot model two adoption waves.
-""")
+# export results to CSV
 
 rows = [
     {
@@ -542,5 +426,4 @@ rows = [
 ]
 pd.DataFrame(rows).to_csv("output/sir_parameters.csv", index=False)
 print("Exported: output/sir_parameters.csv")
-print("\nSection 3 complete. Figures saved to output/")
-print("Figures: fig6_sir_fits.png, fig7_R0_comparison.png, fig8_sir_compartments.png, fig9_residuals.png")
+print("\nDone. Figures: fig6, fig7, fig8, fig9")
