@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
-data_folder = "/Users/j.bhuang/Desktop/data/Data/"
+data_folder = "/Users/rose/Desktop/new fashion3/data/"
 files = ["cottagecore.csv", "dark_academia.csv", "millennial_pink.csv", "soft_grunge.csv"]
 
 
