@@ -1,0 +1,1 @@
+C:\Users\alici\AppData\Local\Programs\Python\Python312\python.exe C:\Users\alici\PycharmProjects\MDM3fashion-\data\vogue_debug.py
