@@ -1,0 +1,4021 @@
+date,value_raw,value_norm,trend_name
+2004-01-01,0,0.0,70sfashion
+2004-02-01,0,0.0,70sfashion
+2004-03-01,0,0.0,70sfashion
+2004-04-01,67,0.67,70sfashion
+2004-05-01,0,0.0,70sfashion
+2004-06-01,94,0.94,70sfashion
+2004-07-01,0,0.0,70sfashion
+2004-08-01,0,0.0,70sfashion
+2004-09-01,49,0.49,70sfashion
+2004-10-01,87,0.87,70sfashion
+2004-11-01,61,0.61,70sfashion
+2004-12-01,48,0.48,70sfashion
+2005-01-01,79,0.79,70sfashion
+2005-02-01,75,0.75,70sfashion
+2005-03-01,40,0.4,70sfashion
+2005-04-01,38,0.38,70sfashion
+2005-05-01,55,0.55,70sfashion
+2005-06-01,54,0.54,70sfashion
+2005-07-01,36,0.36,70sfashion
+2005-08-01,38,0.38,70sfashion
+2005-09-01,33,0.33,70sfashion
+2005-10-01,57,0.57,70sfashion
+2005-11-01,58,0.58,70sfashion
+2005-12-01,55,0.55,70sfashion
+2006-01-01,44,0.44,70sfashion
+2006-02-01,47,0.47,70sfashion
+2006-03-01,39,0.39,70sfashion
+2006-04-01,51,0.51,70sfashion
+2006-05-01,45,0.45,70sfashion
+2006-06-01,54,0.54,70sfashion
+2006-07-01,41,0.41,70sfashion
+2006-08-01,0,0.0,70sfashion
+2006-09-01,32,0.32,70sfashion
+2006-10-01,40,0.4,70sfashion
+2006-11-01,47,0.47,70sfashion
+2006-12-01,45,0.45,70sfashion
+2007-01-01,37,0.37,70sfashion
+2007-02-01,33,0.33,70sfashion
+2007-03-01,48,0.48,70sfashion
+2007-04-01,39,0.39,70sfashion
+2007-05-01,58,0.58,70sfashion
+2007-06-01,59,0.59,70sfashion
+2007-07-01,43,0.43,70sfashion
+2007-08-01,37,0.37,70sfashion
+2007-09-01,60,0.6,70sfashion
+2007-10-01,41,0.41,70sfashion
+2007-11-01,43,0.43,70sfashion
+2007-12-01,36,0.36,70sfashion
+2008-01-01,44,0.44,70sfashion
+2008-02-01,31,0.31,70sfashion
+2008-03-01,40,0.4,70sfashion
+2008-04-01,29,0.29,70sfashion
+2008-05-01,23,0.23,70sfashion
+2008-06-01,42,0.42,70sfashion
+2008-07-01,22,0.22,70sfashion
+2008-08-01,30,0.3,70sfashion
+2008-09-01,44,0.44,70sfashion
+2008-10-01,40,0.4,70sfashion
+2008-11-01,43,0.43,70sfashion
+2008-12-01,33,0.33,70sfashion
+2009-01-01,40,0.4,70sfashion
+2009-02-01,31,0.31,70sfashion
+2009-03-01,37,0.37,70sfashion
+2009-04-01,29,0.29,70sfashion
+2009-05-01,35,0.35,70sfashion
+2009-06-01,39,0.39,70sfashion
+2009-07-01,26,0.26,70sfashion
+2009-08-01,23,0.23,70sfashion
+2009-09-01,30,0.3,70sfashion
+2009-10-01,30,0.3,70sfashion
+2009-11-01,28,0.28,70sfashion
+2009-12-01,23,0.23,70sfashion
+2010-01-01,27,0.27,70sfashion
+2010-02-01,33,0.33,70sfashion
+2010-03-01,26,0.26,70sfashion
+2010-04-01,27,0.27,70sfashion
+2010-05-01,42,0.42,70sfashion
+2010-06-01,22,0.22,70sfashion
+2010-07-01,28,0.28,70sfashion
+2010-08-01,13,0.13,70sfashion
+2010-09-01,26,0.26,70sfashion
+2010-10-01,28,0.28,70sfashion
+2010-11-01,29,0.29,70sfashion
+2010-12-01,17,0.17,70sfashion
+2011-01-01,21,0.21,70sfashion
+2011-02-01,43,0.43,70sfashion
+2011-03-01,41,0.41,70sfashion
+2011-04-01,38,0.38,70sfashion
+2011-05-01,41,0.41,70sfashion
+2011-06-01,33,0.33,70sfashion
+2011-07-01,36,0.36,70sfashion
+2011-08-01,32,0.32,70sfashion
+2011-09-01,43,0.43,70sfashion
+2011-10-01,38,0.38,70sfashion
+2011-11-01,40,0.4,70sfashion
+2011-12-01,33,0.33,70sfashion
+2012-01-01,32,0.32,70sfashion
+2012-02-01,37,0.37,70sfashion
+2012-03-01,36,0.36,70sfashion
+2012-04-01,33,0.33,70sfashion
+2012-05-01,62,0.62,70sfashion
+2012-06-01,36,0.36,70sfashion
+2012-07-01,28,0.28,70sfashion
+2012-08-01,27,0.27,70sfashion
+2012-09-01,32,0.32,70sfashion
+2012-10-01,38,0.38,70sfashion
+2012-11-01,38,0.38,70sfashion
+2012-12-01,30,0.3,70sfashion
+2013-01-01,28,0.28,70sfashion
+2013-02-01,35,0.35,70sfashion
+2013-03-01,39,0.39,70sfashion
+2013-04-01,39,0.39,70sfashion
+2013-05-01,42,0.42,70sfashion
+2013-06-01,40,0.4,70sfashion
+2013-07-01,36,0.36,70sfashion
+2013-08-01,33,0.33,70sfashion
+2013-09-01,37,0.37,70sfashion
+2013-10-01,48,0.48,70sfashion
+2013-11-01,41,0.41,70sfashion
+2013-12-01,36,0.36,70sfashion
+2014-01-01,43,0.43,70sfashion
+2014-02-01,41,0.41,70sfashion
+2014-03-01,40,0.4,70sfashion
+2014-04-01,34,0.34,70sfashion
+2014-05-01,39,0.39,70sfashion
+2014-06-01,39,0.39,70sfashion
+2014-07-01,39,0.39,70sfashion
+2014-08-01,31,0.31,70sfashion
+2014-09-01,38,0.38,70sfashion
+2014-10-01,35,0.35,70sfashion
+2014-11-01,38,0.38,70sfashion
+2014-12-01,38,0.38,70sfashion
+2015-01-01,43,0.43,70sfashion
+2015-02-01,53,0.53,70sfashion
+2015-03-01,72,0.72,70sfashion
+2015-04-01,59,0.59,70sfashion
+2015-05-01,53,0.53,70sfashion
+2015-06-01,53,0.53,70sfashion
+2015-07-01,46,0.46,70sfashion
+2015-08-01,46,0.46,70sfashion
+2015-09-01,64,0.64,70sfashion
+2015-10-01,49,0.49,70sfashion
+2015-11-01,55,0.55,70sfashion
+2015-12-01,56,0.56,70sfashion
+2016-01-01,66,0.66,70sfashion
+2016-02-01,60,0.6,70sfashion
+2016-03-01,51,0.51,70sfashion
+2016-04-01,50,0.5,70sfashion
+2016-05-01,46,0.46,70sfashion
+2016-06-01,48,0.48,70sfashion
+2016-07-01,41,0.41,70sfashion
+2016-08-01,42,0.42,70sfashion
+2016-09-01,48,0.48,70sfashion
+2016-10-01,50,0.5,70sfashion
+2016-11-01,47,0.47,70sfashion
+2016-12-01,44,0.44,70sfashion
+2017-01-01,48,0.48,70sfashion
+2017-02-01,52,0.52,70sfashion
+2017-03-01,49,0.49,70sfashion
+2017-04-01,40,0.4,70sfashion
+2017-05-01,49,0.49,70sfashion
+2017-06-01,50,0.5,70sfashion
+2017-07-01,42,0.42,70sfashion
+2017-08-01,51,0.51,70sfashion
+2017-09-01,57,0.57,70sfashion
+2017-10-01,62,0.62,70sfashion
+2017-11-01,62,0.62,70sfashion
+2017-12-01,49,0.49,70sfashion
+2018-01-01,53,0.53,70sfashion
+2018-02-01,56,0.56,70sfashion
+2018-03-01,51,0.51,70sfashion
+2018-04-01,47,0.47,70sfashion
+2018-05-01,44,0.44,70sfashion
+2018-06-01,51,0.51,70sfashion
+2018-07-01,44,0.44,70sfashion
+2018-08-01,52,0.52,70sfashion
+2018-09-01,63,0.63,70sfashion
+2018-10-01,64,0.64,70sfashion
+2018-11-01,62,0.62,70sfashion
+2018-12-01,52,0.52,70sfashion
+2019-01-01,56,0.56,70sfashion
+2019-02-01,54,0.54,70sfashion
+2019-03-01,52,0.52,70sfashion
+2019-04-01,50,0.5,70sfashion
+2019-05-01,50,0.5,70sfashion
+2019-06-01,51,0.51,70sfashion
+2019-07-01,54,0.54,70sfashion
+2019-08-01,53,0.53,70sfashion
+2019-09-01,56,0.56,70sfashion
+2019-10-01,61,0.61,70sfashion
+2019-11-01,53,0.53,70sfashion
+2019-12-01,49,0.49,70sfashion
+2020-01-01,64,0.64,70sfashion
+2020-02-01,62,0.62,70sfashion
+2020-03-01,40,0.4,70sfashion
+2020-04-01,34,0.34,70sfashion
+2020-05-01,40,0.4,70sfashion
+2020-06-01,31,0.31,70sfashion
+2020-07-01,30,0.3,70sfashion
+2020-08-01,32,0.32,70sfashion
+2020-09-01,34,0.34,70sfashion
+2020-10-01,31,0.31,70sfashion
+2020-11-01,37,0.37,70sfashion
+2020-12-01,27,0.27,70sfashion
+2021-01-01,41,0.41,70sfashion
+2021-02-01,46,0.46,70sfashion
+2021-03-01,47,0.47,70sfashion
+2021-04-01,42,0.42,70sfashion
+2021-05-01,63,0.63,70sfashion
+2021-06-01,61,0.61,70sfashion
+2021-07-01,73,0.73,70sfashion
+2021-08-01,73,0.73,70sfashion
+2021-09-01,95,0.95,70sfashion
+2021-10-01,80,0.8,70sfashion
+2021-11-01,68,0.68,70sfashion
+2021-12-01,52,0.52,70sfashion
+2022-01-01,60,0.6,70sfashion
+2022-02-01,77,0.77,70sfashion
+2022-03-01,62,0.62,70sfashion
+2022-04-01,60,0.6,70sfashion
+2022-05-01,100,1.0,70sfashion
+2022-06-01,75,0.75,70sfashion
+2022-07-01,60,0.6,70sfashion
+2022-08-01,54,0.54,70sfashion
+2022-09-01,61,0.61,70sfashion
+2022-10-01,54,0.54,70sfashion
+2022-11-01,51,0.51,70sfashion
+2022-12-01,41,0.41,70sfashion
+2023-01-01,49,0.49,70sfashion
+2023-02-01,56,0.56,70sfashion
+2023-03-01,56,0.56,70sfashion
+2023-04-01,57,0.57,70sfashion
+2023-05-01,54,0.54,70sfashion
+2023-06-01,46,0.46,70sfashion
+2023-07-01,46,0.46,70sfashion
+2023-08-01,43,0.43,70sfashion
+2023-09-01,51,0.51,70sfashion
+2023-10-01,47,0.47,70sfashion
+2023-11-01,46,0.46,70sfashion
+2023-12-01,34,0.34,70sfashion
+2024-01-01,41,0.41,70sfashion
+2024-02-01,42,0.42,70sfashion
+2024-03-01,38,0.38,70sfashion
+2024-04-01,37,0.37,70sfashion
+2024-05-01,33,0.33,70sfashion
+2024-06-01,37,0.37,70sfashion
+2024-07-01,32,0.32,70sfashion
+2024-08-01,31,0.31,70sfashion
+2024-09-01,35,0.35,70sfashion
+2024-10-01,39,0.39,70sfashion
+2024-11-01,37,0.37,70sfashion
+2024-12-01,26,0.26,70sfashion
+2025-01-01,31,0.31,70sfashion
+2025-02-01,30,0.3,70sfashion
+2025-03-01,31,0.31,70sfashion
+2025-04-01,29,0.29,70sfashion
+2025-05-01,28,0.28,70sfashion
+2025-06-01,29,0.29,70sfashion
+2025-07-01,23,0.23,70sfashion
+2025-08-01,23,0.23,70sfashion
+2025-09-01,28,0.28,70sfashion
+2025-10-01,24,0.24,70sfashion
+2025-11-01,26,0.26,70sfashion
+2025-12-01,24,0.24,70sfashion
+2026-01-01,28,0.28,70sfashion
+2026-02-01,28,0.28,70sfashion
+2026-03-01,28,0.28,70sfashion
+2026-04-01,23,0.23,70sfashion
+2004-01-01,0,0.0,boyfriend jeans
+2004-02-01,0,0.0,boyfriend jeans
+2004-03-01,0,0.0,boyfriend jeans
+2004-04-01,0,0.0,boyfriend jeans
+2004-05-01,0,0.0,boyfriend jeans
+2004-06-01,0,0.0,boyfriend jeans
+2004-07-01,0,0.0,boyfriend jeans
+2004-08-01,0,0.0,boyfriend jeans
+2004-09-01,0,0.0,boyfriend jeans
+2004-10-01,0,0.0,boyfriend jeans
+2004-11-01,0,0.0,boyfriend jeans
+2004-12-01,0,0.0,boyfriend jeans
+2005-01-01,0,0.0,boyfriend jeans
+2005-02-01,0,0.0,boyfriend jeans
+2005-03-01,0,0.0,boyfriend jeans
+2005-04-01,0,0.0,boyfriend jeans
+2005-05-01,0,0.0,boyfriend jeans
+2005-06-01,0,0.0,boyfriend jeans
+2005-07-01,0,0.0,boyfriend jeans
+2005-08-01,0,0.0,boyfriend jeans
+2005-09-01,0,0.0,boyfriend jeans
+2005-10-01,0,0.0,boyfriend jeans
+2005-11-01,0,0.0,boyfriend jeans
+2005-12-01,0,0.0,boyfriend jeans
+2006-01-01,0,0.0,boyfriend jeans
+2006-02-01,0,0.0,boyfriend jeans
+2006-03-01,0,0.0,boyfriend jeans
+2006-04-01,0,0.0,boyfriend jeans
+2006-05-01,0,0.0,boyfriend jeans
+2006-06-01,0,0.0,boyfriend jeans
+2006-07-01,12,0.12,boyfriend jeans
+2006-08-01,15,0.15,boyfriend jeans
+2006-09-01,0,0.0,boyfriend jeans
+2006-10-01,11,0.11,boyfriend jeans
+2006-11-01,11,0.11,boyfriend jeans
+2006-12-01,0,0.0,boyfriend jeans
+2007-01-01,11,0.11,boyfriend jeans
+2007-02-01,16,0.16,boyfriend jeans
+2007-03-01,14,0.14,boyfriend jeans
+2007-04-01,0,0.0,boyfriend jeans
+2007-05-01,11,0.11,boyfriend jeans
+2007-06-01,11,0.11,boyfriend jeans
+2007-07-01,0,0.0,boyfriend jeans
+2007-08-01,17,0.17,boyfriend jeans
+2007-09-01,19,0.19,boyfriend jeans
+2007-10-01,17,0.17,boyfriend jeans
+2007-11-01,10,0.1,boyfriend jeans
+2007-12-01,20,0.2,boyfriend jeans
+2008-01-01,16,0.16,boyfriend jeans
+2008-02-01,14,0.14,boyfriend jeans
+2008-03-01,22,0.22,boyfriend jeans
+2008-04-01,17,0.17,boyfriend jeans
+2008-05-01,11,0.11,boyfriend jeans
+2008-06-01,15,0.15,boyfriend jeans
+2008-07-01,17,0.17,boyfriend jeans
+2008-08-01,35,0.35,boyfriend jeans
+2008-09-01,28,0.28,boyfriend jeans
+2008-10-01,18,0.18,boyfriend jeans
+2008-11-01,15,0.15,boyfriend jeans
+2008-12-01,29,0.29,boyfriend jeans
+2009-01-01,27,0.27,boyfriend jeans
+2009-02-01,27,0.27,boyfriend jeans
+2009-03-01,21,0.21,boyfriend jeans
+2009-04-01,25,0.25,boyfriend jeans
+2009-05-01,24,0.24,boyfriend jeans
+2009-06-01,24,0.24,boyfriend jeans
+2009-07-01,22,0.22,boyfriend jeans
+2009-08-01,34,0.34,boyfriend jeans
+2009-09-01,26,0.26,boyfriend jeans
+2009-10-01,23,0.23,boyfriend jeans
+2009-11-01,19,0.19,boyfriend jeans
+2009-12-01,27,0.27,boyfriend jeans
+2010-01-01,27,0.27,boyfriend jeans
+2010-02-01,30,0.3,boyfriend jeans
+2010-03-01,33,0.33,boyfriend jeans
+2010-04-01,28,0.28,boyfriend jeans
+2010-05-01,28,0.28,boyfriend jeans
+2010-06-01,19,0.19,boyfriend jeans
+2010-07-01,26,0.26,boyfriend jeans
+2010-08-01,30,0.3,boyfriend jeans
+2010-09-01,32,0.32,boyfriend jeans
+2010-10-01,27,0.27,boyfriend jeans
+2010-11-01,18,0.18,boyfriend jeans
+2010-12-01,23,0.23,boyfriend jeans
+2011-01-01,34,0.34,boyfriend jeans
+2011-02-01,28,0.28,boyfriend jeans
+2011-03-01,30,0.3,boyfriend jeans
+2011-04-01,31,0.31,boyfriend jeans
+2011-05-01,25,0.25,boyfriend jeans
+2011-06-01,25,0.25,boyfriend jeans
+2011-07-01,25,0.25,boyfriend jeans
+2011-08-01,29,0.29,boyfriend jeans
+2011-09-01,28,0.28,boyfriend jeans
+2011-10-01,24,0.24,boyfriend jeans
+2011-11-01,24,0.24,boyfriend jeans
+2011-12-01,28,0.28,boyfriend jeans
+2012-01-01,18,0.18,boyfriend jeans
+2012-02-01,28,0.28,boyfriend jeans
+2012-03-01,25,0.25,boyfriend jeans
+2012-04-01,28,0.28,boyfriend jeans
+2012-05-01,32,0.32,boyfriend jeans
+2012-06-01,27,0.27,boyfriend jeans
+2012-07-01,32,0.32,boyfriend jeans
+2012-08-01,30,0.3,boyfriend jeans
+2012-09-01,32,0.32,boyfriend jeans
+2012-10-01,31,0.31,boyfriend jeans
+2012-11-01,28,0.28,boyfriend jeans
+2012-12-01,30,0.3,boyfriend jeans
+2013-01-01,33,0.33,boyfriend jeans
+2013-02-01,41,0.41,boyfriend jeans
+2013-03-01,44,0.44,boyfriend jeans
+2013-04-01,50,0.5,boyfriend jeans
+2013-05-01,49,0.49,boyfriend jeans
+2013-06-01,49,0.49,boyfriend jeans
+2013-07-01,42,0.42,boyfriend jeans
+2013-08-01,50,0.5,boyfriend jeans
+2013-09-01,50,0.5,boyfriend jeans
+2013-10-01,45,0.45,boyfriend jeans
+2013-11-01,41,0.41,boyfriend jeans
+2013-12-01,45,0.45,boyfriend jeans
+2014-01-01,48,0.48,boyfriend jeans
+2014-02-01,59,0.59,boyfriend jeans
+2014-03-01,76,0.76,boyfriend jeans
+2014-04-01,91,0.91,boyfriend jeans
+2014-05-01,71,0.71,boyfriend jeans
+2014-06-01,60,0.6,boyfriend jeans
+2014-07-01,63,0.63,boyfriend jeans
+2014-08-01,66,0.66,boyfriend jeans
+2014-09-01,66,0.66,boyfriend jeans
+2014-10-01,61,0.61,boyfriend jeans
+2014-11-01,50,0.5,boyfriend jeans
+2014-12-01,56,0.56,boyfriend jeans
+2015-01-01,58,0.58,boyfriend jeans
+2015-02-01,66,0.66,boyfriend jeans
+2015-03-01,77,0.77,boyfriend jeans
+2015-04-01,79,0.79,boyfriend jeans
+2015-05-01,76,0.76,boyfriend jeans
+2015-06-01,68,0.68,boyfriend jeans
+2015-07-01,68,0.68,boyfriend jeans
+2015-08-01,80,0.8,boyfriend jeans
+2015-09-01,72,0.72,boyfriend jeans
+2015-10-01,61,0.61,boyfriend jeans
+2015-11-01,59,0.59,boyfriend jeans
+2015-12-01,67,0.67,boyfriend jeans
+2016-01-01,75,0.75,boyfriend jeans
+2016-02-01,75,0.75,boyfriend jeans
+2016-03-01,86,0.86,boyfriend jeans
+2016-04-01,98,0.98,boyfriend jeans
+2016-05-01,100,1.0,boyfriend jeans
+2016-06-01,77,0.77,boyfriend jeans
+2016-07-01,78,0.78,boyfriend jeans
+2016-08-01,78,0.78,boyfriend jeans
+2016-09-01,85,0.85,boyfriend jeans
+2016-10-01,78,0.78,boyfriend jeans
+2016-11-01,64,0.64,boyfriend jeans
+2016-12-01,70,0.7,boyfriend jeans
+2017-01-01,70,0.7,boyfriend jeans
+2017-02-01,80,0.8,boyfriend jeans
+2017-03-01,85,0.85,boyfriend jeans
+2017-04-01,100,1.0,boyfriend jeans
+2017-05-01,76,0.76,boyfriend jeans
+2017-06-01,65,0.65,boyfriend jeans
+2017-07-01,68,0.68,boyfriend jeans
+2017-08-01,68,0.68,boyfriend jeans
+2017-09-01,73,0.73,boyfriend jeans
+2017-10-01,69,0.69,boyfriend jeans
+2017-11-01,57,0.57,boyfriend jeans
+2017-12-01,54,0.54,boyfriend jeans
+2018-01-01,55,0.55,boyfriend jeans
+2018-02-01,67,0.67,boyfriend jeans
+2018-03-01,69,0.69,boyfriend jeans
+2018-04-01,71,0.71,boyfriend jeans
+2018-05-01,66,0.66,boyfriend jeans
+2018-06-01,54,0.54,boyfriend jeans
+2018-07-01,45,0.45,boyfriend jeans
+2018-08-01,63,0.63,boyfriend jeans
+2018-09-01,69,0.69,boyfriend jeans
+2018-10-01,54,0.54,boyfriend jeans
+2018-11-01,52,0.52,boyfriend jeans
+2018-12-01,54,0.54,boyfriend jeans
+2019-01-01,54,0.54,boyfriend jeans
+2019-02-01,67,0.67,boyfriend jeans
+2019-03-01,64,0.64,boyfriend jeans
+2019-04-01,76,0.76,boyfriend jeans
+2019-05-01,60,0.6,boyfriend jeans
+2019-06-01,50,0.5,boyfriend jeans
+2019-07-01,50,0.5,boyfriend jeans
+2019-08-01,56,0.56,boyfriend jeans
+2019-09-01,57,0.57,boyfriend jeans
+2019-10-01,55,0.55,boyfriend jeans
+2019-11-01,42,0.42,boyfriend jeans
+2019-12-01,49,0.49,boyfriend jeans
+2020-01-01,48,0.48,boyfriend jeans
+2020-02-01,59,0.59,boyfriend jeans
+2020-03-01,40,0.4,boyfriend jeans
+2020-04-01,51,0.51,boyfriend jeans
+2020-05-01,68,0.68,boyfriend jeans
+2020-06-01,79,0.79,boyfriend jeans
+2020-07-01,87,0.87,boyfriend jeans
+2020-08-01,83,0.83,boyfriend jeans
+2020-09-01,78,0.78,boyfriend jeans
+2020-10-01,72,0.72,boyfriend jeans
+2020-11-01,57,0.57,boyfriend jeans
+2020-12-01,58,0.58,boyfriend jeans
+2021-01-01,55,0.55,boyfriend jeans
+2021-02-01,80,0.8,boyfriend jeans
+2021-03-01,79,0.79,boyfriend jeans
+2021-04-01,97,0.97,boyfriend jeans
+2021-05-01,88,0.88,boyfriend jeans
+2021-06-01,58,0.58,boyfriend jeans
+2021-07-01,55,0.55,boyfriend jeans
+2021-08-01,63,0.63,boyfriend jeans
+2021-09-01,63,0.63,boyfriend jeans
+2021-10-01,52,0.52,boyfriend jeans
+2021-11-01,44,0.44,boyfriend jeans
+2021-12-01,41,0.41,boyfriend jeans
+2022-01-01,50,0.5,boyfriend jeans
+2022-02-01,57,0.57,boyfriend jeans
+2022-03-01,52,0.52,boyfriend jeans
+2022-04-01,55,0.55,boyfriend jeans
+2022-05-01,46,0.46,boyfriend jeans
+2022-06-01,44,0.44,boyfriend jeans
+2022-07-01,35,0.35,boyfriend jeans
+2022-08-01,40,0.4,boyfriend jeans
+2022-09-01,48,0.48,boyfriend jeans
+2022-10-01,44,0.44,boyfriend jeans
+2022-11-01,36,0.36,boyfriend jeans
+2022-12-01,34,0.34,boyfriend jeans
+2023-01-01,40,0.4,boyfriend jeans
+2023-02-01,47,0.47,boyfriend jeans
+2023-03-01,43,0.43,boyfriend jeans
+2023-04-01,47,0.47,boyfriend jeans
+2023-05-01,46,0.46,boyfriend jeans
+2023-06-01,34,0.34,boyfriend jeans
+2023-07-01,37,0.37,boyfriend jeans
+2023-08-01,49,0.49,boyfriend jeans
+2023-09-01,47,0.47,boyfriend jeans
+2023-10-01,45,0.45,boyfriend jeans
+2023-11-01,38,0.38,boyfriend jeans
+2023-12-01,41,0.41,boyfriend jeans
+2024-01-01,42,0.42,boyfriend jeans
+2024-02-01,49,0.49,boyfriend jeans
+2024-03-01,53,0.53,boyfriend jeans
+2024-04-01,47,0.47,boyfriend jeans
+2024-05-01,41,0.41,boyfriend jeans
+2024-06-01,36,0.36,boyfriend jeans
+2024-07-01,34,0.34,boyfriend jeans
+2024-08-01,35,0.35,boyfriend jeans
+2024-09-01,51,0.51,boyfriend jeans
+2024-10-01,48,0.48,boyfriend jeans
+2024-11-01,46,0.46,boyfriend jeans
+2024-12-01,36,0.36,boyfriend jeans
+2025-01-01,42,0.42,boyfriend jeans
+2025-02-01,45,0.45,boyfriend jeans
+2025-03-01,46,0.46,boyfriend jeans
+2025-04-01,45,0.45,boyfriend jeans
+2025-05-01,33,0.33,boyfriend jeans
+2025-06-01,36,0.36,boyfriend jeans
+2025-07-01,33,0.33,boyfriend jeans
+2025-08-01,41,0.41,boyfriend jeans
+2025-09-01,47,0.47,boyfriend jeans
+2025-10-01,45,0.45,boyfriend jeans
+2025-11-01,41,0.41,boyfriend jeans
+2025-12-01,44,0.44,boyfriend jeans
+2026-01-01,39,0.39,boyfriend jeans
+2026-02-01,62,0.62,boyfriend jeans
+2026-03-01,47,0.47,boyfriend jeans
+2026-04-01,46,0.46,boyfriend jeans
+2004-01-01,0,0.0,flaredjeans
+2004-02-01,0,0.0,flaredjeans
+2004-03-01,0,0.0,flaredjeans
+2004-04-01,0,0.0,flaredjeans
+2004-05-01,0,0.0,flaredjeans
+2004-06-01,0,0.0,flaredjeans
+2004-07-01,0,0.0,flaredjeans
+2004-08-01,21,0.21,flaredjeans
+2004-09-01,16,0.16,flaredjeans
+2004-10-01,0,0.0,flaredjeans
+2004-11-01,0,0.0,flaredjeans
+2004-12-01,0,0.0,flaredjeans
+2005-01-01,0,0.0,flaredjeans
+2005-02-01,0,0.0,flaredjeans
+2005-03-01,11,0.11,flaredjeans
+2005-04-01,0,0.0,flaredjeans
+2005-05-01,0,0.0,flaredjeans
+2005-06-01,0,0.0,flaredjeans
+2005-07-01,0,0.0,flaredjeans
+2005-08-01,12,0.12,flaredjeans
+2005-09-01,0,0.0,flaredjeans
+2005-10-01,0,0.0,flaredjeans
+2005-11-01,0,0.0,flaredjeans
+2005-12-01,0,0.0,flaredjeans
+2006-01-01,9,0.09,flaredjeans
+2006-02-01,0,0.0,flaredjeans
+2006-03-01,8,0.08,flaredjeans
+2006-04-01,10,0.1,flaredjeans
+2006-05-01,0,0.0,flaredjeans
+2006-06-01,0,0.0,flaredjeans
+2006-07-01,0,0.0,flaredjeans
+2006-08-01,0,0.0,flaredjeans
+2006-09-01,0,0.0,flaredjeans
+2006-10-01,0,0.0,flaredjeans
+2006-11-01,7,0.07,flaredjeans
+2006-12-01,0,0.0,flaredjeans
+2007-01-01,5,0.05,flaredjeans
+2007-02-01,7,0.07,flaredjeans
+2007-03-01,0,0.0,flaredjeans
+2007-04-01,7,0.07,flaredjeans
+2007-05-01,8,0.08,flaredjeans
+2007-06-01,7,0.07,flaredjeans
+2007-07-01,0,0.0,flaredjeans
+2007-08-01,5,0.05,flaredjeans
+2007-09-01,8,0.08,flaredjeans
+2007-10-01,7,0.07,flaredjeans
+2007-11-01,7,0.07,flaredjeans
+2007-12-01,0,0.0,flaredjeans
+2008-01-01,5,0.05,flaredjeans
+2008-02-01,4,0.04,flaredjeans
+2008-03-01,5,0.05,flaredjeans
+2008-04-01,7,0.07,flaredjeans
+2008-05-01,5,0.05,flaredjeans
+2008-06-01,4,0.04,flaredjeans
+2008-07-01,0,0.0,flaredjeans
+2008-08-01,5,0.05,flaredjeans
+2008-09-01,4,0.04,flaredjeans
+2008-10-01,5,0.05,flaredjeans
+2008-11-01,4,0.04,flaredjeans
+2008-12-01,4,0.04,flaredjeans
+2009-01-01,6,0.06,flaredjeans
+2009-02-01,4,0.04,flaredjeans
+2009-03-01,4,0.04,flaredjeans
+2009-04-01,7,0.07,flaredjeans
+2009-05-01,4,0.04,flaredjeans
+2009-06-01,4,0.04,flaredjeans
+2009-07-01,5,0.05,flaredjeans
+2009-08-01,5,0.05,flaredjeans
+2009-09-01,5,0.05,flaredjeans
+2009-10-01,4,0.04,flaredjeans
+2009-11-01,4,0.04,flaredjeans
+2009-12-01,3,0.03,flaredjeans
+2010-01-01,2,0.02,flaredjeans
+2010-02-01,3,0.03,flaredjeans
+2010-03-01,4,0.04,flaredjeans
+2010-04-01,5,0.05,flaredjeans
+2010-05-01,5,0.05,flaredjeans
+2010-06-01,4,0.04,flaredjeans
+2010-07-01,3,0.03,flaredjeans
+2010-08-01,5,0.05,flaredjeans
+2010-09-01,4,0.04,flaredjeans
+2010-10-01,4,0.04,flaredjeans
+2010-11-01,3,0.03,flaredjeans
+2010-12-01,5,0.05,flaredjeans
+2011-01-01,7,0.07,flaredjeans
+2011-02-01,8,0.08,flaredjeans
+2011-03-01,10,0.1,flaredjeans
+2011-04-01,7,0.07,flaredjeans
+2011-05-01,7,0.07,flaredjeans
+2011-06-01,5,0.05,flaredjeans
+2011-07-01,5,0.05,flaredjeans
+2011-08-01,6,0.06,flaredjeans
+2011-09-01,4,0.04,flaredjeans
+2011-10-01,3,0.03,flaredjeans
+2011-11-01,4,0.04,flaredjeans
+2011-12-01,4,0.04,flaredjeans
+2012-01-01,5,0.05,flaredjeans
+2012-02-01,5,0.05,flaredjeans
+2012-03-01,7,0.07,flaredjeans
+2012-04-01,6,0.06,flaredjeans
+2012-05-01,6,0.06,flaredjeans
+2012-06-01,4,0.04,flaredjeans
+2012-07-01,5,0.05,flaredjeans
+2012-08-01,3,0.03,flaredjeans
+2012-09-01,6,0.06,flaredjeans
+2012-10-01,4,0.04,flaredjeans
+2012-11-01,4,0.04,flaredjeans
+2012-12-01,4,0.04,flaredjeans
+2013-01-01,5,0.05,flaredjeans
+2013-02-01,6,0.06,flaredjeans
+2013-03-01,5,0.05,flaredjeans
+2013-04-01,8,0.08,flaredjeans
+2013-05-01,6,0.06,flaredjeans
+2013-06-01,5,0.05,flaredjeans
+2013-07-01,5,0.05,flaredjeans
+2013-08-01,4,0.04,flaredjeans
+2013-09-01,6,0.06,flaredjeans
+2013-10-01,5,0.05,flaredjeans
+2013-11-01,4,0.04,flaredjeans
+2013-12-01,4,0.04,flaredjeans
+2014-01-01,5,0.05,flaredjeans
+2014-02-01,6,0.06,flaredjeans
+2014-03-01,6,0.06,flaredjeans
+2014-04-01,5,0.05,flaredjeans
+2014-05-01,5,0.05,flaredjeans
+2014-06-01,6,0.06,flaredjeans
+2014-07-01,5,0.05,flaredjeans
+2014-08-01,6,0.06,flaredjeans
+2014-09-01,6,0.06,flaredjeans
+2014-10-01,8,0.08,flaredjeans
+2014-11-01,6,0.06,flaredjeans
+2014-12-01,5,0.05,flaredjeans
+2015-01-01,9,0.09,flaredjeans
+2015-02-01,17,0.17,flaredjeans
+2015-03-01,19,0.19,flaredjeans
+2015-04-01,16,0.16,flaredjeans
+2015-05-01,16,0.16,flaredjeans
+2015-06-01,9,0.09,flaredjeans
+2015-07-01,7,0.07,flaredjeans
+2015-08-01,10,0.1,flaredjeans
+2015-09-01,11,0.11,flaredjeans
+2015-10-01,9,0.09,flaredjeans
+2015-11-01,7,0.07,flaredjeans
+2015-12-01,7,0.07,flaredjeans
+2016-01-01,8,0.08,flaredjeans
+2016-02-01,10,0.1,flaredjeans
+2016-03-01,11,0.11,flaredjeans
+2016-04-01,9,0.09,flaredjeans
+2016-05-01,8,0.08,flaredjeans
+2016-06-01,8,0.08,flaredjeans
+2016-07-01,8,0.08,flaredjeans
+2016-08-01,7,0.07,flaredjeans
+2016-09-01,9,0.09,flaredjeans
+2016-10-01,9,0.09,flaredjeans
+2016-11-01,7,0.07,flaredjeans
+2016-12-01,8,0.08,flaredjeans
+2017-01-01,8,0.08,flaredjeans
+2017-02-01,12,0.12,flaredjeans
+2017-03-01,11,0.11,flaredjeans
+2017-04-01,12,0.12,flaredjeans
+2017-05-01,10,0.1,flaredjeans
+2017-06-01,10,0.1,flaredjeans
+2017-07-01,9,0.09,flaredjeans
+2017-08-01,12,0.12,flaredjeans
+2017-09-01,14,0.14,flaredjeans
+2017-10-01,11,0.11,flaredjeans
+2017-11-01,12,0.12,flaredjeans
+2017-12-01,10,0.1,flaredjeans
+2018-01-01,13,0.13,flaredjeans
+2018-02-01,12,0.12,flaredjeans
+2018-03-01,15,0.15,flaredjeans
+2018-04-01,15,0.15,flaredjeans
+2018-05-01,13,0.13,flaredjeans
+2018-06-01,12,0.12,flaredjeans
+2018-07-01,10,0.1,flaredjeans
+2018-08-01,15,0.15,flaredjeans
+2018-09-01,16,0.16,flaredjeans
+2018-10-01,14,0.14,flaredjeans
+2018-11-01,13,0.13,flaredjeans
+2018-12-01,10,0.1,flaredjeans
+2019-01-01,13,0.13,flaredjeans
+2019-02-01,15,0.15,flaredjeans
+2019-03-01,17,0.17,flaredjeans
+2019-04-01,16,0.16,flaredjeans
+2019-05-01,14,0.14,flaredjeans
+2019-06-01,13,0.13,flaredjeans
+2019-07-01,11,0.11,flaredjeans
+2019-08-01,13,0.13,flaredjeans
+2019-09-01,17,0.17,flaredjeans
+2019-10-01,19,0.19,flaredjeans
+2019-11-01,18,0.18,flaredjeans
+2019-12-01,19,0.19,flaredjeans
+2020-01-01,22,0.22,flaredjeans
+2020-02-01,23,0.23,flaredjeans
+2020-03-01,18,0.18,flaredjeans
+2020-04-01,15,0.15,flaredjeans
+2020-05-01,19,0.19,flaredjeans
+2020-06-01,22,0.22,flaredjeans
+2020-07-01,29,0.29,flaredjeans
+2020-08-01,30,0.3,flaredjeans
+2020-09-01,33,0.33,flaredjeans
+2020-10-01,35,0.35,flaredjeans
+2020-11-01,33,0.33,flaredjeans
+2020-12-01,41,0.41,flaredjeans
+2021-01-01,33,0.33,flaredjeans
+2021-02-01,37,0.37,flaredjeans
+2021-03-01,45,0.45,flaredjeans
+2021-04-01,54,0.54,flaredjeans
+2021-05-01,62,0.62,flaredjeans
+2021-06-01,37,0.37,flaredjeans
+2021-07-01,34,0.34,flaredjeans
+2021-08-01,45,0.45,flaredjeans
+2021-09-01,52,0.52,flaredjeans
+2021-10-01,52,0.52,flaredjeans
+2021-11-01,46,0.46,flaredjeans
+2021-12-01,42,0.42,flaredjeans
+2022-01-01,51,0.51,flaredjeans
+2022-02-01,54,0.54,flaredjeans
+2022-03-01,57,0.57,flaredjeans
+2022-04-01,55,0.55,flaredjeans
+2022-05-01,40,0.4,flaredjeans
+2022-06-01,35,0.35,flaredjeans
+2022-07-01,29,0.29,flaredjeans
+2022-08-01,33,0.33,flaredjeans
+2022-09-01,45,0.45,flaredjeans
+2022-10-01,47,0.47,flaredjeans
+2022-11-01,42,0.42,flaredjeans
+2022-12-01,42,0.42,flaredjeans
+2023-01-01,44,0.44,flaredjeans
+2023-02-01,50,0.5,flaredjeans
+2023-03-01,57,0.57,flaredjeans
+2023-04-01,57,0.57,flaredjeans
+2023-05-01,50,0.5,flaredjeans
+2023-06-01,28,0.28,flaredjeans
+2023-07-01,42,0.42,flaredjeans
+2023-08-01,47,0.47,flaredjeans
+2023-09-01,49,0.49,flaredjeans
+2023-10-01,61,0.61,flaredjeans
+2023-11-01,61,0.61,flaredjeans
+2023-12-01,58,0.58,flaredjeans
+2024-01-01,57,0.57,flaredjeans
+2024-02-01,68,0.68,flaredjeans
+2024-03-01,65,0.65,flaredjeans
+2024-04-01,61,0.61,flaredjeans
+2024-05-01,48,0.48,flaredjeans
+2024-06-01,44,0.44,flaredjeans
+2024-07-01,44,0.44,flaredjeans
+2024-08-01,51,0.51,flaredjeans
+2024-09-01,73,0.73,flaredjeans
+2024-10-01,80,0.8,flaredjeans
+2024-11-01,84,0.84,flaredjeans
+2024-12-01,92,0.92,flaredjeans
+2025-01-01,74,0.74,flaredjeans
+2025-02-01,87,0.87,flaredjeans
+2025-03-01,85,0.85,flaredjeans
+2025-04-01,69,0.69,flaredjeans
+2025-05-01,53,0.53,flaredjeans
+2025-06-01,43,0.43,flaredjeans
+2025-07-01,41,0.41,flaredjeans
+2025-08-01,65,0.65,flaredjeans
+2025-09-01,82,0.82,flaredjeans
+2025-10-01,82,0.82,flaredjeans
+2025-11-01,85,0.85,flaredjeans
+2025-12-01,100,1.0,flaredjeans
+2026-01-01,73,0.73,flaredjeans
+2026-02-01,79,0.79,flaredjeans
+2026-03-01,80,0.8,flaredjeans
+2026-04-01,70,0.7,flaredjeans
+2004-01-01,0,0.0,hipster fashion
+2004-02-01,0,0.0,hipster fashion
+2004-03-01,0,0.0,hipster fashion
+2004-04-01,0,0.0,hipster fashion
+2004-05-01,0,0.0,hipster fashion
+2004-06-01,0,0.0,hipster fashion
+2004-07-01,0,0.0,hipster fashion
+2004-08-01,0,0.0,hipster fashion
+2004-09-01,0,0.0,hipster fashion
+2004-10-01,0,0.0,hipster fashion
+2004-11-01,0,0.0,hipster fashion
+2004-12-01,0,0.0,hipster fashion
+2005-01-01,0,0.0,hipster fashion
+2005-02-01,0,0.0,hipster fashion
+2005-03-01,0,0.0,hipster fashion
+2005-04-01,0,0.0,hipster fashion
+2005-05-01,0,0.0,hipster fashion
+2005-06-01,0,0.0,hipster fashion
+2005-07-01,0,0.0,hipster fashion
+2005-08-01,0,0.0,hipster fashion
+2005-09-01,0,0.0,hipster fashion
+2005-10-01,0,0.0,hipster fashion
+2005-11-01,0,0.0,hipster fashion
+2005-12-01,0,0.0,hipster fashion
+2006-01-01,0,0.0,hipster fashion
+2006-02-01,0,0.0,hipster fashion
+2006-03-01,0,0.0,hipster fashion
+2006-04-01,0,0.0,hipster fashion
+2006-05-01,0,0.0,hipster fashion
+2006-06-01,0,0.0,hipster fashion
+2006-07-01,0,0.0,hipster fashion
+2006-08-01,0,0.0,hipster fashion
+2006-09-01,0,0.0,hipster fashion
+2006-10-01,0,0.0,hipster fashion
+2006-11-01,0,0.0,hipster fashion
+2006-12-01,0,0.0,hipster fashion
+2007-01-01,0,0.0,hipster fashion
+2007-02-01,0,0.0,hipster fashion
+2007-03-01,0,0.0,hipster fashion
+2007-04-01,0,0.0,hipster fashion
+2007-05-01,0,0.0,hipster fashion
+2007-06-01,0,0.0,hipster fashion
+2007-07-01,0,0.0,hipster fashion
+2007-08-01,0,0.0,hipster fashion
+2007-09-01,0,0.0,hipster fashion
+2007-10-01,0,0.0,hipster fashion
+2007-11-01,0,0.0,hipster fashion
+2007-12-01,0,0.0,hipster fashion
+2008-01-01,0,0.0,hipster fashion
+2008-02-01,0,0.0,hipster fashion
+2008-03-01,0,0.0,hipster fashion
+2008-04-01,0,0.0,hipster fashion
+2008-05-01,0,0.0,hipster fashion
+2008-06-01,0,0.0,hipster fashion
+2008-07-01,0,0.0,hipster fashion
+2008-08-01,0,0.0,hipster fashion
+2008-09-01,0,0.0,hipster fashion
+2008-10-01,0,0.0,hipster fashion
+2008-11-01,0,0.0,hipster fashion
+2008-12-01,0,0.0,hipster fashion
+2009-01-01,0,0.0,hipster fashion
+2009-02-01,0,0.0,hipster fashion
+2009-03-01,0,0.0,hipster fashion
+2009-04-01,0,0.0,hipster fashion
+2009-05-01,0,0.0,hipster fashion
+2009-06-01,0,0.0,hipster fashion
+2009-07-01,0,0.0,hipster fashion
+2009-08-01,0,0.0,hipster fashion
+2009-09-01,0,0.0,hipster fashion
+2009-10-01,0,0.0,hipster fashion
+2009-11-01,0,0.0,hipster fashion
+2009-12-01,0,0.0,hipster fashion
+2010-01-01,0,0.0,hipster fashion
+2010-02-01,0,0.0,hipster fashion
+2010-03-01,0,0.0,hipster fashion
+2010-04-01,0,0.0,hipster fashion
+2010-05-01,43,0.43,hipster fashion
+2010-06-01,0,0.0,hipster fashion
+2010-07-01,0,0.0,hipster fashion
+2010-08-01,0,0.0,hipster fashion
+2010-09-01,0,0.0,hipster fashion
+2010-10-01,0,0.0,hipster fashion
+2010-11-01,0,0.0,hipster fashion
+2010-12-01,0,0.0,hipster fashion
+2011-01-01,24,0.24,hipster fashion
+2011-02-01,24,0.24,hipster fashion
+2011-03-01,0,0.0,hipster fashion
+2011-04-01,29,0.29,hipster fashion
+2011-05-01,0,0.0,hipster fashion
+2011-06-01,0,0.0,hipster fashion
+2011-07-01,32,0.32,hipster fashion
+2011-08-01,24,0.24,hipster fashion
+2011-09-01,45,0.45,hipster fashion
+2011-10-01,45,0.45,hipster fashion
+2011-11-01,37,0.37,hipster fashion
+2011-12-01,55,0.55,hipster fashion
+2012-01-01,48,0.48,hipster fashion
+2012-02-01,56,0.56,hipster fashion
+2012-03-01,74,0.74,hipster fashion
+2012-04-01,65,0.65,hipster fashion
+2012-05-01,76,0.76,hipster fashion
+2012-06-01,77,0.77,hipster fashion
+2012-07-01,87,0.87,hipster fashion
+2012-08-01,70,0.7,hipster fashion
+2012-09-01,91,0.91,hipster fashion
+2012-10-01,74,0.74,hipster fashion
+2012-11-01,82,0.82,hipster fashion
+2012-12-01,94,0.94,hipster fashion
+2013-01-01,88,0.88,hipster fashion
+2013-02-01,100,1.0,hipster fashion
+2013-03-01,85,0.85,hipster fashion
+2013-04-01,86,0.86,hipster fashion
+2013-05-01,91,0.91,hipster fashion
+2013-06-01,67,0.67,hipster fashion
+2013-07-01,69,0.69,hipster fashion
+2013-08-01,74,0.74,hipster fashion
+2013-09-01,78,0.78,hipster fashion
+2013-10-01,79,0.79,hipster fashion
+2013-11-01,57,0.57,hipster fashion
+2013-12-01,68,0.68,hipster fashion
+2014-01-01,57,0.57,hipster fashion
+2014-02-01,48,0.48,hipster fashion
+2014-03-01,62,0.62,hipster fashion
+2014-04-01,64,0.64,hipster fashion
+2014-05-01,72,0.72,hipster fashion
+2014-06-01,56,0.56,hipster fashion
+2014-07-01,48,0.48,hipster fashion
+2014-08-01,49,0.49,hipster fashion
+2014-09-01,76,0.76,hipster fashion
+2014-10-01,64,0.64,hipster fashion
+2014-11-01,62,0.62,hipster fashion
+2014-12-01,58,0.58,hipster fashion
+2015-01-01,56,0.56,hipster fashion
+2015-02-01,60,0.6,hipster fashion
+2015-03-01,84,0.84,hipster fashion
+2015-04-01,59,0.59,hipster fashion
+2015-05-01,62,0.62,hipster fashion
+2015-06-01,57,0.57,hipster fashion
+2015-07-01,59,0.59,hipster fashion
+2015-08-01,49,0.49,hipster fashion
+2015-09-01,56,0.56,hipster fashion
+2015-10-01,62,0.62,hipster fashion
+2015-11-01,49,0.49,hipster fashion
+2015-12-01,56,0.56,hipster fashion
+2016-01-01,53,0.53,hipster fashion
+2016-02-01,46,0.46,hipster fashion
+2016-03-01,44,0.44,hipster fashion
+2016-04-01,61,0.61,hipster fashion
+2016-05-01,51,0.51,hipster fashion
+2016-06-01,44,0.44,hipster fashion
+2016-07-01,35,0.35,hipster fashion
+2016-08-01,52,0.52,hipster fashion
+2016-09-01,40,0.4,hipster fashion
+2016-10-01,48,0.48,hipster fashion
+2016-11-01,38,0.38,hipster fashion
+2016-12-01,45,0.45,hipster fashion
+2017-01-01,53,0.53,hipster fashion
+2017-02-01,41,0.41,hipster fashion
+2017-03-01,31,0.31,hipster fashion
+2017-04-01,55,0.55,hipster fashion
+2017-05-01,36,0.36,hipster fashion
+2017-06-01,44,0.44,hipster fashion
+2017-07-01,22,0.22,hipster fashion
+2017-08-01,33,0.33,hipster fashion
+2017-09-01,29,0.29,hipster fashion
+2017-10-01,24,0.24,hipster fashion
+2017-11-01,31,0.31,hipster fashion
+2017-12-01,29,0.29,hipster fashion
+2018-01-01,36,0.36,hipster fashion
+2018-02-01,26,0.26,hipster fashion
+2018-03-01,37,0.37,hipster fashion
+2018-04-01,32,0.32,hipster fashion
+2018-05-01,19,0.19,hipster fashion
+2018-06-01,26,0.26,hipster fashion
+2018-07-01,27,0.27,hipster fashion
+2018-08-01,17,0.17,hipster fashion
+2018-09-01,33,0.33,hipster fashion
+2018-10-01,24,0.24,hipster fashion
+2018-11-01,28,0.28,hipster fashion
+2018-12-01,24,0.24,hipster fashion
+2019-01-01,22,0.22,hipster fashion
+2019-02-01,0,0.0,hipster fashion
+2019-03-01,14,0.14,hipster fashion
+2019-04-01,15,0.15,hipster fashion
+2019-05-01,20,0.2,hipster fashion
+2019-06-01,16,0.16,hipster fashion
+2019-07-01,12,0.12,hipster fashion
+2019-08-01,16,0.16,hipster fashion
+2019-09-01,21,0.21,hipster fashion
+2019-10-01,16,0.16,hipster fashion
+2019-11-01,17,0.17,hipster fashion
+2019-12-01,20,0.2,hipster fashion
+2020-01-01,21,0.21,hipster fashion
+2020-02-01,19,0.19,hipster fashion
+2020-03-01,12,0.12,hipster fashion
+2020-04-01,17,0.17,hipster fashion
+2020-05-01,11,0.11,hipster fashion
+2020-06-01,10,0.1,hipster fashion
+2020-07-01,15,0.15,hipster fashion
+2020-08-01,14,0.14,hipster fashion
+2020-09-01,12,0.12,hipster fashion
+2020-10-01,0,0.0,hipster fashion
+2020-11-01,0,0.0,hipster fashion
+2020-12-01,0,0.0,hipster fashion
+2021-01-01,10,0.1,hipster fashion
+2021-02-01,0,0.0,hipster fashion
+2021-03-01,15,0.15,hipster fashion
+2021-04-01,16,0.16,hipster fashion
+2021-05-01,0,0.0,hipster fashion
+2021-06-01,15,0.15,hipster fashion
+2021-07-01,0,0.0,hipster fashion
+2021-08-01,0,0.0,hipster fashion
+2021-09-01,22,0.22,hipster fashion
+2021-10-01,0,0.0,hipster fashion
+2021-11-01,0,0.0,hipster fashion
+2021-12-01,19,0.19,hipster fashion
+2022-01-01,15,0.15,hipster fashion
+2022-02-01,13,0.13,hipster fashion
+2022-03-01,10,0.1,hipster fashion
+2022-04-01,0,0.0,hipster fashion
+2022-05-01,11,0.11,hipster fashion
+2022-06-01,0,0.0,hipster fashion
+2022-07-01,0,0.0,hipster fashion
+2022-08-01,0,0.0,hipster fashion
+2022-09-01,20,0.2,hipster fashion
+2022-10-01,17,0.17,hipster fashion
+2022-11-01,0,0.0,hipster fashion
+2022-12-01,0,0.0,hipster fashion
+2023-01-01,0,0.0,hipster fashion
+2023-02-01,0,0.0,hipster fashion
+2023-03-01,11,0.11,hipster fashion
+2023-04-01,0,0.0,hipster fashion
+2023-05-01,12,0.12,hipster fashion
+2023-06-01,0,0.0,hipster fashion
+2023-07-01,0,0.0,hipster fashion
+2023-08-01,0,0.0,hipster fashion
+2023-09-01,0,0.0,hipster fashion
+2023-10-01,11,0.11,hipster fashion
+2023-11-01,18,0.18,hipster fashion
+2023-12-01,0,0.0,hipster fashion
+2024-01-01,12,0.12,hipster fashion
+2024-02-01,0,0.0,hipster fashion
+2024-03-01,0,0.0,hipster fashion
+2024-04-01,0,0.0,hipster fashion
+2024-05-01,0,0.0,hipster fashion
+2024-06-01,0,0.0,hipster fashion
+2024-07-01,15,0.15,hipster fashion
+2024-08-01,0,0.0,hipster fashion
+2024-09-01,18,0.18,hipster fashion
+2024-10-01,13,0.13,hipster fashion
+2024-11-01,21,0.21,hipster fashion
+2024-12-01,0,0.0,hipster fashion
+2025-01-01,0,0.0,hipster fashion
+2025-02-01,0,0.0,hipster fashion
+2025-03-01,0,0.0,hipster fashion
+2025-04-01,0,0.0,hipster fashion
+2025-05-01,0,0.0,hipster fashion
+2025-06-01,0,0.0,hipster fashion
+2025-07-01,0,0.0,hipster fashion
+2025-08-01,0,0.0,hipster fashion
+2025-09-01,0,0.0,hipster fashion
+2025-10-01,0,0.0,hipster fashion
+2025-11-01,0,0.0,hipster fashion
+2025-12-01,0,0.0,hipster fashion
+2026-01-01,0,0.0,hipster fashion
+2026-02-01,62,0.62,hipster fashion
+2026-03-01,0,0.0,hipster fashion
+2026-04-01,10,0.1,hipster fashion
+2004-01-01,0,0.0,INDIE
+2004-02-01,0,0.0,INDIE
+2004-03-01,0,0.0,INDIE
+2004-04-01,0,0.0,INDIE
+2004-05-01,0,0.0,INDIE
+2004-06-01,0,0.0,INDIE
+2004-07-01,0,0.0,INDIE
+2004-08-01,0,0.0,INDIE
+2004-09-01,0,0.0,INDIE
+2004-10-01,0,0.0,INDIE
+2004-11-01,0,0.0,INDIE
+2004-12-01,0,0.0,INDIE
+2005-01-01,0,0.0,INDIE
+2005-02-01,0,0.0,INDIE
+2005-03-01,0,0.0,INDIE
+2005-04-01,0,0.0,INDIE
+2005-05-01,0,0.0,INDIE
+2005-06-01,0,0.0,INDIE
+2005-07-01,0,0.0,INDIE
+2005-08-01,0,0.0,INDIE
+2005-09-01,0,0.0,INDIE
+2005-10-01,70,0.7,INDIE
+2005-11-01,0,0.0,INDIE
+2005-12-01,0,0.0,INDIE
+2006-01-01,0,0.0,INDIE
+2006-02-01,65,0.65,INDIE
+2006-03-01,81,0.81,INDIE
+2006-04-01,94,0.94,INDIE
+2006-05-01,0,0.0,INDIE
+2006-06-01,55,0.55,INDIE
+2006-07-01,67,0.67,INDIE
+2006-08-01,60,0.6,INDIE
+2006-09-01,84,0.84,INDIE
+2006-10-01,75,0.75,INDIE
+2006-11-01,50,0.5,INDIE
+2006-12-01,43,0.43,INDIE
+2007-01-01,60,0.6,INDIE
+2007-02-01,53,0.53,INDIE
+2007-03-01,66,0.66,INDIE
+2007-04-01,80,0.8,INDIE
+2007-05-01,51,0.51,INDIE
+2007-06-01,100,1.0,INDIE
+2007-07-01,76,0.76,INDIE
+2007-08-01,60,0.6,INDIE
+2007-09-01,76,0.76,INDIE
+2007-10-01,59,0.59,INDIE
+2007-11-01,64,0.64,INDIE
+2007-12-01,69,0.69,INDIE
+2008-01-01,63,0.63,INDIE
+2008-02-01,65,0.65,INDIE
+2008-03-01,64,0.64,INDIE
+2008-04-01,52,0.52,INDIE
+2008-05-01,45,0.45,INDIE
+2008-06-01,71,0.71,INDIE
+2008-07-01,80,0.8,INDIE
+2008-08-01,65,0.65,INDIE
+2008-09-01,45,0.45,INDIE
+2008-10-01,61,0.61,INDIE
+2008-11-01,68,0.68,INDIE
+2008-12-01,32,0.32,INDIE
+2009-01-01,75,0.75,INDIE
+2009-02-01,55,0.55,INDIE
+2009-03-01,69,0.69,INDIE
+2009-04-01,60,0.6,INDIE
+2009-05-01,62,0.62,INDIE
+2009-06-01,41,0.41,INDIE
+2009-07-01,67,0.67,INDIE
+2009-08-01,54,0.54,INDIE
+2009-09-01,56,0.56,INDIE
+2009-10-01,49,0.49,INDIE
+2009-11-01,50,0.5,INDIE
+2009-12-01,57,0.57,INDIE
+2010-01-01,62,0.62,INDIE
+2010-02-01,52,0.52,INDIE
+2010-03-01,65,0.65,INDIE
+2010-04-01,53,0.53,INDIE
+2010-05-01,49,0.49,INDIE
+2010-06-01,44,0.44,INDIE
+2010-07-01,25,0.25,INDIE
+2010-08-01,30,0.3,INDIE
+2010-09-01,37,0.37,INDIE
+2010-10-01,47,0.47,INDIE
+2010-11-01,30,0.3,INDIE
+2010-12-01,32,0.32,INDIE
+2011-01-01,35,0.35,INDIE
+2011-02-01,40,0.4,INDIE
+2011-03-01,44,0.44,INDIE
+2011-04-01,41,0.41,INDIE
+2011-05-01,47,0.47,INDIE
+2011-06-01,40,0.4,INDIE
+2011-07-01,45,0.45,INDIE
+2011-08-01,65,0.65,INDIE
+2011-09-01,51,0.51,INDIE
+2011-10-01,49,0.49,INDIE
+2011-11-01,34,0.34,INDIE
+2011-12-01,50,0.5,INDIE
+2012-01-01,47,0.47,INDIE
+2012-02-01,48,0.48,INDIE
+2012-03-01,46,0.46,INDIE
+2012-04-01,50,0.5,INDIE
+2012-05-01,60,0.6,INDIE
+2012-06-01,52,0.52,INDIE
+2012-07-01,55,0.55,INDIE
+2012-08-01,50,0.5,INDIE
+2012-09-01,48,0.48,INDIE
+2012-10-01,49,0.49,INDIE
+2012-11-01,47,0.47,INDIE
+2012-12-01,38,0.38,INDIE
+2013-01-01,37,0.37,INDIE
+2013-02-01,42,0.42,INDIE
+2013-03-01,41,0.41,INDIE
+2013-04-01,41,0.41,INDIE
+2013-05-01,34,0.34,INDIE
+2013-06-01,30,0.3,INDIE
+2013-07-01,28,0.28,INDIE
+2013-08-01,34,0.34,INDIE
+2013-09-01,29,0.29,INDIE
+2013-10-01,41,0.41,INDIE
+2013-11-01,34,0.34,INDIE
+2013-12-01,30,0.3,INDIE
+2014-01-01,33,0.33,INDIE
+2014-02-01,39,0.39,INDIE
+2014-03-01,30,0.3,INDIE
+2014-04-01,26,0.26,INDIE
+2014-05-01,28,0.28,INDIE
+2014-06-01,25,0.25,INDIE
+2014-07-01,15,0.15,INDIE
+2014-08-01,20,0.2,INDIE
+2014-09-01,33,0.33,INDIE
+2014-10-01,27,0.27,INDIE
+2014-11-01,22,0.22,INDIE
+2014-12-01,30,0.3,INDIE
+2015-01-01,23,0.23,INDIE
+2015-02-01,28,0.28,INDIE
+2015-03-01,26,0.26,INDIE
+2015-04-01,17,0.17,INDIE
+2015-05-01,15,0.15,INDIE
+2015-06-01,15,0.15,INDIE
+2015-07-01,16,0.16,INDIE
+2015-08-01,19,0.19,INDIE
+2015-09-01,17,0.17,INDIE
+2015-10-01,20,0.2,INDIE
+2015-11-01,18,0.18,INDIE
+2015-12-01,19,0.19,INDIE
+2016-01-01,17,0.17,INDIE
+2016-02-01,20,0.2,INDIE
+2016-03-01,20,0.2,INDIE
+2016-04-01,15,0.15,INDIE
+2016-05-01,21,0.21,INDIE
+2016-06-01,18,0.18,INDIE
+2016-07-01,17,0.17,INDIE
+2016-08-01,12,0.12,INDIE
+2016-09-01,16,0.16,INDIE
+2016-10-01,18,0.18,INDIE
+2016-11-01,14,0.14,INDIE
+2016-12-01,16,0.16,INDIE
+2017-01-01,18,0.18,INDIE
+2017-02-01,14,0.14,INDIE
+2017-03-01,16,0.16,INDIE
+2017-04-01,17,0.17,INDIE
+2017-05-01,17,0.17,INDIE
+2017-06-01,16,0.16,INDIE
+2017-07-01,11,0.11,INDIE
+2017-08-01,14,0.14,INDIE
+2017-09-01,14,0.14,INDIE
+2017-10-01,16,0.16,INDIE
+2017-11-01,18,0.18,INDIE
+2017-12-01,12,0.12,INDIE
+2018-01-01,19,0.19,INDIE
+2018-02-01,18,0.18,INDIE
+2018-03-01,17,0.17,INDIE
+2018-04-01,13,0.13,INDIE
+2018-05-01,18,0.18,INDIE
+2018-06-01,9,0.09,INDIE
+2018-07-01,11,0.11,INDIE
+2018-08-01,7,0.07,INDIE
+2018-09-01,14,0.14,INDIE
+2018-10-01,9,0.09,INDIE
+2018-11-01,11,0.11,INDIE
+2018-12-01,11,0.11,INDIE
+2019-01-01,9,0.09,INDIE
+2019-02-01,9,0.09,INDIE
+2019-03-01,6,0.06,INDIE
+2019-04-01,0,0.0,INDIE
+2019-05-01,6,0.06,INDIE
+2019-06-01,9,0.09,INDIE
+2019-07-01,11,0.11,INDIE
+2019-08-01,9,0.09,INDIE
+2019-09-01,7,0.07,INDIE
+2019-10-01,14,0.14,INDIE
+2019-11-01,8,0.08,INDIE
+2019-12-01,10,0.1,INDIE
+2020-01-01,8,0.08,INDIE
+2020-02-01,15,0.15,INDIE
+2020-03-01,11,0.11,INDIE
+2020-04-01,14,0.14,INDIE
+2020-05-01,11,0.11,INDIE
+2020-06-01,9,0.09,INDIE
+2020-07-01,17,0.17,INDIE
+2020-08-01,23,0.23,INDIE
+2020-09-01,19,0.19,INDIE
+2020-10-01,17,0.17,INDIE
+2020-11-01,17,0.17,INDIE
+2020-12-01,18,0.18,INDIE
+2021-01-01,16,0.16,INDIE
+2021-02-01,12,0.12,INDIE
+2021-03-01,14,0.14,INDIE
+2021-04-01,14,0.14,INDIE
+2021-05-01,18,0.18,INDIE
+2021-06-01,14,0.14,INDIE
+2021-07-01,10,0.1,INDIE
+2021-08-01,14,0.14,INDIE
+2021-09-01,14,0.14,INDIE
+2021-10-01,10,0.1,INDIE
+2021-11-01,9,0.09,INDIE
+2021-12-01,9,0.09,INDIE
+2022-01-01,14,0.14,INDIE
+2022-02-01,16,0.16,INDIE
+2022-03-01,13,0.13,INDIE
+2022-04-01,13,0.13,INDIE
+2022-05-01,12,0.12,INDIE
+2022-06-01,13,0.13,INDIE
+2022-07-01,13,0.13,INDIE
+2022-08-01,9,0.09,INDIE
+2022-09-01,14,0.14,INDIE
+2022-10-01,7,0.07,INDIE
+2022-11-01,9,0.09,INDIE
+2022-12-01,7,0.07,INDIE
+2023-01-01,7,0.07,INDIE
+2023-02-01,0,0.0,INDIE
+2023-03-01,12,0.12,INDIE
+2023-04-01,8,0.08,INDIE
+2023-05-01,7,0.07,INDIE
+2023-06-01,9,0.09,INDIE
+2023-07-01,6,0.06,INDIE
+2023-08-01,9,0.09,INDIE
+2023-09-01,0,0.0,INDIE
+2023-10-01,9,0.09,INDIE
+2023-11-01,8,0.08,INDIE
+2023-12-01,10,0.1,INDIE
+2024-01-01,15,0.15,INDIE
+2024-02-01,11,0.11,INDIE
+2024-03-01,12,0.12,INDIE
+2024-04-01,10,0.1,INDIE
+2024-05-01,7,0.07,INDIE
+2024-06-01,11,0.11,INDIE
+2024-07-01,13,0.13,INDIE
+2024-08-01,20,0.2,INDIE
+2024-09-01,19,0.19,INDIE
+2024-10-01,19,0.19,INDIE
+2024-11-01,11,0.11,INDIE
+2024-12-01,11,0.11,INDIE
+2025-01-01,11,0.11,INDIE
+2025-02-01,10,0.1,INDIE
+2025-03-01,11,0.11,INDIE
+2025-04-01,8,0.08,INDIE
+2025-05-01,11,0.11,INDIE
+2025-06-01,0,0.0,INDIE
+2025-07-01,7,0.07,INDIE
+2025-08-01,9,0.09,INDIE
+2025-09-01,0,0.0,INDIE
+2025-10-01,8,0.08,INDIE
+2025-11-01,17,0.17,INDIE
+2025-12-01,11,0.11,INDIE
+2026-01-01,20,0.2,INDIE
+2026-02-01,32,0.32,INDIE
+2026-03-01,21,0.21,INDIE
+2026-04-01,14,0.14,INDIE
+2004-01-01,0,0.0,jeggins
+2004-02-01,0,0.0,jeggins
+2004-03-01,0,0.0,jeggins
+2004-04-01,0,0.0,jeggins
+2004-05-01,0,0.0,jeggins
+2004-06-01,0,0.0,jeggins
+2004-07-01,0,0.0,jeggins
+2004-08-01,0,0.0,jeggins
+2004-09-01,0,0.0,jeggins
+2004-10-01,0,0.0,jeggins
+2004-11-01,0,0.0,jeggins
+2004-12-01,0,0.0,jeggins
+2005-01-01,0,0.0,jeggins
+2005-02-01,0,0.0,jeggins
+2005-03-01,0,0.0,jeggins
+2005-04-01,0,0.0,jeggins
+2005-05-01,0,0.0,jeggins
+2005-06-01,0,0.0,jeggins
+2005-07-01,0,0.0,jeggins
+2005-08-01,0,0.0,jeggins
+2005-09-01,0,0.0,jeggins
+2005-10-01,0,0.0,jeggins
+2005-11-01,0,0.0,jeggins
+2005-12-01,0,0.0,jeggins
+2006-01-01,0,0.0,jeggins
+2006-02-01,0,0.0,jeggins
+2006-03-01,0,0.0,jeggins
+2006-04-01,0,0.0,jeggins
+2006-05-01,0,0.0,jeggins
+2006-06-01,0,0.0,jeggins
+2006-07-01,0,0.0,jeggins
+2006-08-01,0,0.0,jeggins
+2006-09-01,0,0.0,jeggins
+2006-10-01,0,0.0,jeggins
+2006-11-01,0,0.0,jeggins
+2006-12-01,0,0.0,jeggins
+2007-01-01,0,0.0,jeggins
+2007-02-01,0,0.0,jeggins
+2007-03-01,0,0.0,jeggins
+2007-04-01,0,0.0,jeggins
+2007-05-01,0,0.0,jeggins
+2007-06-01,0,0.0,jeggins
+2007-07-01,0,0.0,jeggins
+2007-08-01,0,0.0,jeggins
+2007-09-01,0,0.0,jeggins
+2007-10-01,0,0.0,jeggins
+2007-11-01,0,0.0,jeggins
+2007-12-01,0,0.0,jeggins
+2008-01-01,0,0.0,jeggins
+2008-02-01,0,0.0,jeggins
+2008-03-01,0,0.0,jeggins
+2008-04-01,0,0.0,jeggins
+2008-05-01,0,0.0,jeggins
+2008-06-01,0,0.0,jeggins
+2008-07-01,0,0.0,jeggins
+2008-08-01,0,0.0,jeggins
+2008-09-01,0,0.0,jeggins
+2008-10-01,0,0.0,jeggins
+2008-11-01,0,0.0,jeggins
+2008-12-01,0,0.0,jeggins
+2009-01-01,0,0.0,jeggins
+2009-02-01,0,0.0,jeggins
+2009-03-01,4,0.04,jeggins
+2009-04-01,4,0.04,jeggins
+2009-05-01,11,0.11,jeggins
+2009-06-01,21,0.21,jeggins
+2009-07-01,32,0.32,jeggins
+2009-08-01,36,0.36,jeggins
+2009-09-01,44,0.44,jeggins
+2009-10-01,56,0.56,jeggins
+2009-11-01,56,0.56,jeggins
+2009-12-01,58,0.58,jeggins
+2010-01-01,43,0.43,jeggins
+2010-02-01,42,0.42,jeggins
+2010-03-01,37,0.37,jeggins
+2010-04-01,42,0.42,jeggins
+2010-05-01,35,0.35,jeggins
+2010-06-01,26,0.26,jeggins
+2010-07-01,26,0.26,jeggins
+2010-08-01,35,0.35,jeggins
+2010-09-01,33,0.33,jeggins
+2010-10-01,33,0.33,jeggins
+2010-11-01,31,0.31,jeggins
+2010-12-01,28,0.28,jeggins
+2011-01-01,28,0.28,jeggins
+2011-02-01,34,0.34,jeggins
+2011-03-01,27,0.27,jeggins
+2011-04-01,30,0.3,jeggins
+2011-05-01,29,0.29,jeggins
+2011-06-01,27,0.27,jeggins
+2011-07-01,28,0.28,jeggins
+2011-08-01,34,0.34,jeggins
+2011-09-01,37,0.37,jeggins
+2011-10-01,36,0.36,jeggins
+2011-11-01,38,0.38,jeggins
+2011-12-01,43,0.43,jeggins
+2012-01-01,32,0.32,jeggins
+2012-02-01,31,0.31,jeggins
+2012-03-01,33,0.33,jeggins
+2012-04-01,33,0.33,jeggins
+2012-05-01,37,0.37,jeggins
+2012-06-01,31,0.31,jeggins
+2012-07-01,32,0.32,jeggins
+2012-08-01,33,0.33,jeggins
+2012-09-01,37,0.37,jeggins
+2012-10-01,42,0.42,jeggins
+2012-11-01,42,0.42,jeggins
+2012-12-01,51,0.51,jeggins
+2013-01-01,44,0.44,jeggins
+2013-02-01,40,0.4,jeggins
+2013-03-01,43,0.43,jeggins
+2013-04-01,45,0.45,jeggins
+2013-05-01,39,0.39,jeggins
+2013-06-01,37,0.37,jeggins
+2013-07-01,31,0.31,jeggins
+2013-08-01,36,0.36,jeggins
+2013-09-01,46,0.46,jeggins
+2013-10-01,49,0.49,jeggins
+2013-11-01,51,0.51,jeggins
+2013-12-01,59,0.59,jeggins
+2014-01-01,48,0.48,jeggins
+2014-02-01,46,0.46,jeggins
+2014-03-01,52,0.52,jeggins
+2014-04-01,57,0.57,jeggins
+2014-05-01,58,0.58,jeggins
+2014-06-01,54,0.54,jeggins
+2014-07-01,41,0.41,jeggins
+2014-08-01,53,0.53,jeggins
+2014-09-01,56,0.56,jeggins
+2014-10-01,66,0.66,jeggins
+2014-11-01,64,0.64,jeggins
+2014-12-01,67,0.67,jeggins
+2015-01-01,59,0.59,jeggins
+2015-02-01,63,0.63,jeggins
+2015-03-01,69,0.69,jeggins
+2015-04-01,73,0.73,jeggins
+2015-05-01,80,0.8,jeggins
+2015-06-01,62,0.62,jeggins
+2015-07-01,55,0.55,jeggins
+2015-08-01,59,0.59,jeggins
+2015-09-01,68,0.68,jeggins
+2015-10-01,73,0.73,jeggins
+2015-11-01,67,0.67,jeggins
+2015-12-01,69,0.69,jeggins
+2016-01-01,57,0.57,jeggins
+2016-02-01,60,0.6,jeggins
+2016-03-01,57,0.57,jeggins
+2016-04-01,68,0.68,jeggins
+2016-05-01,71,0.71,jeggins
+2016-06-01,58,0.58,jeggins
+2016-07-01,58,0.58,jeggins
+2016-08-01,60,0.6,jeggins
+2016-09-01,65,0.65,jeggins
+2016-10-01,79,0.79,jeggins
+2016-11-01,75,0.75,jeggins
+2016-12-01,77,0.77,jeggins
+2017-01-01,62,0.62,jeggins
+2017-02-01,68,0.68,jeggins
+2017-03-01,67,0.67,jeggins
+2017-04-01,74,0.74,jeggins
+2017-05-01,71,0.71,jeggins
+2017-06-01,58,0.58,jeggins
+2017-07-01,62,0.62,jeggins
+2017-08-01,74,0.74,jeggins
+2017-09-01,83,0.83,jeggins
+2017-10-01,80,0.8,jeggins
+2017-11-01,83,0.83,jeggins
+2017-12-01,79,0.79,jeggins
+2018-01-01,70,0.7,jeggins
+2018-02-01,72,0.72,jeggins
+2018-03-01,72,0.72,jeggins
+2018-04-01,74,0.74,jeggins
+2018-05-01,66,0.66,jeggins
+2018-06-01,57,0.57,jeggins
+2018-07-01,44,0.44,jeggins
+2018-08-01,58,0.58,jeggins
+2018-09-01,80,0.8,jeggins
+2018-10-01,74,0.74,jeggins
+2018-11-01,77,0.77,jeggins
+2018-12-01,82,0.82,jeggins
+2019-01-01,69,0.69,jeggins
+2019-02-01,70,0.7,jeggins
+2019-03-01,70,0.7,jeggins
+2019-04-01,74,0.74,jeggins
+2019-05-01,66,0.66,jeggins
+2019-06-01,62,0.62,jeggins
+2019-07-01,55,0.55,jeggins
+2019-08-01,62,0.62,jeggins
+2019-09-01,74,0.74,jeggins
+2019-10-01,85,0.85,jeggins
+2019-11-01,89,0.89,jeggins
+2019-12-01,94,0.94,jeggins
+2020-01-01,72,0.72,jeggins
+2020-02-01,69,0.69,jeggins
+2020-03-01,42,0.42,jeggins
+2020-04-01,45,0.45,jeggins
+2020-05-01,62,0.62,jeggins
+2020-06-01,66,0.66,jeggins
+2020-07-01,78,0.78,jeggins
+2020-08-01,73,0.73,jeggins
+2020-09-01,91,0.91,jeggins
+2020-10-01,100,1.0,jeggins
+2020-11-01,86,0.86,jeggins
+2020-12-01,87,0.87,jeggins
+2021-01-01,75,0.75,jeggins
+2021-02-01,80,0.8,jeggins
+2021-03-01,89,0.89,jeggins
+2021-04-01,93,0.93,jeggins
+2021-05-01,92,0.92,jeggins
+2021-06-01,72,0.72,jeggins
+2021-07-01,55,0.55,jeggins
+2021-08-01,79,0.79,jeggins
+2021-09-01,80,0.8,jeggins
+2021-10-01,97,0.97,jeggins
+2021-11-01,99,0.99,jeggins
+2021-12-01,85,0.85,jeggins
+2022-01-01,76,0.76,jeggins
+2022-02-01,78,0.78,jeggins
+2022-03-01,83,0.83,jeggins
+2022-04-01,83,0.83,jeggins
+2022-05-01,71,0.71,jeggins
+2022-06-01,55,0.55,jeggins
+2022-07-01,48,0.48,jeggins
+2022-08-01,48,0.48,jeggins
+2022-09-01,76,0.76,jeggins
+2022-10-01,81,0.81,jeggins
+2022-11-01,76,0.76,jeggins
+2022-12-01,75,0.75,jeggins
+2023-01-01,72,0.72,jeggins
+2023-02-01,68,0.68,jeggins
+2023-03-01,66,0.66,jeggins
+2023-04-01,70,0.7,jeggins
+2023-05-01,67,0.67,jeggins
+2023-06-01,45,0.45,jeggins
+2023-07-01,48,0.48,jeggins
+2023-08-01,52,0.52,jeggins
+2023-09-01,57,0.57,jeggins
+2023-10-01,65,0.65,jeggins
+2023-11-01,69,0.69,jeggins
+2023-12-01,61,0.61,jeggins
+2024-01-01,55,0.55,jeggins
+2024-02-01,52,0.52,jeggins
+2024-03-01,54,0.54,jeggins
+2024-04-01,51,0.51,jeggins
+2024-05-01,46,0.46,jeggins
+2024-06-01,36,0.36,jeggins
+2024-07-01,36,0.36,jeggins
+2024-08-01,36,0.36,jeggins
+2024-09-01,53,0.53,jeggins
+2024-10-01,58,0.58,jeggins
+2024-11-01,52,0.52,jeggins
+2024-12-01,48,0.48,jeggins
+2025-01-01,49,0.49,jeggins
+2025-02-01,42,0.42,jeggins
+2025-03-01,50,0.5,jeggins
+2025-04-01,48,0.48,jeggins
+2025-05-01,32,0.32,jeggins
+2025-06-01,29,0.29,jeggins
+2025-07-01,30,0.3,jeggins
+2025-08-01,37,0.37,jeggins
+2025-09-01,55,0.55,jeggins
+2025-10-01,56,0.56,jeggins
+2025-11-01,51,0.51,jeggins
+2025-12-01,47,0.47,jeggins
+2026-01-01,42,0.42,jeggins
+2026-02-01,68,0.68,jeggins
+2026-03-01,64,0.64,jeggins
+2026-04-01,51,0.51,jeggins
+2004-01-01,0,0.0,MAXI dress
+2004-02-01,0,0.0,MAXI dress
+2004-03-01,0,0.0,MAXI dress
+2004-04-01,0,0.0,MAXI dress
+2004-05-01,0,0.0,MAXI dress
+2004-06-01,0,0.0,MAXI dress
+2004-07-01,0,0.0,MAXI dress
+2004-08-01,0,0.0,MAXI dress
+2004-09-01,0,0.0,MAXI dress
+2004-10-01,0,0.0,MAXI dress
+2004-11-01,0,0.0,MAXI dress
+2004-12-01,0,0.0,MAXI dress
+2005-01-01,0,0.0,MAXI dress
+2005-02-01,0,0.0,MAXI dress
+2005-03-01,0,0.0,MAXI dress
+2005-04-01,0,0.0,MAXI dress
+2005-05-01,0,0.0,MAXI dress
+2005-06-01,0,0.0,MAXI dress
+2005-07-01,0,0.0,MAXI dress
+2005-08-01,0,0.0,MAXI dress
+2005-09-01,0,0.0,MAXI dress
+2005-10-01,0,0.0,MAXI dress
+2005-11-01,0,0.0,MAXI dress
+2005-12-01,0,0.0,MAXI dress
+2006-01-01,0,0.0,MAXI dress
+2006-02-01,0,0.0,MAXI dress
+2006-03-01,0,0.0,MAXI dress
+2006-04-01,0,0.0,MAXI dress
+2006-05-01,0,0.0,MAXI dress
+2006-06-01,0,0.0,MAXI dress
+2006-07-01,0,0.0,MAXI dress
+2006-08-01,0,0.0,MAXI dress
+2006-09-01,0,0.0,MAXI dress
+2006-10-01,0,0.0,MAXI dress
+2006-11-01,0,0.0,MAXI dress
+2006-12-01,0,0.0,MAXI dress
+2007-01-01,0,0.0,MAXI dress
+2007-02-01,1,0.01,MAXI dress
+2007-03-01,2,0.02,MAXI dress
+2007-04-01,6,0.06,MAXI dress
+2007-05-01,8,0.08,MAXI dress
+2007-06-01,7,0.07,MAXI dress
+2007-07-01,4,0.04,MAXI dress
+2007-08-01,3,0.03,MAXI dress
+2007-09-01,1,0.01,MAXI dress
+2007-10-01,1,0.01,MAXI dress
+2007-11-01,1,0.01,MAXI dress
+2007-12-01,1,0.01,MAXI dress
+2008-01-01,2,0.02,MAXI dress
+2008-02-01,2,0.02,MAXI dress
+2008-03-01,3,0.03,MAXI dress
+2008-04-01,4,0.04,MAXI dress
+2008-05-01,9,0.09,MAXI dress
+2008-06-01,13,0.13,MAXI dress
+2008-07-01,12,0.12,MAXI dress
+2008-08-01,8,0.08,MAXI dress
+2008-09-01,3,0.03,MAXI dress
+2008-10-01,3,0.03,MAXI dress
+2008-11-01,3,0.03,MAXI dress
+2008-12-01,3,0.03,MAXI dress
+2009-01-01,4,0.04,MAXI dress
+2009-02-01,5,0.05,MAXI dress
+2009-03-01,7,0.07,MAXI dress
+2009-04-01,12,0.12,MAXI dress
+2009-05-01,17,0.17,MAXI dress
+2009-06-01,24,0.24,MAXI dress
+2009-07-01,20,0.2,MAXI dress
+2009-08-01,12,0.12,MAXI dress
+2009-09-01,6,0.06,MAXI dress
+2009-10-01,5,0.05,MAXI dress
+2009-11-01,5,0.05,MAXI dress
+2009-12-01,4,0.04,MAXI dress
+2010-01-01,8,0.08,MAXI dress
+2010-02-01,10,0.1,MAXI dress
+2010-03-01,14,0.14,MAXI dress
+2010-04-01,24,0.24,MAXI dress
+2010-05-01,36,0.36,MAXI dress
+2010-06-01,51,0.51,MAXI dress
+2010-07-01,43,0.43,MAXI dress
+2010-08-01,25,0.25,MAXI dress
+2010-09-01,13,0.13,MAXI dress
+2010-10-01,9,0.09,MAXI dress
+2010-11-01,8,0.08,MAXI dress
+2010-12-01,6,0.06,MAXI dress
+2011-01-01,14,0.14,MAXI dress
+2011-02-01,18,0.18,MAXI dress
+2011-03-01,23,0.23,MAXI dress
+2011-04-01,44,0.44,MAXI dress
+2011-05-01,49,0.49,MAXI dress
+2011-06-01,43,0.43,MAXI dress
+2011-07-01,36,0.36,MAXI dress
+2011-08-01,27,0.27,MAXI dress
+2011-09-01,16,0.16,MAXI dress
+2011-10-01,14,0.14,MAXI dress
+2011-11-01,14,0.14,MAXI dress
+2011-12-01,12,0.12,MAXI dress
+2012-01-01,16,0.16,MAXI dress
+2012-02-01,19,0.19,MAXI dress
+2012-03-01,29,0.29,MAXI dress
+2012-04-01,33,0.33,MAXI dress
+2012-05-01,51,0.51,MAXI dress
+2012-06-01,45,0.45,MAXI dress
+2012-07-01,37,0.37,MAXI dress
+2012-08-01,30,0.3,MAXI dress
+2012-09-01,22,0.22,MAXI dress
+2012-10-01,18,0.18,MAXI dress
+2012-11-01,18,0.18,MAXI dress
+2012-12-01,17,0.17,MAXI dress
+2013-01-01,20,0.2,MAXI dress
+2013-02-01,24,0.24,MAXI dress
+2013-03-01,29,0.29,MAXI dress
+2013-04-01,42,0.42,MAXI dress
+2013-05-01,52,0.52,MAXI dress
+2013-06-01,55,0.55,MAXI dress
+2013-07-01,73,0.73,MAXI dress
+2013-08-01,33,0.33,MAXI dress
+2013-09-01,21,0.21,MAXI dress
+2013-10-01,20,0.2,MAXI dress
+2013-11-01,20,0.2,MAXI dress
+2013-12-01,19,0.19,MAXI dress
+2014-01-01,23,0.23,MAXI dress
+2014-02-01,27,0.27,MAXI dress
+2014-03-01,37,0.37,MAXI dress
+2014-04-01,45,0.45,MAXI dress
+2014-05-01,58,0.58,MAXI dress
+2014-06-01,59,0.59,MAXI dress
+2014-07-01,52,0.52,MAXI dress
+2014-08-01,30,0.3,MAXI dress
+2014-09-01,21,0.21,MAXI dress
+2014-10-01,21,0.21,MAXI dress
+2014-11-01,25,0.25,MAXI dress
+2014-12-01,20,0.2,MAXI dress
+2015-01-01,25,0.25,MAXI dress
+2015-02-01,30,0.3,MAXI dress
+2015-03-01,38,0.38,MAXI dress
+2015-04-01,53,0.53,MAXI dress
+2015-05-01,57,0.57,MAXI dress
+2015-06-01,60,0.6,MAXI dress
+2015-07-01,52,0.52,MAXI dress
+2015-08-01,36,0.36,MAXI dress
+2015-09-01,24,0.24,MAXI dress
+2015-10-01,24,0.24,MAXI dress
+2015-11-01,26,0.26,MAXI dress
+2015-12-01,21,0.21,MAXI dress
+2016-01-01,32,0.32,MAXI dress
+2016-02-01,37,0.37,MAXI dress
+2016-03-01,41,0.41,MAXI dress
+2016-04-01,52,0.52,MAXI dress
+2016-05-01,68,0.68,MAXI dress
+2016-06-01,61,0.61,MAXI dress
+2016-07-01,56,0.56,MAXI dress
+2016-08-01,42,0.42,MAXI dress
+2016-09-01,31,0.31,MAXI dress
+2016-10-01,27,0.27,MAXI dress
+2016-11-01,33,0.33,MAXI dress
+2016-12-01,22,0.22,MAXI dress
+2017-01-01,36,0.36,MAXI dress
+2017-02-01,36,0.36,MAXI dress
+2017-03-01,46,0.46,MAXI dress
+2017-04-01,52,0.52,MAXI dress
+2017-05-01,68,0.68,MAXI dress
+2017-06-01,72,0.72,MAXI dress
+2017-07-01,60,0.6,MAXI dress
+2017-08-01,41,0.41,MAXI dress
+2017-09-01,29,0.29,MAXI dress
+2017-10-01,31,0.31,MAXI dress
+2017-11-01,33,0.33,MAXI dress
+2017-12-01,25,0.25,MAXI dress
+2018-01-01,39,0.39,MAXI dress
+2018-02-01,38,0.38,MAXI dress
+2018-03-01,44,0.44,MAXI dress
+2018-04-01,57,0.57,MAXI dress
+2018-05-01,74,0.74,MAXI dress
+2018-06-01,78,0.78,MAXI dress
+2018-07-01,79,0.79,MAXI dress
+2018-08-01,45,0.45,MAXI dress
+2018-09-01,33,0.33,MAXI dress
+2018-10-01,30,0.3,MAXI dress
+2018-11-01,32,0.32,MAXI dress
+2018-12-01,24,0.24,MAXI dress
+2019-01-01,36,0.36,MAXI dress
+2019-02-01,38,0.38,MAXI dress
+2019-03-01,46,0.46,MAXI dress
+2019-04-01,55,0.55,MAXI dress
+2019-05-01,63,0.63,MAXI dress
+2019-06-01,61,0.61,MAXI dress
+2019-07-01,63,0.63,MAXI dress
+2019-08-01,45,0.45,MAXI dress
+2019-09-01,34,0.34,MAXI dress
+2019-10-01,30,0.3,MAXI dress
+2019-11-01,32,0.32,MAXI dress
+2019-12-01,23,0.23,MAXI dress
+2020-01-01,35,0.35,MAXI dress
+2020-02-01,38,0.38,MAXI dress
+2020-03-01,21,0.21,MAXI dress
+2020-04-01,20,0.2,MAXI dress
+2020-05-01,35,0.35,MAXI dress
+2020-06-01,37,0.37,MAXI dress
+2020-07-01,37,0.37,MAXI dress
+2020-08-01,33,0.33,MAXI dress
+2020-09-01,21,0.21,MAXI dress
+2020-10-01,16,0.16,MAXI dress
+2020-11-01,13,0.13,MAXI dress
+2020-12-01,15,0.15,MAXI dress
+2021-01-01,14,0.14,MAXI dress
+2021-02-01,18,0.18,MAXI dress
+2021-03-01,32,0.32,MAXI dress
+2021-04-01,42,0.42,MAXI dress
+2021-05-01,49,0.49,MAXI dress
+2021-06-01,76,0.76,MAXI dress
+2021-07-01,71,0.71,MAXI dress
+2021-08-01,52,0.52,MAXI dress
+2021-09-01,41,0.41,MAXI dress
+2021-10-01,38,0.38,MAXI dress
+2021-11-01,38,0.38,MAXI dress
+2021-12-01,27,0.27,MAXI dress
+2022-01-01,39,0.39,MAXI dress
+2022-02-01,48,0.48,MAXI dress
+2022-03-01,59,0.59,MAXI dress
+2022-04-01,71,0.71,MAXI dress
+2022-05-01,93,0.93,MAXI dress
+2022-06-01,90,0.9,MAXI dress
+2022-07-01,85,0.85,MAXI dress
+2022-08-01,60,0.6,MAXI dress
+2022-09-01,39,0.39,MAXI dress
+2022-10-01,37,0.37,MAXI dress
+2022-11-01,37,0.37,MAXI dress
+2022-12-01,30,0.3,MAXI dress
+2023-01-01,40,0.4,MAXI dress
+2023-02-01,47,0.47,MAXI dress
+2023-03-01,54,0.54,MAXI dress
+2023-04-01,70,0.7,MAXI dress
+2023-05-01,85,0.85,MAXI dress
+2023-06-01,98,0.98,MAXI dress
+2023-07-01,73,0.73,MAXI dress
+2023-08-01,57,0.57,MAXI dress
+2023-09-01,47,0.47,MAXI dress
+2023-10-01,41,0.41,MAXI dress
+2023-11-01,44,0.44,MAXI dress
+2023-12-01,36,0.36,MAXI dress
+2024-01-01,47,0.47,MAXI dress
+2024-02-01,54,0.54,MAXI dress
+2024-03-01,62,0.62,MAXI dress
+2024-04-01,82,0.82,MAXI dress
+2024-05-01,100,1.0,MAXI dress
+2024-06-01,99,0.99,MAXI dress
+2024-07-01,84,0.84,MAXI dress
+2024-08-01,69,0.69,MAXI dress
+2024-09-01,51,0.51,MAXI dress
+2024-10-01,46,0.46,MAXI dress
+2024-11-01,49,0.49,MAXI dress
+2024-12-01,42,0.42,MAXI dress
+2025-01-01,50,0.5,MAXI dress
+2025-02-01,58,0.58,MAXI dress
+2025-03-01,71,0.71,MAXI dress
+2025-04-01,88,0.88,MAXI dress
+2025-05-01,97,0.97,MAXI dress
+2025-06-01,97,0.97,MAXI dress
+2025-07-01,86,0.86,MAXI dress
+2025-08-01,71,0.71,MAXI dress
+2025-09-01,58,0.58,MAXI dress
+2025-10-01,49,0.49,MAXI dress
+2025-11-01,55,0.55,MAXI dress
+2025-12-01,47,0.47,MAXI dress
+2026-01-01,56,0.56,MAXI dress
+2026-02-01,92,0.92,MAXI dress
+2026-03-01,81,0.81,MAXI dress
+2026-04-01,82,0.82,MAXI dress
+2004-01-01,0,0.0,MOMJEANS
+2004-02-01,0,0.0,MOMJEANS
+2004-03-01,0,0.0,MOMJEANS
+2004-04-01,0,0.0,MOMJEANS
+2004-05-01,0,0.0,MOMJEANS
+2004-06-01,0,0.0,MOMJEANS
+2004-07-01,0,0.0,MOMJEANS
+2004-08-01,0,0.0,MOMJEANS
+2004-09-01,0,0.0,MOMJEANS
+2004-10-01,0,0.0,MOMJEANS
+2004-11-01,0,0.0,MOMJEANS
+2004-12-01,0,0.0,MOMJEANS
+2005-01-01,0,0.0,MOMJEANS
+2005-02-01,0,0.0,MOMJEANS
+2005-03-01,0,0.0,MOMJEANS
+2005-04-01,0,0.0,MOMJEANS
+2005-05-01,0,0.0,MOMJEANS
+2005-06-01,0,0.0,MOMJEANS
+2005-07-01,0,0.0,MOMJEANS
+2005-08-01,0,0.0,MOMJEANS
+2005-09-01,0,0.0,MOMJEANS
+2005-10-01,0,0.0,MOMJEANS
+2005-11-01,0,0.0,MOMJEANS
+2005-12-01,0,0.0,MOMJEANS
+2006-01-01,0,0.0,MOMJEANS
+2006-02-01,0,0.0,MOMJEANS
+2006-03-01,0,0.0,MOMJEANS
+2006-04-01,0,0.0,MOMJEANS
+2006-05-01,0,0.0,MOMJEANS
+2006-06-01,0,0.0,MOMJEANS
+2006-07-01,0,0.0,MOMJEANS
+2006-08-01,0,0.0,MOMJEANS
+2006-09-01,0,0.0,MOMJEANS
+2006-10-01,0,0.0,MOMJEANS
+2006-11-01,0,0.0,MOMJEANS
+2006-12-01,0,0.0,MOMJEANS
+2007-01-01,0,0.0,MOMJEANS
+2007-02-01,0,0.0,MOMJEANS
+2007-03-01,0,0.0,MOMJEANS
+2007-04-01,0,0.0,MOMJEANS
+2007-05-01,0,0.0,MOMJEANS
+2007-06-01,0,0.0,MOMJEANS
+2007-07-01,0,0.0,MOMJEANS
+2007-08-01,0,0.0,MOMJEANS
+2007-09-01,0,0.0,MOMJEANS
+2007-10-01,0,0.0,MOMJEANS
+2007-11-01,0,0.0,MOMJEANS
+2007-12-01,0,0.0,MOMJEANS
+2008-01-01,0,0.0,MOMJEANS
+2008-02-01,0,0.0,MOMJEANS
+2008-03-01,0,0.0,MOMJEANS
+2008-04-01,0,0.0,MOMJEANS
+2008-05-01,0,0.0,MOMJEANS
+2008-06-01,0,0.0,MOMJEANS
+2008-07-01,0,0.0,MOMJEANS
+2008-08-01,0,0.0,MOMJEANS
+2008-09-01,0,0.0,MOMJEANS
+2008-10-01,0,0.0,MOMJEANS
+2008-11-01,0,0.0,MOMJEANS
+2008-12-01,0,0.0,MOMJEANS
+2009-01-01,0,0.0,MOMJEANS
+2009-02-01,0,0.0,MOMJEANS
+2009-03-01,0,0.0,MOMJEANS
+2009-04-01,0,0.0,MOMJEANS
+2009-05-01,0,0.0,MOMJEANS
+2009-06-01,0,0.0,MOMJEANS
+2009-07-01,0,0.0,MOMJEANS
+2009-08-01,0,0.0,MOMJEANS
+2009-09-01,0,0.0,MOMJEANS
+2009-10-01,0,0.0,MOMJEANS
+2009-11-01,0,0.0,MOMJEANS
+2009-12-01,0,0.0,MOMJEANS
+2010-01-01,0,0.0,MOMJEANS
+2010-02-01,0,0.0,MOMJEANS
+2010-03-01,0,0.0,MOMJEANS
+2010-04-01,0,0.0,MOMJEANS
+2010-05-01,0,0.0,MOMJEANS
+2010-06-01,0,0.0,MOMJEANS
+2010-07-01,0,0.0,MOMJEANS
+2010-08-01,0,0.0,MOMJEANS
+2010-09-01,0,0.0,MOMJEANS
+2010-10-01,0,0.0,MOMJEANS
+2010-11-01,0,0.0,MOMJEANS
+2010-12-01,0,0.0,MOMJEANS
+2011-01-01,0,0.0,MOMJEANS
+2011-02-01,0,0.0,MOMJEANS
+2011-03-01,1,0.01,MOMJEANS
+2011-04-01,0,0.0,MOMJEANS
+2011-05-01,0,0.0,MOMJEANS
+2011-06-01,0,0.0,MOMJEANS
+2011-07-01,0,0.0,MOMJEANS
+2011-08-01,0,0.0,MOMJEANS
+2011-09-01,1,0.01,MOMJEANS
+2011-10-01,0,0.0,MOMJEANS
+2011-11-01,1,0.01,MOMJEANS
+2011-12-01,0,0.0,MOMJEANS
+2012-01-01,0,0.0,MOMJEANS
+2012-02-01,0,0.0,MOMJEANS
+2012-03-01,1,0.01,MOMJEANS
+2012-04-01,1,0.01,MOMJEANS
+2012-05-01,1,0.01,MOMJEANS
+2012-06-01,0,0.0,MOMJEANS
+2012-07-01,1,0.01,MOMJEANS
+2012-08-01,0,0.0,MOMJEANS
+2012-09-01,1,0.01,MOMJEANS
+2012-10-01,1,0.01,MOMJEANS
+2012-11-01,1,0.01,MOMJEANS
+2012-12-01,1,0.01,MOMJEANS
+2013-01-01,1,0.01,MOMJEANS
+2013-02-01,2,0.02,MOMJEANS
+2013-03-01,2,0.02,MOMJEANS
+2013-04-01,3,0.03,MOMJEANS
+2013-05-01,5,0.05,MOMJEANS
+2013-06-01,4,0.04,MOMJEANS
+2013-07-01,4,0.04,MOMJEANS
+2013-08-01,6,0.06,MOMJEANS
+2013-09-01,8,0.08,MOMJEANS
+2013-10-01,7,0.07,MOMJEANS
+2013-11-01,6,0.06,MOMJEANS
+2013-12-01,9,0.09,MOMJEANS
+2014-01-01,10,0.1,MOMJEANS
+2014-02-01,10,0.1,MOMJEANS
+2014-03-01,12,0.12,MOMJEANS
+2014-04-01,13,0.13,MOMJEANS
+2014-05-01,12,0.12,MOMJEANS
+2014-06-01,11,0.11,MOMJEANS
+2014-07-01,12,0.12,MOMJEANS
+2014-08-01,13,0.13,MOMJEANS
+2014-09-01,13,0.13,MOMJEANS
+2014-10-01,12,0.12,MOMJEANS
+2014-11-01,10,0.1,MOMJEANS
+2014-12-01,11,0.11,MOMJEANS
+2015-01-01,10,0.1,MOMJEANS
+2015-02-01,11,0.11,MOMJEANS
+2015-03-01,12,0.12,MOMJEANS
+2015-04-01,12,0.12,MOMJEANS
+2015-05-01,13,0.13,MOMJEANS
+2015-06-01,11,0.11,MOMJEANS
+2015-07-01,12,0.12,MOMJEANS
+2015-08-01,14,0.14,MOMJEANS
+2015-09-01,13,0.13,MOMJEANS
+2015-10-01,12,0.12,MOMJEANS
+2015-11-01,11,0.11,MOMJEANS
+2015-12-01,13,0.13,MOMJEANS
+2016-01-01,14,0.14,MOMJEANS
+2016-02-01,17,0.17,MOMJEANS
+2016-03-01,22,0.22,MOMJEANS
+2016-04-01,23,0.23,MOMJEANS
+2016-05-01,22,0.22,MOMJEANS
+2016-06-01,19,0.19,MOMJEANS
+2016-07-01,22,0.22,MOMJEANS
+2016-08-01,24,0.24,MOMJEANS
+2016-09-01,28,0.28,MOMJEANS
+2016-10-01,27,0.27,MOMJEANS
+2016-11-01,22,0.22,MOMJEANS
+2016-12-01,27,0.27,MOMJEANS
+2017-01-01,29,0.29,MOMJEANS
+2017-02-01,31,0.31,MOMJEANS
+2017-03-01,34,0.34,MOMJEANS
+2017-04-01,36,0.36,MOMJEANS
+2017-05-01,27,0.27,MOMJEANS
+2017-06-01,25,0.25,MOMJEANS
+2017-07-01,25,0.25,MOMJEANS
+2017-08-01,33,0.33,MOMJEANS
+2017-09-01,33,0.33,MOMJEANS
+2017-10-01,29,0.29,MOMJEANS
+2017-11-01,29,0.29,MOMJEANS
+2017-12-01,28,0.28,MOMJEANS
+2018-01-01,31,0.31,MOMJEANS
+2018-02-01,36,0.36,MOMJEANS
+2018-03-01,34,0.34,MOMJEANS
+2018-04-01,37,0.37,MOMJEANS
+2018-05-01,33,0.33,MOMJEANS
+2018-06-01,26,0.26,MOMJEANS
+2018-07-01,24,0.24,MOMJEANS
+2018-08-01,38,0.38,MOMJEANS
+2018-09-01,50,0.5,MOMJEANS
+2018-10-01,43,0.43,MOMJEANS
+2018-11-01,38,0.38,MOMJEANS
+2018-12-01,40,0.4,MOMJEANS
+2019-01-01,41,0.41,MOMJEANS
+2019-02-01,47,0.47,MOMJEANS
+2019-03-01,50,0.5,MOMJEANS
+2019-04-01,52,0.52,MOMJEANS
+2019-05-01,48,0.48,MOMJEANS
+2019-06-01,37,0.37,MOMJEANS
+2019-07-01,37,0.37,MOMJEANS
+2019-08-01,48,0.48,MOMJEANS
+2019-09-01,53,0.53,MOMJEANS
+2019-10-01,45,0.45,MOMJEANS
+2019-11-01,43,0.43,MOMJEANS
+2019-12-01,46,0.46,MOMJEANS
+2020-01-01,45,0.45,MOMJEANS
+2020-02-01,56,0.56,MOMJEANS
+2020-03-01,41,0.41,MOMJEANS
+2020-04-01,48,0.48,MOMJEANS
+2020-05-01,67,0.67,MOMJEANS
+2020-06-01,69,0.69,MOMJEANS
+2020-07-01,100,1.0,MOMJEANS
+2020-08-01,93,0.93,MOMJEANS
+2020-09-01,87,0.87,MOMJEANS
+2020-10-01,73,0.73,MOMJEANS
+2020-11-01,62,0.62,MOMJEANS
+2020-12-01,57,0.57,MOMJEANS
+2021-01-01,48,0.48,MOMJEANS
+2021-02-01,63,0.63,MOMJEANS
+2021-03-01,79,0.79,MOMJEANS
+2021-04-01,96,0.96,MOMJEANS
+2021-05-01,95,0.95,MOMJEANS
+2021-06-01,59,0.59,MOMJEANS
+2021-07-01,56,0.56,MOMJEANS
+2021-08-01,65,0.65,MOMJEANS
+2021-09-01,68,0.68,MOMJEANS
+2021-10-01,58,0.58,MOMJEANS
+2021-11-01,47,0.47,MOMJEANS
+2021-12-01,43,0.43,MOMJEANS
+2022-01-01,45,0.45,MOMJEANS
+2022-02-01,51,0.51,MOMJEANS
+2022-03-01,51,0.51,MOMJEANS
+2022-04-01,54,0.54,MOMJEANS
+2022-05-01,48,0.48,MOMJEANS
+2022-06-01,40,0.4,MOMJEANS
+2022-07-01,30,0.3,MOMJEANS
+2022-08-01,36,0.36,MOMJEANS
+2022-09-01,46,0.46,MOMJEANS
+2022-10-01,40,0.4,MOMJEANS
+2022-11-01,32,0.32,MOMJEANS
+2022-12-01,30,0.3,MOMJEANS
+2023-01-01,36,0.36,MOMJEANS
+2023-02-01,45,0.45,MOMJEANS
+2023-03-01,43,0.43,MOMJEANS
+2023-04-01,50,0.5,MOMJEANS
+2023-05-01,42,0.42,MOMJEANS
+2023-06-01,23,0.23,MOMJEANS
+2023-07-01,32,0.32,MOMJEANS
+2023-08-01,40,0.4,MOMJEANS
+2023-09-01,38,0.38,MOMJEANS
+2023-10-01,37,0.37,MOMJEANS
+2023-11-01,32,0.32,MOMJEANS
+2023-12-01,28,0.28,MOMJEANS
+2024-01-01,34,0.34,MOMJEANS
+2024-02-01,37,0.37,MOMJEANS
+2024-03-01,40,0.4,MOMJEANS
+2024-04-01,37,0.37,MOMJEANS
+2024-05-01,30,0.3,MOMJEANS
+2024-06-01,26,0.26,MOMJEANS
+2024-07-01,24,0.24,MOMJEANS
+2024-08-01,25,0.25,MOMJEANS
+2024-09-01,34,0.34,MOMJEANS
+2024-10-01,28,0.28,MOMJEANS
+2024-11-01,25,0.25,MOMJEANS
+2024-12-01,25,0.25,MOMJEANS
+2025-01-01,25,0.25,MOMJEANS
+2025-02-01,24,0.24,MOMJEANS
+2025-03-01,29,0.29,MOMJEANS
+2025-04-01,26,0.26,MOMJEANS
+2025-05-01,18,0.18,MOMJEANS
+2025-06-01,16,0.16,MOMJEANS
+2025-07-01,15,0.15,MOMJEANS
+2025-08-01,22,0.22,MOMJEANS
+2025-09-01,25,0.25,MOMJEANS
+2025-10-01,22,0.22,MOMJEANS
+2025-11-01,19,0.19,MOMJEANS
+2025-12-01,18,0.18,MOMJEANS
+2026-01-01,17,0.17,MOMJEANS
+2026-02-01,29,0.29,MOMJEANS
+2026-03-01,26,0.26,MOMJEANS
+2026-04-01,24,0.24,MOMJEANS
+2004-01-01,0,0.0,Pastelgrunge
+2004-02-01,0,0.0,Pastelgrunge
+2004-03-01,0,0.0,Pastelgrunge
+2004-04-01,0,0.0,Pastelgrunge
+2004-05-01,0,0.0,Pastelgrunge
+2004-06-01,0,0.0,Pastelgrunge
+2004-07-01,0,0.0,Pastelgrunge
+2004-08-01,0,0.0,Pastelgrunge
+2004-09-01,0,0.0,Pastelgrunge
+2004-10-01,0,0.0,Pastelgrunge
+2004-11-01,0,0.0,Pastelgrunge
+2004-12-01,0,0.0,Pastelgrunge
+2005-01-01,0,0.0,Pastelgrunge
+2005-02-01,0,0.0,Pastelgrunge
+2005-03-01,0,0.0,Pastelgrunge
+2005-04-01,0,0.0,Pastelgrunge
+2005-05-01,0,0.0,Pastelgrunge
+2005-06-01,0,0.0,Pastelgrunge
+2005-07-01,0,0.0,Pastelgrunge
+2005-08-01,0,0.0,Pastelgrunge
+2005-09-01,0,0.0,Pastelgrunge
+2005-10-01,0,0.0,Pastelgrunge
+2005-11-01,0,0.0,Pastelgrunge
+2005-12-01,0,0.0,Pastelgrunge
+2006-01-01,0,0.0,Pastelgrunge
+2006-02-01,0,0.0,Pastelgrunge
+2006-03-01,0,0.0,Pastelgrunge
+2006-04-01,0,0.0,Pastelgrunge
+2006-05-01,0,0.0,Pastelgrunge
+2006-06-01,0,0.0,Pastelgrunge
+2006-07-01,0,0.0,Pastelgrunge
+2006-08-01,0,0.0,Pastelgrunge
+2006-09-01,0,0.0,Pastelgrunge
+2006-10-01,0,0.0,Pastelgrunge
+2006-11-01,0,0.0,Pastelgrunge
+2006-12-01,0,0.0,Pastelgrunge
+2007-01-01,0,0.0,Pastelgrunge
+2007-02-01,0,0.0,Pastelgrunge
+2007-03-01,0,0.0,Pastelgrunge
+2007-04-01,0,0.0,Pastelgrunge
+2007-05-01,0,0.0,Pastelgrunge
+2007-06-01,0,0.0,Pastelgrunge
+2007-07-01,0,0.0,Pastelgrunge
+2007-08-01,0,0.0,Pastelgrunge
+2007-09-01,0,0.0,Pastelgrunge
+2007-10-01,0,0.0,Pastelgrunge
+2007-11-01,0,0.0,Pastelgrunge
+2007-12-01,0,0.0,Pastelgrunge
+2008-01-01,0,0.0,Pastelgrunge
+2008-02-01,0,0.0,Pastelgrunge
+2008-03-01,0,0.0,Pastelgrunge
+2008-04-01,0,0.0,Pastelgrunge
+2008-05-01,0,0.0,Pastelgrunge
+2008-06-01,0,0.0,Pastelgrunge
+2008-07-01,0,0.0,Pastelgrunge
+2008-08-01,0,0.0,Pastelgrunge
+2008-09-01,0,0.0,Pastelgrunge
+2008-10-01,0,0.0,Pastelgrunge
+2008-11-01,0,0.0,Pastelgrunge
+2008-12-01,0,0.0,Pastelgrunge
+2009-01-01,0,0.0,Pastelgrunge
+2009-02-01,0,0.0,Pastelgrunge
+2009-03-01,0,0.0,Pastelgrunge
+2009-04-01,0,0.0,Pastelgrunge
+2009-05-01,0,0.0,Pastelgrunge
+2009-06-01,0,0.0,Pastelgrunge
+2009-07-01,0,0.0,Pastelgrunge
+2009-08-01,0,0.0,Pastelgrunge
+2009-09-01,0,0.0,Pastelgrunge
+2009-10-01,0,0.0,Pastelgrunge
+2009-11-01,0,0.0,Pastelgrunge
+2009-12-01,0,0.0,Pastelgrunge
+2010-01-01,0,0.0,Pastelgrunge
+2010-02-01,0,0.0,Pastelgrunge
+2010-03-01,0,0.0,Pastelgrunge
+2010-04-01,0,0.0,Pastelgrunge
+2010-05-01,0,0.0,Pastelgrunge
+2010-06-01,0,0.0,Pastelgrunge
+2010-07-01,0,0.0,Pastelgrunge
+2010-08-01,0,0.0,Pastelgrunge
+2010-09-01,0,0.0,Pastelgrunge
+2010-10-01,0,0.0,Pastelgrunge
+2010-11-01,0,0.0,Pastelgrunge
+2010-12-01,0,0.0,Pastelgrunge
+2011-01-01,0,0.0,Pastelgrunge
+2011-02-01,0,0.0,Pastelgrunge
+2011-03-01,0,0.0,Pastelgrunge
+2011-04-01,0,0.0,Pastelgrunge
+2011-05-01,0,0.0,Pastelgrunge
+2011-06-01,0,0.0,Pastelgrunge
+2011-07-01,0,0.0,Pastelgrunge
+2011-08-01,0,0.0,Pastelgrunge
+2011-09-01,0,0.0,Pastelgrunge
+2011-10-01,0,0.0,Pastelgrunge
+2011-11-01,0,0.0,Pastelgrunge
+2011-12-01,0,0.0,Pastelgrunge
+2012-01-01,0,0.0,Pastelgrunge
+2012-02-01,0,0.0,Pastelgrunge
+2012-03-01,0,0.0,Pastelgrunge
+2012-04-01,50,0.5,Pastelgrunge
+2012-05-01,0,0.0,Pastelgrunge
+2012-06-01,0,0.0,Pastelgrunge
+2012-07-01,0,0.0,Pastelgrunge
+2012-08-01,0,0.0,Pastelgrunge
+2012-09-01,0,0.0,Pastelgrunge
+2012-10-01,43,0.43,Pastelgrunge
+2012-11-01,0,0.0,Pastelgrunge
+2012-12-01,0,0.0,Pastelgrunge
+2013-01-01,37,0.37,Pastelgrunge
+2013-02-01,0,0.0,Pastelgrunge
+2013-03-01,0,0.0,Pastelgrunge
+2013-04-01,35,0.35,Pastelgrunge
+2013-05-01,0,0.0,Pastelgrunge
+2013-06-01,0,0.0,Pastelgrunge
+2013-07-01,60,0.6,Pastelgrunge
+2013-08-01,0,0.0,Pastelgrunge
+2013-09-01,0,0.0,Pastelgrunge
+2013-10-01,0,0.0,Pastelgrunge
+2013-11-01,38,0.38,Pastelgrunge
+2013-12-01,45,0.45,Pastelgrunge
+2014-01-01,40,0.4,Pastelgrunge
+2014-02-01,0,0.0,Pastelgrunge
+2014-03-01,47,0.47,Pastelgrunge
+2014-04-01,32,0.32,Pastelgrunge
+2014-05-01,57,0.57,Pastelgrunge
+2014-06-01,0,0.0,Pastelgrunge
+2014-07-01,41,0.41,Pastelgrunge
+2014-08-01,0,0.0,Pastelgrunge
+2014-09-01,53,0.53,Pastelgrunge
+2014-10-01,61,0.61,Pastelgrunge
+2014-11-01,77,0.77,Pastelgrunge
+2014-12-01,58,0.58,Pastelgrunge
+2015-01-01,61,0.61,Pastelgrunge
+2015-02-01,100,1.0,Pastelgrunge
+2015-03-01,77,0.77,Pastelgrunge
+2015-04-01,91,0.91,Pastelgrunge
+2015-05-01,72,0.72,Pastelgrunge
+2015-06-01,59,0.59,Pastelgrunge
+2015-07-01,64,0.64,Pastelgrunge
+2015-08-01,57,0.57,Pastelgrunge
+2015-09-01,50,0.5,Pastelgrunge
+2015-10-01,76,0.76,Pastelgrunge
+2015-11-01,61,0.61,Pastelgrunge
+2015-12-01,64,0.64,Pastelgrunge
+2016-01-01,88,0.88,Pastelgrunge
+2016-02-01,72,0.72,Pastelgrunge
+2016-03-01,43,0.43,Pastelgrunge
+2016-04-01,58,0.58,Pastelgrunge
+2016-05-01,66,0.66,Pastelgrunge
+2016-06-01,84,0.84,Pastelgrunge
+2016-07-01,48,0.48,Pastelgrunge
+2016-08-01,61,0.61,Pastelgrunge
+2016-09-01,50,0.5,Pastelgrunge
+2016-10-01,41,0.41,Pastelgrunge
+2016-11-01,38,0.38,Pastelgrunge
+2016-12-01,31,0.31,Pastelgrunge
+2017-01-01,48,0.48,Pastelgrunge
+2017-02-01,45,0.45,Pastelgrunge
+2017-03-01,0,0.0,Pastelgrunge
+2017-04-01,0,0.0,Pastelgrunge
+2017-05-01,0,0.0,Pastelgrunge
+2017-06-01,0,0.0,Pastelgrunge
+2017-07-01,0,0.0,Pastelgrunge
+2017-08-01,0,0.0,Pastelgrunge
+2017-09-01,33,0.33,Pastelgrunge
+2017-10-01,0,0.0,Pastelgrunge
+2017-11-01,0,0.0,Pastelgrunge
+2017-12-01,0,0.0,Pastelgrunge
+2018-01-01,0,0.0,Pastelgrunge
+2018-02-01,30,0.3,Pastelgrunge
+2018-03-01,0,0.0,Pastelgrunge
+2018-04-01,0,0.0,Pastelgrunge
+2018-05-01,0,0.0,Pastelgrunge
+2018-06-01,0,0.0,Pastelgrunge
+2018-07-01,0,0.0,Pastelgrunge
+2018-08-01,0,0.0,Pastelgrunge
+2018-09-01,0,0.0,Pastelgrunge
+2018-10-01,34,0.34,Pastelgrunge
+2018-11-01,0,0.0,Pastelgrunge
+2018-12-01,0,0.0,Pastelgrunge
+2019-01-01,0,0.0,Pastelgrunge
+2019-02-01,0,0.0,Pastelgrunge
+2019-03-01,0,0.0,Pastelgrunge
+2019-04-01,0,0.0,Pastelgrunge
+2019-05-01,0,0.0,Pastelgrunge
+2019-06-01,0,0.0,Pastelgrunge
+2019-07-01,0,0.0,Pastelgrunge
+2019-08-01,0,0.0,Pastelgrunge
+2019-09-01,0,0.0,Pastelgrunge
+2019-10-01,0,0.0,Pastelgrunge
+2019-11-01,0,0.0,Pastelgrunge
+2019-12-01,0,0.0,Pastelgrunge
+2020-01-01,0,0.0,Pastelgrunge
+2020-02-01,0,0.0,Pastelgrunge
+2020-03-01,25,0.25,Pastelgrunge
+2020-04-01,35,0.35,Pastelgrunge
+2020-05-01,0,0.0,Pastelgrunge
+2020-06-01,23,0.23,Pastelgrunge
+2020-07-01,0,0.0,Pastelgrunge
+2020-08-01,0,0.0,Pastelgrunge
+2020-09-01,28,0.28,Pastelgrunge
+2020-10-01,42,0.42,Pastelgrunge
+2020-11-01,0,0.0,Pastelgrunge
+2020-12-01,0,0.0,Pastelgrunge
+2021-01-01,0,0.0,Pastelgrunge
+2021-02-01,0,0.0,Pastelgrunge
+2021-03-01,0,0.0,Pastelgrunge
+2021-04-01,0,0.0,Pastelgrunge
+2021-05-01,0,0.0,Pastelgrunge
+2021-06-01,0,0.0,Pastelgrunge
+2021-07-01,0,0.0,Pastelgrunge
+2021-08-01,0,0.0,Pastelgrunge
+2021-09-01,0,0.0,Pastelgrunge
+2021-10-01,0,0.0,Pastelgrunge
+2021-11-01,0,0.0,Pastelgrunge
+2021-12-01,0,0.0,Pastelgrunge
+2022-01-01,0,0.0,Pastelgrunge
+2022-02-01,0,0.0,Pastelgrunge
+2022-03-01,0,0.0,Pastelgrunge
+2022-04-01,0,0.0,Pastelgrunge
+2022-05-01,0,0.0,Pastelgrunge
+2022-06-01,0,0.0,Pastelgrunge
+2022-07-01,0,0.0,Pastelgrunge
+2022-08-01,0,0.0,Pastelgrunge
+2022-09-01,0,0.0,Pastelgrunge
+2022-10-01,0,0.0,Pastelgrunge
+2022-11-01,0,0.0,Pastelgrunge
+2022-12-01,0,0.0,Pastelgrunge
+2023-01-01,0,0.0,Pastelgrunge
+2023-02-01,0,0.0,Pastelgrunge
+2023-03-01,0,0.0,Pastelgrunge
+2023-04-01,0,0.0,Pastelgrunge
+2023-05-01,25,0.25,Pastelgrunge
+2023-06-01,0,0.0,Pastelgrunge
+2023-07-01,0,0.0,Pastelgrunge
+2023-08-01,0,0.0,Pastelgrunge
+2023-09-01,0,0.0,Pastelgrunge
+2023-10-01,0,0.0,Pastelgrunge
+2023-11-01,0,0.0,Pastelgrunge
+2023-12-01,0,0.0,Pastelgrunge
+2024-01-01,0,0.0,Pastelgrunge
+2024-02-01,0,0.0,Pastelgrunge
+2024-03-01,0,0.0,Pastelgrunge
+2024-04-01,0,0.0,Pastelgrunge
+2024-05-01,0,0.0,Pastelgrunge
+2024-06-01,0,0.0,Pastelgrunge
+2024-07-01,0,0.0,Pastelgrunge
+2024-08-01,0,0.0,Pastelgrunge
+2024-09-01,0,0.0,Pastelgrunge
+2024-10-01,0,0.0,Pastelgrunge
+2024-11-01,0,0.0,Pastelgrunge
+2024-12-01,0,0.0,Pastelgrunge
+2025-01-01,0,0.0,Pastelgrunge
+2025-02-01,0,0.0,Pastelgrunge
+2025-03-01,0,0.0,Pastelgrunge
+2025-04-01,0,0.0,Pastelgrunge
+2025-05-01,0,0.0,Pastelgrunge
+2025-06-01,0,0.0,Pastelgrunge
+2025-07-01,0,0.0,Pastelgrunge
+2025-08-01,0,0.0,Pastelgrunge
+2025-09-01,0,0.0,Pastelgrunge
+2025-10-01,0,0.0,Pastelgrunge
+2025-11-01,0,0.0,Pastelgrunge
+2025-12-01,0,0.0,Pastelgrunge
+2026-01-01,0,0.0,Pastelgrunge
+2026-02-01,45,0.45,Pastelgrunge
+2026-03-01,0,0.0,Pastelgrunge
+2026-04-01,3,0.03,Pastelgrunge
+2004-01-01,9,0.09,ripepdjeans
+2004-02-01,10,0.1,ripepdjeans
+2004-03-01,0,0.0,ripepdjeans
+2004-04-01,0,0.0,ripepdjeans
+2004-05-01,0,0.0,ripepdjeans
+2004-06-01,8,0.08,ripepdjeans
+2004-07-01,0,0.0,ripepdjeans
+2004-08-01,8,0.08,ripepdjeans
+2004-09-01,8,0.08,ripepdjeans
+2004-10-01,0,0.0,ripepdjeans
+2004-11-01,9,0.09,ripepdjeans
+2004-12-01,10,0.1,ripepdjeans
+2005-01-01,5,0.05,ripepdjeans
+2005-02-01,0,0.0,ripepdjeans
+2005-03-01,0,0.0,ripepdjeans
+2005-04-01,0,0.0,ripepdjeans
+2005-05-01,0,0.0,ripepdjeans
+2005-06-01,7,0.07,ripepdjeans
+2005-07-01,0,0.0,ripepdjeans
+2005-08-01,8,0.08,ripepdjeans
+2005-09-01,5,0.05,ripepdjeans
+2005-10-01,5,0.05,ripepdjeans
+2005-11-01,4,0.04,ripepdjeans
+2005-12-01,0,0.0,ripepdjeans
+2006-01-01,5,0.05,ripepdjeans
+2006-02-01,4,0.04,ripepdjeans
+2006-03-01,3,0.03,ripepdjeans
+2006-04-01,0,0.0,ripepdjeans
+2006-05-01,4,0.04,ripepdjeans
+2006-06-01,0,0.0,ripepdjeans
+2006-07-01,0,0.0,ripepdjeans
+2006-08-01,0,0.0,ripepdjeans
+2006-09-01,0,0.0,ripepdjeans
+2006-10-01,4,0.04,ripepdjeans
+2006-11-01,0,0.0,ripepdjeans
+2006-12-01,0,0.0,ripepdjeans
+2007-01-01,3,0.03,ripepdjeans
+2007-02-01,0,0.0,ripepdjeans
+2007-03-01,3,0.03,ripepdjeans
+2007-04-01,3,0.03,ripepdjeans
+2007-05-01,0,0.0,ripepdjeans
+2007-06-01,2,0.02,ripepdjeans
+2007-07-01,3,0.03,ripepdjeans
+2007-08-01,3,0.03,ripepdjeans
+2007-09-01,3,0.03,ripepdjeans
+2007-10-01,2,0.02,ripepdjeans
+2007-11-01,2,0.02,ripepdjeans
+2007-12-01,2,0.02,ripepdjeans
+2008-01-01,2,0.02,ripepdjeans
+2008-02-01,3,0.03,ripepdjeans
+2008-03-01,3,0.03,ripepdjeans
+2008-04-01,3,0.03,ripepdjeans
+2008-05-01,3,0.03,ripepdjeans
+2008-06-01,3,0.03,ripepdjeans
+2008-07-01,2,0.02,ripepdjeans
+2008-08-01,3,0.03,ripepdjeans
+2008-09-01,2,0.02,ripepdjeans
+2008-10-01,2,0.02,ripepdjeans
+2008-11-01,2,0.02,ripepdjeans
+2008-12-01,2,0.02,ripepdjeans
+2009-01-01,3,0.03,ripepdjeans
+2009-02-01,3,0.03,ripepdjeans
+2009-03-01,4,0.04,ripepdjeans
+2009-04-01,6,0.06,ripepdjeans
+2009-05-01,4,0.04,ripepdjeans
+2009-06-01,6,0.06,ripepdjeans
+2009-07-01,5,0.05,ripepdjeans
+2009-08-01,6,0.06,ripepdjeans
+2009-09-01,4,0.04,ripepdjeans
+2009-10-01,4,0.04,ripepdjeans
+2009-11-01,5,0.05,ripepdjeans
+2009-12-01,4,0.04,ripepdjeans
+2010-01-01,6,0.06,ripepdjeans
+2010-02-01,5,0.05,ripepdjeans
+2010-03-01,5,0.05,ripepdjeans
+2010-04-01,5,0.05,ripepdjeans
+2010-05-01,5,0.05,ripepdjeans
+2010-06-01,3,0.03,ripepdjeans
+2010-07-01,4,0.04,ripepdjeans
+2010-08-01,4,0.04,ripepdjeans
+2010-09-01,10,0.1,ripepdjeans
+2010-10-01,8,0.08,ripepdjeans
+2010-11-01,6,0.06,ripepdjeans
+2010-12-01,5,0.05,ripepdjeans
+2011-01-01,7,0.07,ripepdjeans
+2011-02-01,7,0.07,ripepdjeans
+2011-03-01,7,0.07,ripepdjeans
+2011-04-01,6,0.06,ripepdjeans
+2011-05-01,6,0.06,ripepdjeans
+2011-06-01,6,0.06,ripepdjeans
+2011-07-01,6,0.06,ripepdjeans
+2011-08-01,6,0.06,ripepdjeans
+2011-09-01,6,0.06,ripepdjeans
+2011-10-01,6,0.06,ripepdjeans
+2011-11-01,5,0.05,ripepdjeans
+2011-12-01,6,0.06,ripepdjeans
+2012-01-01,5,0.05,ripepdjeans
+2012-02-01,7,0.07,ripepdjeans
+2012-03-01,6,0.06,ripepdjeans
+2012-04-01,7,0.07,ripepdjeans
+2012-05-01,9,0.09,ripepdjeans
+2012-06-01,7,0.07,ripepdjeans
+2012-07-01,8,0.08,ripepdjeans
+2012-08-01,8,0.08,ripepdjeans
+2012-09-01,9,0.09,ripepdjeans
+2012-10-01,7,0.07,ripepdjeans
+2012-11-01,6,0.06,ripepdjeans
+2012-12-01,7,0.07,ripepdjeans
+2013-01-01,6,0.06,ripepdjeans
+2013-02-01,8,0.08,ripepdjeans
+2013-03-01,9,0.09,ripepdjeans
+2013-04-01,9,0.09,ripepdjeans
+2013-05-01,9,0.09,ripepdjeans
+2013-06-01,9,0.09,ripepdjeans
+2013-07-01,7,0.07,ripepdjeans
+2013-08-01,10,0.1,ripepdjeans
+2013-09-01,9,0.09,ripepdjeans
+2013-10-01,10,0.1,ripepdjeans
+2013-11-01,9,0.09,ripepdjeans
+2013-12-01,14,0.14,ripepdjeans
+2014-01-01,14,0.14,ripepdjeans
+2014-02-01,18,0.18,ripepdjeans
+2014-03-01,25,0.25,ripepdjeans
+2014-04-01,33,0.33,ripepdjeans
+2014-05-01,36,0.36,ripepdjeans
+2014-06-01,32,0.32,ripepdjeans
+2014-07-01,32,0.32,ripepdjeans
+2014-08-01,43,0.43,ripepdjeans
+2014-09-01,48,0.48,ripepdjeans
+2014-10-01,44,0.44,ripepdjeans
+2014-11-01,39,0.39,ripepdjeans
+2014-12-01,46,0.46,ripepdjeans
+2015-01-01,40,0.4,ripepdjeans
+2015-02-01,41,0.41,ripepdjeans
+2015-03-01,47,0.47,ripepdjeans
+2015-04-01,52,0.52,ripepdjeans
+2015-05-01,54,0.54,ripepdjeans
+2015-06-01,46,0.46,ripepdjeans
+2015-07-01,49,0.49,ripepdjeans
+2015-08-01,51,0.51,ripepdjeans
+2015-09-01,52,0.52,ripepdjeans
+2015-10-01,52,0.52,ripepdjeans
+2015-11-01,49,0.49,ripepdjeans
+2015-12-01,56,0.56,ripepdjeans
+2016-01-01,49,0.49,ripepdjeans
+2016-02-01,56,0.56,ripepdjeans
+2016-03-01,70,0.7,ripepdjeans
+2016-04-01,71,0.71,ripepdjeans
+2016-05-01,76,0.76,ripepdjeans
+2016-06-01,66,0.66,ripepdjeans
+2016-07-01,80,0.8,ripepdjeans
+2016-08-01,72,0.72,ripepdjeans
+2016-09-01,79,0.79,ripepdjeans
+2016-10-01,81,0.81,ripepdjeans
+2016-11-01,74,0.74,ripepdjeans
+2016-12-01,87,0.87,ripepdjeans
+2017-01-01,72,0.72,ripepdjeans
+2017-02-01,85,0.85,ripepdjeans
+2017-03-01,88,0.88,ripepdjeans
+2017-04-01,100,1.0,ripepdjeans
+2017-05-01,84,0.84,ripepdjeans
+2017-06-01,87,0.87,ripepdjeans
+2017-07-01,85,0.85,ripepdjeans
+2017-08-01,90,0.9,ripepdjeans
+2017-09-01,80,0.8,ripepdjeans
+2017-10-01,82,0.82,ripepdjeans
+2017-11-01,77,0.77,ripepdjeans
+2017-12-01,82,0.82,ripepdjeans
+2018-01-01,61,0.61,ripepdjeans
+2018-02-01,68,0.68,ripepdjeans
+2018-03-01,72,0.72,ripepdjeans
+2018-04-01,75,0.75,ripepdjeans
+2018-05-01,75,0.75,ripepdjeans
+2018-06-01,70,0.7,ripepdjeans
+2018-07-01,53,0.53,ripepdjeans
+2018-08-01,61,0.61,ripepdjeans
+2018-09-01,67,0.67,ripepdjeans
+2018-10-01,64,0.64,ripepdjeans
+2018-11-01,66,0.66,ripepdjeans
+2018-12-01,68,0.68,ripepdjeans
+2019-01-01,52,0.52,ripepdjeans
+2019-02-01,59,0.59,ripepdjeans
+2019-03-01,61,0.61,ripepdjeans
+2019-04-01,67,0.67,ripepdjeans
+2019-05-01,63,0.63,ripepdjeans
+2019-06-01,56,0.56,ripepdjeans
+2019-07-01,50,0.5,ripepdjeans
+2019-08-01,55,0.55,ripepdjeans
+2019-09-01,57,0.57,ripepdjeans
+2019-10-01,54,0.54,ripepdjeans
+2019-11-01,59,0.59,ripepdjeans
+2019-12-01,62,0.62,ripepdjeans
+2020-01-01,48,0.48,ripepdjeans
+2020-02-01,57,0.57,ripepdjeans
+2020-03-01,46,0.46,ripepdjeans
+2020-04-01,54,0.54,ripepdjeans
+2020-05-01,65,0.65,ripepdjeans
+2020-06-01,70,0.7,ripepdjeans
+2020-07-01,74,0.74,ripepdjeans
+2020-08-01,70,0.7,ripepdjeans
+2020-09-01,62,0.62,ripepdjeans
+2020-10-01,59,0.59,ripepdjeans
+2020-11-01,61,0.61,ripepdjeans
+2020-12-01,61,0.61,ripepdjeans
+2021-01-01,47,0.47,ripepdjeans
+2021-02-01,49,0.49,ripepdjeans
+2021-03-01,54,0.54,ripepdjeans
+2021-04-01,62,0.62,ripepdjeans
+2021-05-01,59,0.59,ripepdjeans
+2021-06-01,49,0.49,ripepdjeans
+2021-07-01,49,0.49,ripepdjeans
+2021-08-01,55,0.55,ripepdjeans
+2021-09-01,53,0.53,ripepdjeans
+2021-10-01,51,0.51,ripepdjeans
+2021-11-01,50,0.5,ripepdjeans
+2021-12-01,50,0.5,ripepdjeans
+2022-01-01,42,0.42,ripepdjeans
+2022-02-01,47,0.47,ripepdjeans
+2022-03-01,44,0.44,ripepdjeans
+2022-04-01,48,0.48,ripepdjeans
+2022-05-01,41,0.41,ripepdjeans
+2022-06-01,37,0.37,ripepdjeans
+2022-07-01,32,0.32,ripepdjeans
+2022-08-01,32,0.32,ripepdjeans
+2022-09-01,37,0.37,ripepdjeans
+2022-10-01,34,0.34,ripepdjeans
+2022-11-01,36,0.36,ripepdjeans
+2022-12-01,35,0.35,ripepdjeans
+2023-01-01,29,0.29,ripepdjeans
+2023-02-01,32,0.32,ripepdjeans
+2023-03-01,34,0.34,ripepdjeans
+2023-04-01,40,0.4,ripepdjeans
+2023-05-01,34,0.34,ripepdjeans
+2023-06-01,26,0.26,ripepdjeans
+2023-07-01,30,0.3,ripepdjeans
+2023-08-01,30,0.3,ripepdjeans
+2023-09-01,27,0.27,ripepdjeans
+2023-10-01,29,0.29,ripepdjeans
+2023-11-01,28,0.28,ripepdjeans
+2023-12-01,29,0.29,ripepdjeans
+2024-01-01,23,0.23,ripepdjeans
+2024-02-01,25,0.25,ripepdjeans
+2024-03-01,28,0.28,ripepdjeans
+2024-04-01,29,0.29,ripepdjeans
+2024-05-01,25,0.25,ripepdjeans
+2024-06-01,23,0.23,ripepdjeans
+2024-07-01,22,0.22,ripepdjeans
+2024-08-01,23,0.23,ripepdjeans
+2024-09-01,24,0.24,ripepdjeans
+2024-10-01,22,0.22,ripepdjeans
+2024-11-01,22,0.22,ripepdjeans
+2024-12-01,24,0.24,ripepdjeans
+2025-01-01,17,0.17,ripepdjeans
+2025-02-01,19,0.19,ripepdjeans
+2025-03-01,23,0.23,ripepdjeans
+2025-04-01,22,0.22,ripepdjeans
+2025-05-01,17,0.17,ripepdjeans
+2025-06-01,16,0.16,ripepdjeans
+2025-07-01,16,0.16,ripepdjeans
+2025-08-01,18,0.18,ripepdjeans
+2025-09-01,17,0.17,ripepdjeans
+2025-10-01,15,0.15,ripepdjeans
+2025-11-01,15,0.15,ripepdjeans
+2025-12-01,18,0.18,ripepdjeans
+2026-01-01,15,0.15,ripepdjeans
+2026-02-01,31,0.31,ripepdjeans
+2026-03-01,24,0.24,ripepdjeans
+2026-04-01,22,0.22,ripepdjeans
+2004-01-01,0,0.0,Skaterfashion
+2004-02-01,0,0.0,Skaterfashion
+2004-03-01,0,0.0,Skaterfashion
+2004-04-01,0,0.0,Skaterfashion
+2004-05-01,0,0.0,Skaterfashion
+2004-06-01,0,0.0,Skaterfashion
+2004-07-01,0,0.0,Skaterfashion
+2004-08-01,0,0.0,Skaterfashion
+2004-09-01,0,0.0,Skaterfashion
+2004-10-01,0,0.0,Skaterfashion
+2004-11-01,0,0.0,Skaterfashion
+2004-12-01,0,0.0,Skaterfashion
+2005-01-01,0,0.0,Skaterfashion
+2005-02-01,0,0.0,Skaterfashion
+2005-03-01,0,0.0,Skaterfashion
+2005-04-01,0,0.0,Skaterfashion
+2005-05-01,0,0.0,Skaterfashion
+2005-06-01,0,0.0,Skaterfashion
+2005-07-01,0,0.0,Skaterfashion
+2005-08-01,0,0.0,Skaterfashion
+2005-09-01,0,0.0,Skaterfashion
+2005-10-01,0,0.0,Skaterfashion
+2005-11-01,0,0.0,Skaterfashion
+2005-12-01,0,0.0,Skaterfashion
+2006-01-01,0,0.0,Skaterfashion
+2006-02-01,0,0.0,Skaterfashion
+2006-03-01,0,0.0,Skaterfashion
+2006-04-01,0,0.0,Skaterfashion
+2006-05-01,0,0.0,Skaterfashion
+2006-06-01,0,0.0,Skaterfashion
+2006-07-01,0,0.0,Skaterfashion
+2006-08-01,0,0.0,Skaterfashion
+2006-09-01,0,0.0,Skaterfashion
+2006-10-01,0,0.0,Skaterfashion
+2006-11-01,0,0.0,Skaterfashion
+2006-12-01,0,0.0,Skaterfashion
+2007-01-01,0,0.0,Skaterfashion
+2007-02-01,0,0.0,Skaterfashion
+2007-03-01,0,0.0,Skaterfashion
+2007-04-01,0,0.0,Skaterfashion
+2007-05-01,0,0.0,Skaterfashion
+2007-06-01,0,0.0,Skaterfashion
+2007-07-01,0,0.0,Skaterfashion
+2007-08-01,0,0.0,Skaterfashion
+2007-09-01,0,0.0,Skaterfashion
+2007-10-01,0,0.0,Skaterfashion
+2007-11-01,0,0.0,Skaterfashion
+2007-12-01,0,0.0,Skaterfashion
+2008-01-01,0,0.0,Skaterfashion
+2008-02-01,0,0.0,Skaterfashion
+2008-03-01,0,0.0,Skaterfashion
+2008-04-01,0,0.0,Skaterfashion
+2008-05-01,0,0.0,Skaterfashion
+2008-06-01,0,0.0,Skaterfashion
+2008-07-01,0,0.0,Skaterfashion
+2008-08-01,0,0.0,Skaterfashion
+2008-09-01,0,0.0,Skaterfashion
+2008-10-01,0,0.0,Skaterfashion
+2008-11-01,0,0.0,Skaterfashion
+2008-12-01,0,0.0,Skaterfashion
+2009-01-01,0,0.0,Skaterfashion
+2009-02-01,0,0.0,Skaterfashion
+2009-03-01,0,0.0,Skaterfashion
+2009-04-01,0,0.0,Skaterfashion
+2009-05-01,0,0.0,Skaterfashion
+2009-06-01,0,0.0,Skaterfashion
+2009-07-01,0,0.0,Skaterfashion
+2009-08-01,0,0.0,Skaterfashion
+2009-09-01,0,0.0,Skaterfashion
+2009-10-01,0,0.0,Skaterfashion
+2009-11-01,0,0.0,Skaterfashion
+2009-12-01,0,0.0,Skaterfashion
+2010-01-01,0,0.0,Skaterfashion
+2010-02-01,0,0.0,Skaterfashion
+2010-03-01,0,0.0,Skaterfashion
+2010-04-01,0,0.0,Skaterfashion
+2010-05-01,0,0.0,Skaterfashion
+2010-06-01,0,0.0,Skaterfashion
+2010-07-01,0,0.0,Skaterfashion
+2010-08-01,0,0.0,Skaterfashion
+2010-09-01,0,0.0,Skaterfashion
+2010-10-01,0,0.0,Skaterfashion
+2010-11-01,0,0.0,Skaterfashion
+2010-12-01,0,0.0,Skaterfashion
+2011-01-01,0,0.0,Skaterfashion
+2011-02-01,0,0.0,Skaterfashion
+2011-03-01,0,0.0,Skaterfashion
+2011-04-01,0,0.0,Skaterfashion
+2011-05-01,0,0.0,Skaterfashion
+2011-06-01,0,0.0,Skaterfashion
+2011-07-01,0,0.0,Skaterfashion
+2011-08-01,29,0.29,Skaterfashion
+2011-09-01,0,0.0,Skaterfashion
+2011-10-01,37,0.37,Skaterfashion
+2011-11-01,37,0.37,Skaterfashion
+2011-12-01,37,0.37,Skaterfashion
+2012-01-01,34,0.34,Skaterfashion
+2012-02-01,30,0.3,Skaterfashion
+2012-03-01,42,0.42,Skaterfashion
+2012-04-01,51,0.51,Skaterfashion
+2012-05-01,33,0.33,Skaterfashion
+2012-06-01,22,0.22,Skaterfashion
+2012-07-01,38,0.38,Skaterfashion
+2012-08-01,63,0.63,Skaterfashion
+2012-09-01,75,0.75,Skaterfashion
+2012-10-01,39,0.39,Skaterfashion
+2012-11-01,71,0.71,Skaterfashion
+2012-12-01,79,0.79,Skaterfashion
+2013-01-01,78,0.78,Skaterfashion
+2013-02-01,88,0.88,Skaterfashion
+2013-03-01,71,0.71,Skaterfashion
+2013-04-01,68,0.68,Skaterfashion
+2013-05-01,71,0.71,Skaterfashion
+2013-06-01,80,0.8,Skaterfashion
+2013-07-01,75,0.75,Skaterfashion
+2013-08-01,100,1.0,Skaterfashion
+2013-09-01,83,0.83,Skaterfashion
+2013-10-01,75,0.75,Skaterfashion
+2013-11-01,80,0.8,Skaterfashion
+2013-12-01,75,0.75,Skaterfashion
+2014-01-01,72,0.72,Skaterfashion
+2014-02-01,55,0.55,Skaterfashion
+2014-03-01,76,0.76,Skaterfashion
+2014-04-01,87,0.87,Skaterfashion
+2014-05-01,61,0.61,Skaterfashion
+2014-06-01,61,0.61,Skaterfashion
+2014-07-01,70,0.7,Skaterfashion
+2014-08-01,51,0.51,Skaterfashion
+2014-09-01,62,0.62,Skaterfashion
+2014-10-01,86,0.86,Skaterfashion
+2014-11-01,53,0.53,Skaterfashion
+2014-12-01,64,0.64,Skaterfashion
+2015-01-01,44,0.44,Skaterfashion
+2015-02-01,56,0.56,Skaterfashion
+2015-03-01,56,0.56,Skaterfashion
+2015-04-01,63,0.63,Skaterfashion
+2015-05-01,58,0.58,Skaterfashion
+2015-06-01,57,0.57,Skaterfashion
+2015-07-01,40,0.4,Skaterfashion
+2015-08-01,39,0.39,Skaterfashion
+2015-09-01,43,0.43,Skaterfashion
+2015-10-01,34,0.34,Skaterfashion
+2015-11-01,54,0.54,Skaterfashion
+2015-12-01,55,0.55,Skaterfashion
+2016-01-01,35,0.35,Skaterfashion
+2016-02-01,40,0.4,Skaterfashion
+2016-03-01,46,0.46,Skaterfashion
+2016-04-01,68,0.68,Skaterfashion
+2016-05-01,58,0.58,Skaterfashion
+2016-06-01,32,0.32,Skaterfashion
+2016-07-01,40,0.4,Skaterfashion
+2016-08-01,0,0.0,Skaterfashion
+2016-09-01,47,0.47,Skaterfashion
+2016-10-01,38,0.38,Skaterfashion
+2016-11-01,39,0.39,Skaterfashion
+2016-12-01,42,0.42,Skaterfashion
+2017-01-01,28,0.28,Skaterfashion
+2017-02-01,30,0.3,Skaterfashion
+2017-03-01,33,0.33,Skaterfashion
+2017-04-01,35,0.35,Skaterfashion
+2017-05-01,44,0.44,Skaterfashion
+2017-06-01,20,0.2,Skaterfashion
+2017-07-01,27,0.27,Skaterfashion
+2017-08-01,44,0.44,Skaterfashion
+2017-09-01,20,0.2,Skaterfashion
+2017-10-01,33,0.33,Skaterfashion
+2017-11-01,42,0.42,Skaterfashion
+2017-12-01,41,0.41,Skaterfashion
+2018-01-01,24,0.24,Skaterfashion
+2018-02-01,38,0.38,Skaterfashion
+2018-03-01,27,0.27,Skaterfashion
+2018-04-01,51,0.51,Skaterfashion
+2018-05-01,38,0.38,Skaterfashion
+2018-06-01,31,0.31,Skaterfashion
+2018-07-01,16,0.16,Skaterfashion
+2018-08-01,25,0.25,Skaterfashion
+2018-09-01,37,0.37,Skaterfashion
+2018-10-01,25,0.25,Skaterfashion
+2018-11-01,32,0.32,Skaterfashion
+2018-12-01,32,0.32,Skaterfashion
+2019-01-01,20,0.2,Skaterfashion
+2019-02-01,27,0.27,Skaterfashion
+2019-03-01,32,0.32,Skaterfashion
+2019-04-01,32,0.32,Skaterfashion
+2019-05-01,19,0.19,Skaterfashion
+2019-06-01,32,0.32,Skaterfashion
+2019-07-01,27,0.27,Skaterfashion
+2019-08-01,27,0.27,Skaterfashion
+2019-09-01,22,0.22,Skaterfashion
+2019-10-01,19,0.19,Skaterfashion
+2019-11-01,29,0.29,Skaterfashion
+2019-12-01,27,0.27,Skaterfashion
+2020-01-01,32,0.32,Skaterfashion
+2020-02-01,33,0.33,Skaterfashion
+2020-03-01,28,0.28,Skaterfashion
+2020-04-01,22,0.22,Skaterfashion
+2020-05-01,30,0.3,Skaterfashion
+2020-06-01,34,0.34,Skaterfashion
+2020-07-01,33,0.33,Skaterfashion
+2020-08-01,30,0.3,Skaterfashion
+2020-09-01,38,0.38,Skaterfashion
+2020-10-01,33,0.33,Skaterfashion
+2020-11-01,45,0.45,Skaterfashion
+2020-12-01,33,0.33,Skaterfashion
+2021-01-01,18,0.18,Skaterfashion
+2021-02-01,28,0.28,Skaterfashion
+2021-03-01,28,0.28,Skaterfashion
+2021-04-01,28,0.28,Skaterfashion
+2021-05-01,28,0.28,Skaterfashion
+2021-06-01,27,0.27,Skaterfashion
+2021-07-01,30,0.3,Skaterfashion
+2021-08-01,34,0.34,Skaterfashion
+2021-09-01,35,0.35,Skaterfashion
+2021-10-01,25,0.25,Skaterfashion
+2021-11-01,44,0.44,Skaterfashion
+2021-12-01,16,0.16,Skaterfashion
+2022-01-01,27,0.27,Skaterfashion
+2022-02-01,32,0.32,Skaterfashion
+2022-03-01,28,0.28,Skaterfashion
+2022-04-01,35,0.35,Skaterfashion
+2022-05-01,34,0.34,Skaterfashion
+2022-06-01,25,0.25,Skaterfashion
+2022-07-01,28,0.28,Skaterfashion
+2022-08-01,17,0.17,Skaterfashion
+2022-09-01,24,0.24,Skaterfashion
+2022-10-01,30,0.3,Skaterfashion
+2022-11-01,17,0.17,Skaterfashion
+2022-12-01,16,0.16,Skaterfashion
+2023-01-01,14,0.14,Skaterfashion
+2023-02-01,0,0.0,Skaterfashion
+2023-03-01,23,0.23,Skaterfashion
+2023-04-01,23,0.23,Skaterfashion
+2023-05-01,26,0.26,Skaterfashion
+2023-06-01,27,0.27,Skaterfashion
+2023-07-01,18,0.18,Skaterfashion
+2023-08-01,26,0.26,Skaterfashion
+2023-09-01,17,0.17,Skaterfashion
+2023-10-01,17,0.17,Skaterfashion
+2023-11-01,18,0.18,Skaterfashion
+2023-12-01,0,0.0,Skaterfashion
+2024-01-01,21,0.21,Skaterfashion
+2024-02-01,19,0.19,Skaterfashion
+2024-03-01,16,0.16,Skaterfashion
+2024-04-01,19,0.19,Skaterfashion
+2024-05-01,17,0.17,Skaterfashion
+2024-06-01,0,0.0,Skaterfashion
+2024-07-01,20,0.2,Skaterfashion
+2024-08-01,0,0.0,Skaterfashion
+2024-09-01,19,0.19,Skaterfashion
+2024-10-01,23,0.23,Skaterfashion
+2024-11-01,16,0.16,Skaterfashion
+2024-12-01,16,0.16,Skaterfashion
+2025-01-01,22,0.22,Skaterfashion
+2025-02-01,0,0.0,Skaterfashion
+2025-03-01,24,0.24,Skaterfashion
+2025-04-01,24,0.24,Skaterfashion
+2025-05-01,22,0.22,Skaterfashion
+2025-06-01,0,0.0,Skaterfashion
+2025-07-01,0,0.0,Skaterfashion
+2025-08-01,0,0.0,Skaterfashion
+2025-09-01,0,0.0,Skaterfashion
+2025-10-01,0,0.0,Skaterfashion
+2025-11-01,18,0.18,Skaterfashion
+2025-12-01,17,0.17,Skaterfashion
+2026-01-01,16,0.16,Skaterfashion
+2026-02-01,59,0.59,Skaterfashion
+2026-03-01,24,0.24,Skaterfashion
+2026-04-01,13,0.13,Skaterfashion
+2004-01-01,0,0.0,SKINNYJEANS
+2004-02-01,0,0.0,SKINNYJEANS
+2004-03-01,0,0.0,SKINNYJEANS
+2004-04-01,0,0.0,SKINNYJEANS
+2004-05-01,0,0.0,SKINNYJEANS
+2004-06-01,0,0.0,SKINNYJEANS
+2004-07-01,0,0.0,SKINNYJEANS
+2004-08-01,0,0.0,SKINNYJEANS
+2004-09-01,0,0.0,SKINNYJEANS
+2004-10-01,0,0.0,SKINNYJEANS
+2004-11-01,0,0.0,SKINNYJEANS
+2004-12-01,5,0.05,SKINNYJEANS
+2005-01-01,0,0.0,SKINNYJEANS
+2005-02-01,0,0.0,SKINNYJEANS
+2005-03-01,0,0.0,SKINNYJEANS
+2005-04-01,0,0.0,SKINNYJEANS
+2005-05-01,0,0.0,SKINNYJEANS
+2005-06-01,0,0.0,SKINNYJEANS
+2005-07-01,3,0.03,SKINNYJEANS
+2005-08-01,9,0.09,SKINNYJEANS
+2005-09-01,8,0.08,SKINNYJEANS
+2005-10-01,22,0.22,SKINNYJEANS
+2005-11-01,19,0.19,SKINNYJEANS
+2005-12-01,18,0.18,SKINNYJEANS
+2006-01-01,14,0.14,SKINNYJEANS
+2006-02-01,17,0.17,SKINNYJEANS
+2006-03-01,15,0.15,SKINNYJEANS
+2006-04-01,14,0.14,SKINNYJEANS
+2006-05-01,10,0.1,SKINNYJEANS
+2006-06-01,10,0.1,SKINNYJEANS
+2006-07-01,10,0.1,SKINNYJEANS
+2006-08-01,14,0.14,SKINNYJEANS
+2006-09-01,18,0.18,SKINNYJEANS
+2006-10-01,23,0.23,SKINNYJEANS
+2006-11-01,20,0.2,SKINNYJEANS
+2006-12-01,25,0.25,SKINNYJEANS
+2007-01-01,25,0.25,SKINNYJEANS
+2007-02-01,24,0.24,SKINNYJEANS
+2007-03-01,25,0.25,SKINNYJEANS
+2007-04-01,23,0.23,SKINNYJEANS
+2007-05-01,25,0.25,SKINNYJEANS
+2007-06-01,26,0.26,SKINNYJEANS
+2007-07-01,30,0.3,SKINNYJEANS
+2007-08-01,25,0.25,SKINNYJEANS
+2007-09-01,29,0.29,SKINNYJEANS
+2007-10-01,33,0.33,SKINNYJEANS
+2007-11-01,36,0.36,SKINNYJEANS
+2007-12-01,34,0.34,SKINNYJEANS
+2008-01-01,27,0.27,SKINNYJEANS
+2008-02-01,25,0.25,SKINNYJEANS
+2008-03-01,29,0.29,SKINNYJEANS
+2008-04-01,22,0.22,SKINNYJEANS
+2008-05-01,25,0.25,SKINNYJEANS
+2008-06-01,20,0.2,SKINNYJEANS
+2008-07-01,23,0.23,SKINNYJEANS
+2008-08-01,26,0.26,SKINNYJEANS
+2008-09-01,28,0.28,SKINNYJEANS
+2008-10-01,31,0.31,SKINNYJEANS
+2008-11-01,29,0.29,SKINNYJEANS
+2008-12-01,31,0.31,SKINNYJEANS
+2009-01-01,27,0.27,SKINNYJEANS
+2009-02-01,26,0.26,SKINNYJEANS
+2009-03-01,29,0.29,SKINNYJEANS
+2009-04-01,26,0.26,SKINNYJEANS
+2009-05-01,26,0.26,SKINNYJEANS
+2009-06-01,23,0.23,SKINNYJEANS
+2009-07-01,26,0.26,SKINNYJEANS
+2009-08-01,25,0.25,SKINNYJEANS
+2009-09-01,27,0.27,SKINNYJEANS
+2009-10-01,30,0.3,SKINNYJEANS
+2009-11-01,28,0.28,SKINNYJEANS
+2009-12-01,34,0.34,SKINNYJEANS
+2010-01-01,27,0.27,SKINNYJEANS
+2010-02-01,29,0.29,SKINNYJEANS
+2010-03-01,31,0.31,SKINNYJEANS
+2010-04-01,37,0.37,SKINNYJEANS
+2010-05-01,28,0.28,SKINNYJEANS
+2010-06-01,21,0.21,SKINNYJEANS
+2010-07-01,25,0.25,SKINNYJEANS
+2010-08-01,26,0.26,SKINNYJEANS
+2010-09-01,30,0.3,SKINNYJEANS
+2010-10-01,29,0.29,SKINNYJEANS
+2010-11-01,30,0.3,SKINNYJEANS
+2010-12-01,32,0.32,SKINNYJEANS
+2011-01-01,38,0.38,SKINNYJEANS
+2011-02-01,36,0.36,SKINNYJEANS
+2011-03-01,34,0.34,SKINNYJEANS
+2011-04-01,34,0.34,SKINNYJEANS
+2011-05-01,36,0.36,SKINNYJEANS
+2011-06-01,35,0.35,SKINNYJEANS
+2011-07-01,38,0.38,SKINNYJEANS
+2011-08-01,42,0.42,SKINNYJEANS
+2011-09-01,46,0.46,SKINNYJEANS
+2011-10-01,52,0.52,SKINNYJEANS
+2011-11-01,51,0.51,SKINNYJEANS
+2011-12-01,57,0.57,SKINNYJEANS
+2012-01-01,49,0.49,SKINNYJEANS
+2012-02-01,52,0.52,SKINNYJEANS
+2012-03-01,53,0.53,SKINNYJEANS
+2012-04-01,57,0.57,SKINNYJEANS
+2012-05-01,51,0.51,SKINNYJEANS
+2012-06-01,49,0.49,SKINNYJEANS
+2012-07-01,51,0.51,SKINNYJEANS
+2012-08-01,51,0.51,SKINNYJEANS
+2012-09-01,54,0.54,SKINNYJEANS
+2012-10-01,53,0.53,SKINNYJEANS
+2012-11-01,53,0.53,SKINNYJEANS
+2012-12-01,59,0.59,SKINNYJEANS
+2013-01-01,47,0.47,SKINNYJEANS
+2013-02-01,51,0.51,SKINNYJEANS
+2013-03-01,52,0.52,SKINNYJEANS
+2013-04-01,58,0.58,SKINNYJEANS
+2013-05-01,49,0.49,SKINNYJEANS
+2013-06-01,45,0.45,SKINNYJEANS
+2013-07-01,36,0.36,SKINNYJEANS
+2013-08-01,50,0.5,SKINNYJEANS
+2013-09-01,51,0.51,SKINNYJEANS
+2013-10-01,53,0.53,SKINNYJEANS
+2013-11-01,60,0.6,SKINNYJEANS
+2013-12-01,68,0.68,SKINNYJEANS
+2014-01-01,52,0.52,SKINNYJEANS
+2014-02-01,53,0.53,SKINNYJEANS
+2014-03-01,58,0.58,SKINNYJEANS
+2014-04-01,60,0.6,SKINNYJEANS
+2014-05-01,60,0.6,SKINNYJEANS
+2014-06-01,54,0.54,SKINNYJEANS
+2014-07-01,52,0.52,SKINNYJEANS
+2014-08-01,63,0.63,SKINNYJEANS
+2014-09-01,67,0.67,SKINNYJEANS
+2014-10-01,69,0.69,SKINNYJEANS
+2014-11-01,65,0.65,SKINNYJEANS
+2014-12-01,82,0.82,SKINNYJEANS
+2015-01-01,62,0.62,SKINNYJEANS
+2015-02-01,57,0.57,SKINNYJEANS
+2015-03-01,62,0.62,SKINNYJEANS
+2015-04-01,62,0.62,SKINNYJEANS
+2015-05-01,58,0.58,SKINNYJEANS
+2015-06-01,68,0.68,SKINNYJEANS
+2015-07-01,56,0.56,SKINNYJEANS
+2015-08-01,62,0.62,SKINNYJEANS
+2015-09-01,63,0.63,SKINNYJEANS
+2015-10-01,72,0.72,SKINNYJEANS
+2015-11-01,71,0.71,SKINNYJEANS
+2015-12-01,84,0.84,SKINNYJEANS
+2016-01-01,63,0.63,SKINNYJEANS
+2016-02-01,64,0.64,SKINNYJEANS
+2016-03-01,65,0.65,SKINNYJEANS
+2016-04-01,66,0.66,SKINNYJEANS
+2016-05-01,61,0.61,SKINNYJEANS
+2016-06-01,57,0.57,SKINNYJEANS
+2016-07-01,58,0.58,SKINNYJEANS
+2016-08-01,61,0.61,SKINNYJEANS
+2016-09-01,67,0.67,SKINNYJEANS
+2016-10-01,77,0.77,SKINNYJEANS
+2016-11-01,81,0.81,SKINNYJEANS
+2016-12-01,100,1.0,SKINNYJEANS
+2017-01-01,71,0.71,SKINNYJEANS
+2017-02-01,68,0.68,SKINNYJEANS
+2017-03-01,77,0.77,SKINNYJEANS
+2017-04-01,74,0.74,SKINNYJEANS
+2017-05-01,68,0.68,SKINNYJEANS
+2017-06-01,59,0.59,SKINNYJEANS
+2017-07-01,65,0.65,SKINNYJEANS
+2017-08-01,77,0.77,SKINNYJEANS
+2017-09-01,81,0.81,SKINNYJEANS
+2017-10-01,85,0.85,SKINNYJEANS
+2017-11-01,92,0.92,SKINNYJEANS
+2017-12-01,97,0.97,SKINNYJEANS
+2018-01-01,70,0.7,SKINNYJEANS
+2018-02-01,65,0.65,SKINNYJEANS
+2018-03-01,65,0.65,SKINNYJEANS
+2018-04-01,66,0.66,SKINNYJEANS
+2018-05-01,53,0.53,SKINNYJEANS
+2018-06-01,51,0.51,SKINNYJEANS
+2018-07-01,41,0.41,SKINNYJEANS
+2018-08-01,49,0.49,SKINNYJEANS
+2018-09-01,68,0.68,SKINNYJEANS
+2018-10-01,64,0.64,SKINNYJEANS
+2018-11-01,76,0.76,SKINNYJEANS
+2018-12-01,91,0.91,SKINNYJEANS
+2019-01-01,63,0.63,SKINNYJEANS
+2019-02-01,60,0.6,SKINNYJEANS
+2019-03-01,70,0.7,SKINNYJEANS
+2019-04-01,63,0.63,SKINNYJEANS
+2019-05-01,54,0.54,SKINNYJEANS
+2019-06-01,46,0.46,SKINNYJEANS
+2019-07-01,44,0.44,SKINNYJEANS
+2019-08-01,48,0.48,SKINNYJEANS
+2019-09-01,55,0.55,SKINNYJEANS
+2019-10-01,58,0.58,SKINNYJEANS
+2019-11-01,68,0.68,SKINNYJEANS
+2019-12-01,79,0.79,SKINNYJEANS
+2020-01-01,57,0.57,SKINNYJEANS
+2020-02-01,57,0.57,SKINNYJEANS
+2020-03-01,43,0.43,SKINNYJEANS
+2020-04-01,39,0.39,SKINNYJEANS
+2020-05-01,48,0.48,SKINNYJEANS
+2020-06-01,46,0.46,SKINNYJEANS
+2020-07-01,65,0.65,SKINNYJEANS
+2020-08-01,56,0.56,SKINNYJEANS
+2020-09-01,57,0.57,SKINNYJEANS
+2020-10-01,60,0.6,SKINNYJEANS
+2020-11-01,62,0.62,SKINNYJEANS
+2020-12-01,69,0.69,SKINNYJEANS
+2021-01-01,54,0.54,SKINNYJEANS
+2021-02-01,58,0.58,SKINNYJEANS
+2021-03-01,62,0.62,SKINNYJEANS
+2021-04-01,64,0.64,SKINNYJEANS
+2021-05-01,60,0.6,SKINNYJEANS
+2021-06-01,40,0.4,SKINNYJEANS
+2021-07-01,42,0.42,SKINNYJEANS
+2021-08-01,47,0.47,SKINNYJEANS
+2021-09-01,53,0.53,SKINNYJEANS
+2021-10-01,55,0.55,SKINNYJEANS
+2021-11-01,59,0.59,SKINNYJEANS
+2021-12-01,62,0.62,SKINNYJEANS
+2022-01-01,50,0.5,SKINNYJEANS
+2022-02-01,55,0.55,SKINNYJEANS
+2022-03-01,47,0.47,SKINNYJEANS
+2022-04-01,45,0.45,SKINNYJEANS
+2022-05-01,41,0.41,SKINNYJEANS
+2022-06-01,37,0.37,SKINNYJEANS
+2022-07-01,30,0.3,SKINNYJEANS
+2022-08-01,34,0.34,SKINNYJEANS
+2022-09-01,41,0.41,SKINNYJEANS
+2022-10-01,44,0.44,SKINNYJEANS
+2022-11-01,46,0.46,SKINNYJEANS
+2022-12-01,46,0.46,SKINNYJEANS
+2023-01-01,41,0.41,SKINNYJEANS
+2023-02-01,42,0.42,SKINNYJEANS
+2023-03-01,41,0.41,SKINNYJEANS
+2023-04-01,44,0.44,SKINNYJEANS
+2023-05-01,37,0.37,SKINNYJEANS
+2023-06-01,25,0.25,SKINNYJEANS
+2023-07-01,29,0.29,SKINNYJEANS
+2023-08-01,32,0.32,SKINNYJEANS
+2023-09-01,32,0.32,SKINNYJEANS
+2023-10-01,37,0.37,SKINNYJEANS
+2023-11-01,42,0.42,SKINNYJEANS
+2023-12-01,45,0.45,SKINNYJEANS
+2024-01-01,39,0.39,SKINNYJEANS
+2024-02-01,38,0.38,SKINNYJEANS
+2024-03-01,39,0.39,SKINNYJEANS
+2024-04-01,38,0.38,SKINNYJEANS
+2024-05-01,29,0.29,SKINNYJEANS
+2024-06-01,28,0.28,SKINNYJEANS
+2024-07-01,24,0.24,SKINNYJEANS
+2024-08-01,26,0.26,SKINNYJEANS
+2024-09-01,37,0.37,SKINNYJEANS
+2024-10-01,36,0.36,SKINNYJEANS
+2024-11-01,39,0.39,SKINNYJEANS
+2024-12-01,40,0.4,SKINNYJEANS
+2025-01-01,36,0.36,SKINNYJEANS
+2025-02-01,37,0.37,SKINNYJEANS
+2025-03-01,36,0.36,SKINNYJEANS
+2025-04-01,31,0.31,SKINNYJEANS
+2025-05-01,24,0.24,SKINNYJEANS
+2025-06-01,21,0.21,SKINNYJEANS
+2025-07-01,22,0.22,SKINNYJEANS
+2025-08-01,28,0.28,SKINNYJEANS
+2025-09-01,34,0.34,SKINNYJEANS
+2025-10-01,37,0.37,SKINNYJEANS
+2025-11-01,38,0.38,SKINNYJEANS
+2025-12-01,40,0.4,SKINNYJEANS
+2026-01-01,35,0.35,SKINNYJEANS
+2026-02-01,55,0.55,SKINNYJEANS
+2026-03-01,41,0.41,SKINNYJEANS
+2026-04-01,35,0.35,SKINNYJEANS
+2004-01-01,100,1.0,streetwear
+2004-02-01,70,0.7,streetwear
+2004-03-01,0,0.0,streetwear
+2004-04-01,55,0.55,streetwear
+2004-05-01,76,0.76,streetwear
+2004-06-01,53,0.53,streetwear
+2004-07-01,72,0.72,streetwear
+2004-08-01,84,0.84,streetwear
+2004-09-01,94,0.94,streetwear
+2004-10-01,87,0.87,streetwear
+2004-11-01,82,0.82,streetwear
+2004-12-01,86,0.86,streetwear
+2005-01-01,67,0.67,streetwear
+2005-02-01,59,0.59,streetwear
+2005-03-01,95,0.95,streetwear
+2005-04-01,71,0.71,streetwear
+2005-05-01,78,0.78,streetwear
+2005-06-01,60,0.6,streetwear
+2005-07-01,76,0.76,streetwear
+2005-08-01,53,0.53,streetwear
+2005-09-01,61,0.61,streetwear
+2005-10-01,65,0.65,streetwear
+2005-11-01,71,0.71,streetwear
+2005-12-01,70,0.7,streetwear
+2006-01-01,60,0.6,streetwear
+2006-02-01,65,0.65,streetwear
+2006-03-01,64,0.64,streetwear
+2006-04-01,65,0.65,streetwear
+2006-05-01,67,0.67,streetwear
+2006-06-01,55,0.55,streetwear
+2006-07-01,57,0.57,streetwear
+2006-08-01,61,0.61,streetwear
+2006-09-01,45,0.45,streetwear
+2006-10-01,56,0.56,streetwear
+2006-11-01,67,0.67,streetwear
+2006-12-01,52,0.52,streetwear
+2007-01-01,64,0.64,streetwear
+2007-02-01,77,0.77,streetwear
+2007-03-01,60,0.6,streetwear
+2007-04-01,58,0.58,streetwear
+2007-05-01,77,0.77,streetwear
+2007-06-01,54,0.54,streetwear
+2007-07-01,54,0.54,streetwear
+2007-08-01,54,0.54,streetwear
+2007-09-01,60,0.6,streetwear
+2007-10-01,54,0.54,streetwear
+2007-11-01,53,0.53,streetwear
+2007-12-01,59,0.59,streetwear
+2008-01-01,60,0.6,streetwear
+2008-02-01,69,0.69,streetwear
+2008-03-01,59,0.59,streetwear
+2008-04-01,62,0.62,streetwear
+2008-05-01,46,0.46,streetwear
+2008-06-01,52,0.52,streetwear
+2008-07-01,58,0.58,streetwear
+2008-08-01,48,0.48,streetwear
+2008-09-01,61,0.61,streetwear
+2008-10-01,49,0.49,streetwear
+2008-11-01,49,0.49,streetwear
+2008-12-01,47,0.47,streetwear
+2009-01-01,51,0.51,streetwear
+2009-02-01,54,0.54,streetwear
+2009-03-01,55,0.55,streetwear
+2009-04-01,49,0.49,streetwear
+2009-05-01,44,0.44,streetwear
+2009-06-01,54,0.54,streetwear
+2009-07-01,48,0.48,streetwear
+2009-08-01,47,0.47,streetwear
+2009-09-01,40,0.4,streetwear
+2009-10-01,43,0.43,streetwear
+2009-11-01,41,0.41,streetwear
+2009-12-01,43,0.43,streetwear
+2010-01-01,43,0.43,streetwear
+2010-02-01,48,0.48,streetwear
+2010-03-01,46,0.46,streetwear
+2010-04-01,44,0.44,streetwear
+2010-05-01,38,0.38,streetwear
+2010-06-01,48,0.48,streetwear
+2010-07-01,36,0.36,streetwear
+2010-08-01,38,0.38,streetwear
+2010-09-01,34,0.34,streetwear
+2010-10-01,39,0.39,streetwear
+2010-11-01,40,0.4,streetwear
+2010-12-01,34,0.34,streetwear
+2011-01-01,48,0.48,streetwear
+2011-02-01,45,0.45,streetwear
+2011-03-01,49,0.49,streetwear
+2011-04-01,52,0.52,streetwear
+2011-05-01,55,0.55,streetwear
+2011-06-01,47,0.47,streetwear
+2011-07-01,43,0.43,streetwear
+2011-08-01,50,0.5,streetwear
+2011-09-01,47,0.47,streetwear
+2011-10-01,45,0.45,streetwear
+2011-11-01,46,0.46,streetwear
+2011-12-01,43,0.43,streetwear
+2012-01-01,47,0.47,streetwear
+2012-02-01,44,0.44,streetwear
+2012-03-01,45,0.45,streetwear
+2012-04-01,51,0.51,streetwear
+2012-05-01,50,0.5,streetwear
+2012-06-01,49,0.49,streetwear
+2012-07-01,44,0.44,streetwear
+2012-08-01,53,0.53,streetwear
+2012-09-01,54,0.54,streetwear
+2012-10-01,48,0.48,streetwear
+2012-11-01,43,0.43,streetwear
+2012-12-01,47,0.47,streetwear
+2013-01-01,47,0.47,streetwear
+2013-02-01,48,0.48,streetwear
+2013-03-01,52,0.52,streetwear
+2013-04-01,44,0.44,streetwear
+2013-05-01,45,0.45,streetwear
+2013-06-01,51,0.51,streetwear
+2013-07-01,48,0.48,streetwear
+2013-08-01,55,0.55,streetwear
+2013-09-01,44,0.44,streetwear
+2013-10-01,48,0.48,streetwear
+2013-11-01,50,0.5,streetwear
+2013-12-01,51,0.51,streetwear
+2014-01-01,50,0.5,streetwear
+2014-02-01,46,0.46,streetwear
+2014-03-01,46,0.46,streetwear
+2014-04-01,48,0.48,streetwear
+2014-05-01,45,0.45,streetwear
+2014-06-01,53,0.53,streetwear
+2014-07-01,48,0.48,streetwear
+2014-08-01,51,0.51,streetwear
+2014-09-01,49,0.49,streetwear
+2014-10-01,46,0.46,streetwear
+2014-11-01,48,0.48,streetwear
+2014-12-01,49,0.49,streetwear
+2015-01-01,47,0.47,streetwear
+2015-02-01,51,0.51,streetwear
+2015-03-01,45,0.45,streetwear
+2015-04-01,47,0.47,streetwear
+2015-05-01,50,0.5,streetwear
+2015-06-01,47,0.47,streetwear
+2015-07-01,53,0.53,streetwear
+2015-08-01,51,0.51,streetwear
+2015-09-01,49,0.49,streetwear
+2015-10-01,47,0.47,streetwear
+2015-11-01,50,0.5,streetwear
+2015-12-01,48,0.48,streetwear
+2016-01-01,50,0.5,streetwear
+2016-02-01,53,0.53,streetwear
+2016-03-01,48,0.48,streetwear
+2016-04-01,52,0.52,streetwear
+2016-05-01,50,0.5,streetwear
+2016-06-01,51,0.51,streetwear
+2016-07-01,46,0.46,streetwear
+2016-08-01,41,0.41,streetwear
+2016-09-01,51,0.51,streetwear
+2016-10-01,52,0.52,streetwear
+2016-11-01,49,0.49,streetwear
+2016-12-01,47,0.47,streetwear
+2017-01-01,47,0.47,streetwear
+2017-02-01,48,0.48,streetwear
+2017-03-01,50,0.5,streetwear
+2017-04-01,53,0.53,streetwear
+2017-05-01,48,0.48,streetwear
+2017-06-01,50,0.5,streetwear
+2017-07-01,54,0.54,streetwear
+2017-08-01,53,0.53,streetwear
+2017-09-01,52,0.52,streetwear
+2017-10-01,54,0.54,streetwear
+2017-11-01,57,0.57,streetwear
+2017-12-01,53,0.53,streetwear
+2018-01-01,51,0.51,streetwear
+2018-02-01,52,0.52,streetwear
+2018-03-01,46,0.46,streetwear
+2018-04-01,45,0.45,streetwear
+2018-05-01,50,0.5,streetwear
+2018-06-01,46,0.46,streetwear
+2018-07-01,46,0.46,streetwear
+2018-08-01,51,0.51,streetwear
+2018-09-01,45,0.45,streetwear
+2018-10-01,49,0.49,streetwear
+2018-11-01,45,0.45,streetwear
+2018-12-01,47,0.47,streetwear
+2019-01-01,42,0.42,streetwear
+2019-02-01,41,0.41,streetwear
+2019-03-01,40,0.4,streetwear
+2019-04-01,40,0.4,streetwear
+2019-05-01,40,0.4,streetwear
+2019-06-01,41,0.41,streetwear
+2019-07-01,40,0.4,streetwear
+2019-08-01,43,0.43,streetwear
+2019-09-01,40,0.4,streetwear
+2019-10-01,36,0.36,streetwear
+2019-11-01,40,0.4,streetwear
+2019-12-01,39,0.39,streetwear
+2020-01-01,38,0.38,streetwear
+2020-02-01,39,0.39,streetwear
+2020-03-01,26,0.26,streetwear
+2020-04-01,24,0.24,streetwear
+2020-05-01,29,0.29,streetwear
+2020-06-01,35,0.35,streetwear
+2020-07-01,48,0.48,streetwear
+2020-08-01,43,0.43,streetwear
+2020-09-01,39,0.39,streetwear
+2020-10-01,40,0.4,streetwear
+2020-11-01,35,0.35,streetwear
+2020-12-01,35,0.35,streetwear
+2021-01-01,34,0.34,streetwear
+2021-02-01,31,0.31,streetwear
+2021-03-01,33,0.33,streetwear
+2021-04-01,36,0.36,streetwear
+2021-05-01,39,0.39,streetwear
+2021-06-01,41,0.41,streetwear
+2021-07-01,42,0.42,streetwear
+2021-08-01,43,0.43,streetwear
+2021-09-01,45,0.45,streetwear
+2021-10-01,46,0.46,streetwear
+2021-11-01,43,0.43,streetwear
+2021-12-01,43,0.43,streetwear
+2022-01-01,44,0.44,streetwear
+2022-02-01,51,0.51,streetwear
+2022-03-01,47,0.47,streetwear
+2022-04-01,47,0.47,streetwear
+2022-05-01,49,0.49,streetwear
+2022-06-01,48,0.48,streetwear
+2022-07-01,41,0.41,streetwear
+2022-08-01,49,0.49,streetwear
+2022-09-01,48,0.48,streetwear
+2022-10-01,48,0.48,streetwear
+2022-11-01,46,0.46,streetwear
+2022-12-01,44,0.44,streetwear
+2023-01-01,42,0.42,streetwear
+2023-02-01,44,0.44,streetwear
+2023-03-01,49,0.49,streetwear
+2023-04-01,45,0.45,streetwear
+2023-05-01,46,0.46,streetwear
+2023-06-01,43,0.43,streetwear
+2023-07-01,48,0.48,streetwear
+2023-08-01,47,0.47,streetwear
+2023-09-01,49,0.49,streetwear
+2023-10-01,50,0.5,streetwear
+2023-11-01,52,0.52,streetwear
+2023-12-01,48,0.48,streetwear
+2024-01-01,47,0.47,streetwear
+2024-02-01,49,0.49,streetwear
+2024-03-01,46,0.46,streetwear
+2024-04-01,47,0.47,streetwear
+2024-05-01,47,0.47,streetwear
+2024-06-01,48,0.48,streetwear
+2024-07-01,50,0.5,streetwear
+2024-08-01,60,0.6,streetwear
+2024-09-01,65,0.65,streetwear
+2024-10-01,55,0.55,streetwear
+2024-11-01,53,0.53,streetwear
+2024-12-01,57,0.57,streetwear
+2025-01-01,49,0.49,streetwear
+2025-02-01,50,0.5,streetwear
+2025-03-01,49,0.49,streetwear
+2025-04-01,45,0.45,streetwear
+2025-05-01,46,0.46,streetwear
+2025-06-01,51,0.51,streetwear
+2025-07-01,51,0.51,streetwear
+2025-08-01,53,0.53,streetwear
+2025-09-01,53,0.53,streetwear
+2025-10-01,53,0.53,streetwear
+2025-11-01,63,0.63,streetwear
+2025-12-01,66,0.66,streetwear
+2026-01-01,57,0.57,streetwear
+2026-02-01,99,0.99,streetwear
+2026-03-01,57,0.57,streetwear
+2026-04-01,51,0.51,streetwear
+2004-01-01,0,0.0,Tumblr Grunge
+2004-02-01,0,0.0,Tumblr Grunge
+2004-03-01,0,0.0,Tumblr Grunge
+2004-04-01,0,0.0,Tumblr Grunge
+2004-05-01,0,0.0,Tumblr Grunge
+2004-06-01,0,0.0,Tumblr Grunge
+2004-07-01,0,0.0,Tumblr Grunge
+2004-08-01,0,0.0,Tumblr Grunge
+2004-09-01,0,0.0,Tumblr Grunge
+2004-10-01,0,0.0,Tumblr Grunge
+2004-11-01,0,0.0,Tumblr Grunge
+2004-12-01,0,0.0,Tumblr Grunge
+2005-01-01,0,0.0,Tumblr Grunge
+2005-02-01,0,0.0,Tumblr Grunge
+2005-03-01,0,0.0,Tumblr Grunge
+2005-04-01,0,0.0,Tumblr Grunge
+2005-05-01,0,0.0,Tumblr Grunge
+2005-06-01,0,0.0,Tumblr Grunge
+2005-07-01,0,0.0,Tumblr Grunge
+2005-08-01,0,0.0,Tumblr Grunge
+2005-09-01,0,0.0,Tumblr Grunge
+2005-10-01,0,0.0,Tumblr Grunge
+2005-11-01,0,0.0,Tumblr Grunge
+2005-12-01,0,0.0,Tumblr Grunge
+2006-01-01,0,0.0,Tumblr Grunge
+2006-02-01,0,0.0,Tumblr Grunge
+2006-03-01,0,0.0,Tumblr Grunge
+2006-04-01,0,0.0,Tumblr Grunge
+2006-05-01,0,0.0,Tumblr Grunge
+2006-06-01,0,0.0,Tumblr Grunge
+2006-07-01,0,0.0,Tumblr Grunge
+2006-08-01,0,0.0,Tumblr Grunge
+2006-09-01,0,0.0,Tumblr Grunge
+2006-10-01,0,0.0,Tumblr Grunge
+2006-11-01,0,0.0,Tumblr Grunge
+2006-12-01,0,0.0,Tumblr Grunge
+2007-01-01,0,0.0,Tumblr Grunge
+2007-02-01,0,0.0,Tumblr Grunge
+2007-03-01,0,0.0,Tumblr Grunge
+2007-04-01,0,0.0,Tumblr Grunge
+2007-05-01,0,0.0,Tumblr Grunge
+2007-06-01,0,0.0,Tumblr Grunge
+2007-07-01,0,0.0,Tumblr Grunge
+2007-08-01,0,0.0,Tumblr Grunge
+2007-09-01,0,0.0,Tumblr Grunge
+2007-10-01,0,0.0,Tumblr Grunge
+2007-11-01,0,0.0,Tumblr Grunge
+2007-12-01,0,0.0,Tumblr Grunge
+2008-01-01,0,0.0,Tumblr Grunge
+2008-02-01,0,0.0,Tumblr Grunge
+2008-03-01,0,0.0,Tumblr Grunge
+2008-04-01,0,0.0,Tumblr Grunge
+2008-05-01,0,0.0,Tumblr Grunge
+2008-06-01,0,0.0,Tumblr Grunge
+2008-07-01,0,0.0,Tumblr Grunge
+2008-08-01,0,0.0,Tumblr Grunge
+2008-09-01,0,0.0,Tumblr Grunge
+2008-10-01,0,0.0,Tumblr Grunge
+2008-11-01,0,0.0,Tumblr Grunge
+2008-12-01,0,0.0,Tumblr Grunge
+2009-01-01,0,0.0,Tumblr Grunge
+2009-02-01,0,0.0,Tumblr Grunge
+2009-03-01,0,0.0,Tumblr Grunge
+2009-04-01,0,0.0,Tumblr Grunge
+2009-05-01,0,0.0,Tumblr Grunge
+2009-06-01,0,0.0,Tumblr Grunge
+2009-07-01,0,0.0,Tumblr Grunge
+2009-08-01,0,0.0,Tumblr Grunge
+2009-09-01,0,0.0,Tumblr Grunge
+2009-10-01,0,0.0,Tumblr Grunge
+2009-11-01,0,0.0,Tumblr Grunge
+2009-12-01,0,0.0,Tumblr Grunge
+2010-01-01,0,0.0,Tumblr Grunge
+2010-02-01,0,0.0,Tumblr Grunge
+2010-03-01,0,0.0,Tumblr Grunge
+2010-04-01,0,0.0,Tumblr Grunge
+2010-05-01,0,0.0,Tumblr Grunge
+2010-06-01,0,0.0,Tumblr Grunge
+2010-07-01,0,0.0,Tumblr Grunge
+2010-08-01,0,0.0,Tumblr Grunge
+2010-09-01,0,0.0,Tumblr Grunge
+2010-10-01,0,0.0,Tumblr Grunge
+2010-11-01,0,0.0,Tumblr Grunge
+2010-12-01,0,0.0,Tumblr Grunge
+2011-01-01,0,0.0,Tumblr Grunge
+2011-02-01,0,0.0,Tumblr Grunge
+2011-03-01,0,0.0,Tumblr Grunge
+2011-04-01,0,0.0,Tumblr Grunge
+2011-05-01,0,0.0,Tumblr Grunge
+2011-06-01,0,0.0,Tumblr Grunge
+2011-07-01,0,0.0,Tumblr Grunge
+2011-08-01,0,0.0,Tumblr Grunge
+2011-09-01,0,0.0,Tumblr Grunge
+2011-10-01,0,0.0,Tumblr Grunge
+2011-11-01,0,0.0,Tumblr Grunge
+2011-12-01,0,0.0,Tumblr Grunge
+2012-01-01,8,0.08,Tumblr Grunge
+2012-02-01,11,0.11,Tumblr Grunge
+2012-03-01,11,0.11,Tumblr Grunge
+2012-04-01,23,0.23,Tumblr Grunge
+2012-05-01,28,0.28,Tumblr Grunge
+2012-06-01,28,0.28,Tumblr Grunge
+2012-07-01,31,0.31,Tumblr Grunge
+2012-08-01,33,0.33,Tumblr Grunge
+2012-09-01,30,0.3,Tumblr Grunge
+2012-10-01,26,0.26,Tumblr Grunge
+2012-11-01,27,0.27,Tumblr Grunge
+2012-12-01,28,0.28,Tumblr Grunge
+2013-01-01,27,0.27,Tumblr Grunge
+2013-02-01,34,0.34,Tumblr Grunge
+2013-03-01,25,0.25,Tumblr Grunge
+2013-04-01,26,0.26,Tumblr Grunge
+2013-05-01,28,0.28,Tumblr Grunge
+2013-06-01,26,0.26,Tumblr Grunge
+2013-07-01,26,0.26,Tumblr Grunge
+2013-08-01,28,0.28,Tumblr Grunge
+2013-09-01,31,0.31,Tumblr Grunge
+2013-10-01,32,0.32,Tumblr Grunge
+2013-11-01,36,0.36,Tumblr Grunge
+2013-12-01,38,0.38,Tumblr Grunge
+2014-01-01,36,0.36,Tumblr Grunge
+2014-02-01,39,0.39,Tumblr Grunge
+2014-03-01,38,0.38,Tumblr Grunge
+2014-04-01,51,0.51,Tumblr Grunge
+2014-05-01,53,0.53,Tumblr Grunge
+2014-06-01,49,0.49,Tumblr Grunge
+2014-07-01,55,0.55,Tumblr Grunge
+2014-08-01,49,0.49,Tumblr Grunge
+2014-09-01,64,0.64,Tumblr Grunge
+2014-10-01,74,0.74,Tumblr Grunge
+2014-11-01,73,0.73,Tumblr Grunge
+2014-12-01,79,0.79,Tumblr Grunge
+2015-01-01,94,0.94,Tumblr Grunge
+2015-02-01,95,0.95,Tumblr Grunge
+2015-03-01,89,0.89,Tumblr Grunge
+2015-04-01,86,0.86,Tumblr Grunge
+2015-05-01,83,0.83,Tumblr Grunge
+2015-06-01,90,0.9,Tumblr Grunge
+2015-07-01,89,0.89,Tumblr Grunge
+2015-08-01,87,0.87,Tumblr Grunge
+2015-09-01,77,0.77,Tumblr Grunge
+2015-10-01,75,0.75,Tumblr Grunge
+2015-11-01,88,0.88,Tumblr Grunge
+2015-12-01,93,0.93,Tumblr Grunge
+2016-01-01,100,1.0,Tumblr Grunge
+2016-02-01,95,0.95,Tumblr Grunge
+2016-03-01,87,0.87,Tumblr Grunge
+2016-04-01,83,0.83,Tumblr Grunge
+2016-05-01,82,0.82,Tumblr Grunge
+2016-06-01,74,0.74,Tumblr Grunge
+2016-07-01,75,0.75,Tumblr Grunge
+2016-08-01,69,0.69,Tumblr Grunge
+2016-09-01,64,0.64,Tumblr Grunge
+2016-10-01,60,0.6,Tumblr Grunge
+2016-11-01,51,0.51,Tumblr Grunge
+2016-12-01,56,0.56,Tumblr Grunge
+2017-01-01,61,0.61,Tumblr Grunge
+2017-02-01,51,0.51,Tumblr Grunge
+2017-03-01,41,0.41,Tumblr Grunge
+2017-04-01,44,0.44,Tumblr Grunge
+2017-05-01,38,0.38,Tumblr Grunge
+2017-06-01,35,0.35,Tumblr Grunge
+2017-07-01,33,0.33,Tumblr Grunge
+2017-08-01,39,0.39,Tumblr Grunge
+2017-09-01,30,0.3,Tumblr Grunge
+2017-10-01,34,0.34,Tumblr Grunge
+2017-11-01,20,0.2,Tumblr Grunge
+2017-12-01,21,0.21,Tumblr Grunge
+2018-01-01,21,0.21,Tumblr Grunge
+2018-02-01,28,0.28,Tumblr Grunge
+2018-03-01,20,0.2,Tumblr Grunge
+2018-04-01,17,0.17,Tumblr Grunge
+2018-05-01,15,0.15,Tumblr Grunge
+2018-06-01,15,0.15,Tumblr Grunge
+2018-07-01,16,0.16,Tumblr Grunge
+2018-08-01,16,0.16,Tumblr Grunge
+2018-09-01,13,0.13,Tumblr Grunge
+2018-10-01,7,0.07,Tumblr Grunge
+2018-11-01,11,0.11,Tumblr Grunge
+2018-12-01,12,0.12,Tumblr Grunge
+2019-01-01,14,0.14,Tumblr Grunge
+2019-02-01,9,0.09,Tumblr Grunge
+2019-03-01,9,0.09,Tumblr Grunge
+2019-04-01,7,0.07,Tumblr Grunge
+2019-05-01,7,0.07,Tumblr Grunge
+2019-06-01,8,0.08,Tumblr Grunge
+2019-07-01,6,0.06,Tumblr Grunge
+2019-08-01,5,0.05,Tumblr Grunge
+2019-09-01,6,0.06,Tumblr Grunge
+2019-10-01,5,0.05,Tumblr Grunge
+2019-11-01,5,0.05,Tumblr Grunge
+2019-12-01,6,0.06,Tumblr Grunge
+2020-01-01,4,0.04,Tumblr Grunge
+2020-02-01,4,0.04,Tumblr Grunge
+2020-03-01,5,0.05,Tumblr Grunge
+2020-04-01,6,0.06,Tumblr Grunge
+2020-05-01,4,0.04,Tumblr Grunge
+2020-06-01,8,0.08,Tumblr Grunge
+2020-07-01,5,0.05,Tumblr Grunge
+2020-08-01,4,0.04,Tumblr Grunge
+2020-09-01,5,0.05,Tumblr Grunge
+2020-10-01,3,0.03,Tumblr Grunge
+2020-11-01,4,0.04,Tumblr Grunge
+2020-12-01,4,0.04,Tumblr Grunge
+2021-01-01,4,0.04,Tumblr Grunge
+2021-02-01,0,0.0,Tumblr Grunge
+2021-03-01,0,0.0,Tumblr Grunge
+2021-04-01,0,0.0,Tumblr Grunge
+2021-05-01,0,0.0,Tumblr Grunge
+2021-06-01,0,0.0,Tumblr Grunge
+2021-07-01,0,0.0,Tumblr Grunge
+2021-08-01,0,0.0,Tumblr Grunge
+2021-09-01,0,0.0,Tumblr Grunge
+2021-10-01,0,0.0,Tumblr Grunge
+2021-11-01,0,0.0,Tumblr Grunge
+2021-12-01,8,0.08,Tumblr Grunge
+2022-01-01,0,0.0,Tumblr Grunge
+2022-02-01,0,0.0,Tumblr Grunge
+2022-03-01,0,0.0,Tumblr Grunge
+2022-04-01,0,0.0,Tumblr Grunge
+2022-05-01,0,0.0,Tumblr Grunge
+2022-06-01,0,0.0,Tumblr Grunge
+2022-07-01,0,0.0,Tumblr Grunge
+2022-08-01,0,0.0,Tumblr Grunge
+2022-09-01,0,0.0,Tumblr Grunge
+2022-10-01,0,0.0,Tumblr Grunge
+2022-11-01,4,0.04,Tumblr Grunge
+2022-12-01,0,0.0,Tumblr Grunge
+2023-01-01,3,0.03,Tumblr Grunge
+2023-02-01,0,0.0,Tumblr Grunge
+2023-03-01,3,0.03,Tumblr Grunge
+2023-04-01,0,0.0,Tumblr Grunge
+2023-05-01,0,0.0,Tumblr Grunge
+2023-06-01,0,0.0,Tumblr Grunge
+2023-07-01,0,0.0,Tumblr Grunge
+2023-08-01,0,0.0,Tumblr Grunge
+2023-09-01,0,0.0,Tumblr Grunge
+2023-10-01,0,0.0,Tumblr Grunge
+2023-11-01,0,0.0,Tumblr Grunge
+2023-12-01,0,0.0,Tumblr Grunge
+2024-01-01,0,0.0,Tumblr Grunge
+2024-02-01,0,0.0,Tumblr Grunge
+2024-03-01,0,0.0,Tumblr Grunge
+2024-04-01,0,0.0,Tumblr Grunge
+2024-05-01,0,0.0,Tumblr Grunge
+2024-06-01,0,0.0,Tumblr Grunge
+2024-07-01,0,0.0,Tumblr Grunge
+2024-08-01,0,0.0,Tumblr Grunge
+2024-09-01,0,0.0,Tumblr Grunge
+2024-10-01,0,0.0,Tumblr Grunge
+2024-11-01,0,0.0,Tumblr Grunge
+2024-12-01,0,0.0,Tumblr Grunge
+2025-01-01,0,0.0,Tumblr Grunge
+2025-02-01,0,0.0,Tumblr Grunge
+2025-03-01,0,0.0,Tumblr Grunge
+2025-04-01,0,0.0,Tumblr Grunge
+2025-05-01,0,0.0,Tumblr Grunge
+2025-06-01,0,0.0,Tumblr Grunge
+2025-07-01,0,0.0,Tumblr Grunge
+2025-08-01,0,0.0,Tumblr Grunge
+2025-09-01,0,0.0,Tumblr Grunge
+2025-10-01,0,0.0,Tumblr Grunge
+2025-11-01,0,0.0,Tumblr Grunge
+2025-12-01,0,0.0,Tumblr Grunge
+2026-01-01,0,0.0,Tumblr Grunge
+2026-02-01,0,0.0,Tumblr Grunge
+2026-03-01,0,0.0,Tumblr Grunge
+2026-04-01,0,0.0,Tumblr Grunge
+2004-01-01,0,0.0,TUMBLR
+2004-02-01,0,0.0,TUMBLR
+2004-03-01,0,0.0,TUMBLR
+2004-04-01,0,0.0,TUMBLR
+2004-05-01,0,0.0,TUMBLR
+2004-06-01,0,0.0,TUMBLR
+2004-07-01,0,0.0,TUMBLR
+2004-08-01,0,0.0,TUMBLR
+2004-09-01,0,0.0,TUMBLR
+2004-10-01,0,0.0,TUMBLR
+2004-11-01,0,0.0,TUMBLR
+2004-12-01,0,0.0,TUMBLR
+2005-01-01,0,0.0,TUMBLR
+2005-02-01,0,0.0,TUMBLR
+2005-03-01,0,0.0,TUMBLR
+2005-04-01,0,0.0,TUMBLR
+2005-05-01,0,0.0,TUMBLR
+2005-06-01,0,0.0,TUMBLR
+2005-07-01,0,0.0,TUMBLR
+2005-08-01,0,0.0,TUMBLR
+2005-09-01,0,0.0,TUMBLR
+2005-10-01,0,0.0,TUMBLR
+2005-11-01,0,0.0,TUMBLR
+2005-12-01,0,0.0,TUMBLR
+2006-01-01,0,0.0,TUMBLR
+2006-02-01,0,0.0,TUMBLR
+2006-03-01,0,0.0,TUMBLR
+2006-04-01,0,0.0,TUMBLR
+2006-05-01,0,0.0,TUMBLR
+2006-06-01,0,0.0,TUMBLR
+2006-07-01,0,0.0,TUMBLR
+2006-08-01,0,0.0,TUMBLR
+2006-09-01,0,0.0,TUMBLR
+2006-10-01,0,0.0,TUMBLR
+2006-11-01,0,0.0,TUMBLR
+2006-12-01,0,0.0,TUMBLR
+2007-01-01,0,0.0,TUMBLR
+2007-02-01,0,0.0,TUMBLR
+2007-03-01,0,0.0,TUMBLR
+2007-04-01,0,0.0,TUMBLR
+2007-05-01,0,0.0,TUMBLR
+2007-06-01,0,0.0,TUMBLR
+2007-07-01,0,0.0,TUMBLR
+2007-08-01,0,0.0,TUMBLR
+2007-09-01,0,0.0,TUMBLR
+2007-10-01,0,0.0,TUMBLR
+2007-11-01,0,0.0,TUMBLR
+2007-12-01,0,0.0,TUMBLR
+2008-01-01,0,0.0,TUMBLR
+2008-02-01,0,0.0,TUMBLR
+2008-03-01,0,0.0,TUMBLR
+2008-04-01,0,0.0,TUMBLR
+2008-05-01,0,0.0,TUMBLR
+2008-06-01,0,0.0,TUMBLR
+2008-07-01,0,0.0,TUMBLR
+2008-08-01,0,0.0,TUMBLR
+2008-09-01,0,0.0,TUMBLR
+2008-10-01,0,0.0,TUMBLR
+2008-11-01,0,0.0,TUMBLR
+2008-12-01,0,0.0,TUMBLR
+2009-01-01,0,0.0,TUMBLR
+2009-02-01,0,0.0,TUMBLR
+2009-03-01,0,0.0,TUMBLR
+2009-04-01,0,0.0,TUMBLR
+2009-05-01,0,0.0,TUMBLR
+2009-06-01,0,0.0,TUMBLR
+2009-07-01,0,0.0,TUMBLR
+2009-08-01,0,0.0,TUMBLR
+2009-09-01,0,0.0,TUMBLR
+2009-10-01,0,0.0,TUMBLR
+2009-11-01,0,0.0,TUMBLR
+2009-12-01,0,0.0,TUMBLR
+2010-01-01,0,0.0,TUMBLR
+2010-02-01,0,0.0,TUMBLR
+2010-03-01,0,0.0,TUMBLR
+2010-04-01,0,0.0,TUMBLR
+2010-05-01,0,0.0,TUMBLR
+2010-06-01,0,0.0,TUMBLR
+2010-07-01,0,0.0,TUMBLR
+2010-08-01,0,0.0,TUMBLR
+2010-09-01,0,0.0,TUMBLR
+2010-10-01,0,0.0,TUMBLR
+2010-11-01,0,0.0,TUMBLR
+2010-12-01,0,0.0,TUMBLR
+2011-01-01,0,0.0,TUMBLR
+2011-02-01,0,0.0,TUMBLR
+2011-03-01,0,0.0,TUMBLR
+2011-04-01,0,0.0,TUMBLR
+2011-05-01,0,0.0,TUMBLR
+2011-06-01,0,0.0,TUMBLR
+2011-07-01,0,0.0,TUMBLR
+2011-08-01,0,0.0,TUMBLR
+2011-09-01,0,0.0,TUMBLR
+2011-10-01,0,0.0,TUMBLR
+2011-11-01,0,0.0,TUMBLR
+2011-12-01,0,0.0,TUMBLR
+2012-01-01,0,0.0,TUMBLR
+2012-02-01,0,0.0,TUMBLR
+2012-03-01,0,0.0,TUMBLR
+2012-04-01,0,0.0,TUMBLR
+2012-05-01,0,0.0,TUMBLR
+2012-06-01,0,0.0,TUMBLR
+2012-07-01,0,0.0,TUMBLR
+2012-08-01,0,0.0,TUMBLR
+2012-09-01,0,0.0,TUMBLR
+2012-10-01,0,0.0,TUMBLR
+2012-11-01,0,0.0,TUMBLR
+2012-12-01,0,0.0,TUMBLR
+2013-01-01,0,0.0,TUMBLR
+2013-02-01,0,0.0,TUMBLR
+2013-03-01,0,0.0,TUMBLR
+2013-04-01,0,0.0,TUMBLR
+2013-05-01,0,0.0,TUMBLR
+2013-06-01,0,0.0,TUMBLR
+2013-07-01,0,0.0,TUMBLR
+2013-08-01,0,0.0,TUMBLR
+2013-09-01,0,0.0,TUMBLR
+2013-10-01,0,0.0,TUMBLR
+2013-11-01,0,0.0,TUMBLR
+2013-12-01,0,0.0,TUMBLR
+2014-01-01,0,0.0,TUMBLR
+2014-02-01,0,0.0,TUMBLR
+2014-03-01,0,0.0,TUMBLR
+2014-04-01,0,0.0,TUMBLR
+2014-05-01,0,0.0,TUMBLR
+2014-06-01,0,0.0,TUMBLR
+2014-07-01,0,0.0,TUMBLR
+2014-08-01,0,0.0,TUMBLR
+2014-09-01,5,0.05,TUMBLR
+2014-10-01,0,0.0,TUMBLR
+2014-11-01,0,0.0,TUMBLR
+2014-12-01,7,0.07,TUMBLR
+2015-01-01,9,0.09,TUMBLR
+2015-02-01,10,0.1,TUMBLR
+2015-03-01,13,0.13,TUMBLR
+2015-04-01,12,0.12,TUMBLR
+2015-05-01,14,0.14,TUMBLR
+2015-06-01,21,0.21,TUMBLR
+2015-07-01,26,0.26,TUMBLR
+2015-08-01,24,0.24,TUMBLR
+2015-09-01,25,0.25,TUMBLR
+2015-10-01,32,0.32,TUMBLR
+2015-11-01,31,0.31,TUMBLR
+2015-12-01,48,0.48,TUMBLR
+2016-01-01,50,0.5,TUMBLR
+2016-02-01,55,0.55,TUMBLR
+2016-03-01,57,0.57,TUMBLR
+2016-04-01,56,0.56,TUMBLR
+2016-05-01,62,0.62,TUMBLR
+2016-06-01,61,0.61,TUMBLR
+2016-07-01,68,0.68,TUMBLR
+2016-08-01,62,0.62,TUMBLR
+2016-09-01,72,0.72,TUMBLR
+2016-10-01,70,0.7,TUMBLR
+2016-11-01,64,0.64,TUMBLR
+2016-12-01,77,0.77,TUMBLR
+2017-01-01,87,0.87,TUMBLR
+2017-02-01,85,0.85,TUMBLR
+2017-03-01,81,0.81,TUMBLR
+2017-04-01,87,0.87,TUMBLR
+2017-05-01,84,0.84,TUMBLR
+2017-06-01,84,0.84,TUMBLR
+2017-07-01,82,0.82,TUMBLR
+2017-08-01,94,0.94,TUMBLR
+2017-09-01,86,0.86,TUMBLR
+2017-10-01,84,0.84,TUMBLR
+2017-11-01,78,0.78,TUMBLR
+2017-12-01,88,0.88,TUMBLR
+2018-01-01,89,0.89,TUMBLR
+2018-02-01,92,0.92,TUMBLR
+2018-03-01,75,0.75,TUMBLR
+2018-04-01,100,1.0,TUMBLR
+2018-05-01,92,0.92,TUMBLR
+2018-06-01,96,0.96,TUMBLR
+2018-07-01,99,0.99,TUMBLR
+2018-08-01,93,0.93,TUMBLR
+2018-09-01,96,0.96,TUMBLR
+2018-10-01,77,0.77,TUMBLR
+2018-11-01,81,0.81,TUMBLR
+2018-12-01,94,0.94,TUMBLR
+2019-01-01,82,0.82,TUMBLR
+2019-02-01,79,0.79,TUMBLR
+2019-03-01,72,0.72,TUMBLR
+2019-04-01,76,0.76,TUMBLR
+2019-05-01,67,0.67,TUMBLR
+2019-06-01,62,0.62,TUMBLR
+2019-07-01,67,0.67,TUMBLR
+2019-08-01,59,0.59,TUMBLR
+2019-09-01,50,0.5,TUMBLR
+2019-10-01,41,0.41,TUMBLR
+2019-11-01,39,0.39,TUMBLR
+2019-12-01,43,0.43,TUMBLR
+2020-01-01,45,0.45,TUMBLR
+2020-02-01,47,0.47,TUMBLR
+2020-03-01,57,0.57,TUMBLR
+2020-04-01,72,0.72,TUMBLR
+2020-05-01,64,0.64,TUMBLR
+2020-06-01,54,0.54,TUMBLR
+2020-07-01,43,0.43,TUMBLR
+2020-08-01,41,0.41,TUMBLR
+2020-09-01,98,0.98,TUMBLR
+2020-10-01,54,0.54,TUMBLR
+2020-11-01,42,0.42,TUMBLR
+2020-12-01,40,0.4,TUMBLR
+2021-01-01,42,0.42,TUMBLR
+2021-02-01,33,0.33,TUMBLR
+2021-03-01,31,0.31,TUMBLR
+2021-04-01,29,0.29,TUMBLR
+2021-05-01,22,0.22,TUMBLR
+2021-06-01,24,0.24,TUMBLR
+2021-07-01,20,0.2,TUMBLR
+2021-08-01,26,0.26,TUMBLR
+2021-09-01,21,0.21,TUMBLR
+2021-10-01,18,0.18,TUMBLR
+2021-11-01,18,0.18,TUMBLR
+2021-12-01,21,0.21,TUMBLR
+2022-01-01,22,0.22,TUMBLR
+2022-02-01,22,0.22,TUMBLR
+2022-03-01,16,0.16,TUMBLR
+2022-04-01,14,0.14,TUMBLR
+2022-05-01,14,0.14,TUMBLR
+2022-06-01,15,0.15,TUMBLR
+2022-07-01,17,0.17,TUMBLR
+2022-08-01,15,0.15,TUMBLR
+2022-09-01,22,0.22,TUMBLR
+2022-10-01,11,0.11,TUMBLR
+2022-11-01,16,0.16,TUMBLR
+2022-12-01,9,0.09,TUMBLR
+2023-01-01,14,0.14,TUMBLR
+2023-02-01,11,0.11,TUMBLR
+2023-03-01,11,0.11,TUMBLR
+2023-04-01,11,0.11,TUMBLR
+2023-05-01,10,0.1,TUMBLR
+2023-06-01,9,0.09,TUMBLR
+2023-07-01,8,0.08,TUMBLR
+2023-08-01,11,0.11,TUMBLR
+2023-09-01,7,0.07,TUMBLR
+2023-10-01,7,0.07,TUMBLR
+2023-11-01,10,0.1,TUMBLR
+2023-12-01,5,0.05,TUMBLR
+2024-01-01,11,0.11,TUMBLR
+2024-02-01,7,0.07,TUMBLR
+2024-03-01,7,0.07,TUMBLR
+2024-04-01,11,0.11,TUMBLR
+2024-05-01,9,0.09,TUMBLR
+2024-06-01,6,0.06,TUMBLR
+2024-07-01,7,0.07,TUMBLR
+2024-08-01,7,0.07,TUMBLR
+2024-09-01,6,0.06,TUMBLR
+2024-10-01,7,0.07,TUMBLR
+2024-11-01,7,0.07,TUMBLR
+2024-12-01,6,0.06,TUMBLR
+2025-01-01,6,0.06,TUMBLR
+2025-02-01,7,0.07,TUMBLR
+2025-03-01,4,0.04,TUMBLR
+2025-04-01,5,0.05,TUMBLR
+2025-05-01,5,0.05,TUMBLR
+2025-06-01,7,0.07,TUMBLR
+2025-07-01,5,0.05,TUMBLR
+2025-08-01,4,0.04,TUMBLR
+2025-09-01,0,0.0,TUMBLR
+2025-10-01,4,0.04,TUMBLR
+2025-11-01,6,0.06,TUMBLR
+2025-12-01,0,0.0,TUMBLR
+2026-01-01,5,0.05,TUMBLR
+2026-02-01,6,0.06,TUMBLR
+2026-03-01,4,0.04,TUMBLR
+2026-04-01,4,0.04,TUMBLR

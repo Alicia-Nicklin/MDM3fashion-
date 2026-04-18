@@ -7,7 +7,6 @@ import numpy as np
 # CONFIG
 # =========================================================
 DATA_FOLDER = r"data"
-GOOGLE_TRENDS_FOLDER = "google_trends_data"
 OUTPUT_FILE = "trend_validation_results.csv"
 
 THRESHOLD = 0.35       # lowered from 0.50 — captures sustained interest, not just the sharp peak
@@ -22,7 +21,7 @@ DATE_COL_CANDIDATES = ["Month", "Date", "date", "month", "Week", "Time"]
 # CLASSIFICATION RULES
 # =========================================================
 def classify_trend(months):
-    if months < 6:
+    if months <= 6:
         return "Micro"
     elif months <= 36:
         return "Macro"
@@ -221,7 +220,8 @@ def main():
 
     if not files:
         raise FileNotFoundError(
-            f"No CSV files found in: {os.path.join(DATA_FOLDER, GOOGLE_TRENDS_FOLDER)}"
+            f"No CSV files found in {DATA_FOLDER}/Macrotrends, "
+            f"{DATA_FOLDER}/Microtrends, {DATA_FOLDER}/MegaTrends"
         )
 
     results = []

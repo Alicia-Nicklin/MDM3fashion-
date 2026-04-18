@@ -1,11 +1,11 @@
 trend_name,num_points,max_raw_value,active_points_total,main_trend_duration_months,main_trend_start,main_trend_end,computed_label,file_path
+officesiren,268,100.0,7,6,2024-05-01,2024-10-01,Micro,data\Microtrends\officesiren.csv
 Bikeshorts,268,100.0,17,5,2020-04-01,2020-08-01,Micro,data\Macrotrends\Bikeshorts.csv
 tiedye,268,100.0,8,5,2020-04-01,2020-08-01,Micro,data\Macrotrends\tiedye.csv
 SCENEFASHION,268,100.0,15,5,2006-02-01,2006-06-01,Micro,data\Microtrends\SCENEFASHION.csv
 teddycoat,268,100.0,20,5,2018-10-01,2019-02-01,Micro,data\Microtrends\teddycoat.csv
 Euphoriafashion,268,100.0,4,4,2022-01-01,2022-04-01,Micro,data\Macrotrends\Euphoriafashion.csv
 bimbocore,268,100.0,4,4,2008-03-01,2008-06-01,Micro,data\Microtrends\bimbocore.csv
-Latte makeup,268,100.0,7,4,2023-07-01,2023-10-01,Micro,data\Microtrends\Latte makeup.csv
 vsco,268,100.0,4,4,2019-07-01,2019-10-01,Micro,data\Microtrends\vsco.csv
 Brat summer,268,100.0,3,3,2024-07-01,2024-09-01,Micro,data\Microtrends\Brat summer.csv
 coastalgrandmother,268,100.0,4,3,2022-06-01,2022-08-01,Micro,data\Microtrends\coastalgrandmother.csv
@@ -17,7 +17,6 @@ ivyleague,268,100.0,3,1,2010-11-01,2010-11-01,Micro,data\Microtrends\ivyleague.c
 Cleangirl,268,100.0,44,35,2023-06-01,2026-04-01,Macro,data\Macrotrends\Cleangirl.csv
 PENDULUMTOPS,268,100.0,53,35,2012-07-01,2015-05-01,Macro,data\Macrotrends\PENDULUMTOPS.csv
 y2kaesthetic,268,100.0,48,35,2021-07-01,2024-05-01,Macro,data\Macrotrends\y2kaesthetic.csv
-PENDULUMTOPS,268,100.0,53,35,2012-07-01,2015-05-01,Macro,data\MegaTrends\PENDULUMTOPS.csv
 goblincore,268,100.0,45,35,2020-12-01,2023-10-01,Macro,data\Microtrends\goblincore.csv
 Fairycore,268,100.0,43,34,2021-01-01,2023-10-01,Macro,data\Macrotrends\Fairycore.csv
 disco fashion,268,100.0,156,30,2017-09-01,2020-02-01,Macro,data\Macrotrends\disco fashion.csv
@@ -30,7 +29,6 @@ chokers,268,100.0,21,20,2016-05-01,2017-12-01,Macro,data\Macrotrends\chokers.csv
 softgirlaesthetic,268,100.0,18,18,2020-03-01,2021-08-01,Macro,data\Microtrends\softgirlaesthetic.csv
 Normcore,268,100.0,15,11,2014-03-01,2015-01-01,Macro,data\Macrotrends\Normcore.csv
 chunkyshoes,268,100.0,36,9,2024-02-01,2024-10-01,Macro,data\Microtrends\chunkyshoes.csv
-officesiren,268,100.0,7,6,2024-05-01,2024-10-01,Macro,data\Microtrends\officesiren.csv
 streetwear,268,100.0,262,194,2004-01-01,2020-02-01,Mega,data\MegaTrends\streetwear.csv
 boyfriend jeans,268,100.0,160,159,2013-02-01,2026-04-01,Mega,data\MegaTrends\boyfriend jeans.csv
 jeggins,268,100.0,177,152,2012-09-01,2025-04-01,Mega,data\MegaTrends\jeggins.csv
@@ -45,4 +43,4 @@ INDIE,268,100.0,86,53,2006-02-01,2010-06-01,Mega,data\MegaTrends\INDIE.csv
 MOMJEANS,268,100.0,66,51,2018-08-01,2022-10-01,Mega,data\MegaTrends\MOMJEANS.csv
 Tumblr Grunge,268,100.0,46,46,2013-11-01,2017-08-01,Mega,data\MegaTrends\Tumblr Grunge.csv
 flaredjeans,268,100.0,65,44,2022-09-01,2026-04-01,Mega,data\MegaTrends\flaredjeans.csv
-Pastelgrunge,268,100.0,48,40,2013-11-01,2017-02-01,Mega,data\Macrotrends\Pastelgrunge.csv
+Pastelgrunge,268,100.0,48,40,2013-11-01,2017-02-01,Mega,data\MegaTrends\Pastelgrunge.csv
