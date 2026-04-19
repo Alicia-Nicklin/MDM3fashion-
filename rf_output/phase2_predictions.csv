@@ -1,0 +1,46 @@
+trend,true_label,pred_label,correct
+Bikeshorts,Macro,Macro,True
+Bomber jacket,Macro,Macro,True
+Cleangirl,Macro,Macro,True
+Cottagecore,Macro,Macro,True
+Darkacademia,Macro,Macro,True
+EMOfashio,Macro,Macro,True
+Euphoriafashion,Macro,Micro,False
+Fairycore,Macro,Macro,True
+Normcore,Macro,Macro,True
+PENDULUMTOPS,Macro,Macro,True
+chokers,Macro,Macro,True
+disco fashion,Macro,Macro,True
+mini skirts,Macro,Macro,True
+tiedye,Macro,Micro,False
+y2kaesthetic,Macro,Macro,True
+70sfashion,Mega,Mega,True
+INDIE,Mega,Mega,True
+MAXI dress,Mega,Mega,True
+MOMJEANS,Mega,Mega,True
+Pastelgrunge,Mega,Macro,False
+SKINNYJEANS,Mega,Mega,True
+Skaterfashion,Mega,Mega,True
+TUMBLR,Mega,Mega,True
+Tumblr Grunge,Mega,Mega,True
+boyfriend jeans,Mega,Mega,True
+flaredjeans,Mega,Mega,True
+hipster fashion,Mega,Mega,True
+jeggins,Mega,Mega,True
+ripepdjeans,Mega,Mega,True
+streetwear,Mega,Mega,True
+Brat summer,Micro,Micro,True
+BuisnessCausal,Micro,Micro,True
+SCENEFASHION,Micro,Macro,False
+barbiecore,Micro,Micro,True
+bimbocore,Micro,Micro,True
+blokecore,Micro,Micro,True
+chunkyshoes,Micro,Macro,False
+coastalgrandmother,Micro,Micro,True
+galaxyprint,Micro,Micro,True
+goblincore,Micro,Macro,False
+ivyleague,Micro,Micro,True
+officesiren,Micro,Micro,True
+softgirlaesthetic,Micro,Macro,False
+teddycoat,Micro,Macro,False
+vsco,Micro,Micro,True

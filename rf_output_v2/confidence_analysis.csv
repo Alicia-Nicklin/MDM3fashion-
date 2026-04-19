@@ -1,0 +1,46 @@
+trend,true_label,pred_label,confidence,correct
+Cleangirl,Macro,Micro,0.693750256294319,0
+Normcore,Macro,Macro,0.7875532746556305,1
+officesiren,Micro,Micro,0.8419535171131642,1
+y2kaesthetic,Macro,Macro,0.8930430483272128,1
+Bikeshorts,Macro,Macro,0.9082351655894791,1
+SCENEFASHION,Micro,Macro,0.9592925997539727,0
+tiedye,Macro,Macro,0.9766034550956199,1
+softgirlaesthetic,Micro,Micro,0.9767359366337923,1
+Pastelgrunge,Mega,Mega,0.9770363795036809,1
+vsco,Micro,Micro,0.9807222242665657,1
+coastalgrandmother,Micro,Micro,0.9897689842882299,1
+Darkacademia,Macro,Macro,0.9900410813384685,1
+mini skirts,Macro,Macro,0.9913325171872787,1
+Fairycore,Macro,Macro,0.9936167161526404,1
+chunkyshoes,Micro,Macro,0.9954600172872969,0
+Bomber jacket,Macro,Macro,0.9968235356091928,1
+disco fashion,Macro,Macro,0.99768024962239,1
+70sfashion,Mega,Mega,0.9978497013103975,1
+EMOfashio,Macro,Macro,0.9988320589103622,1
+chokers,Macro,Macro,0.9989798294832467,1
+ivyleague,Micro,Micro,0.9992678416822183,1
+MAXI dress,Mega,Mega,0.9994452637281523,1
+flaredjeans,Mega,Mega,0.9996498062447232,1
+Cottagecore,Macro,Macro,0.9997456558248208,1
+goblincore,Micro,Macro,0.9997882545675868,0
+blokecore,Micro,Micro,0.9997968146926383,1
+Skaterfashion,Mega,Mega,0.9998039948386516,1
+PENDULUMTOPS,Macro,Macro,0.9998171530366097,1
+SKINNYJEANS,Mega,Mega,0.9999011758475127,1
+teddycoat,Micro,Macro,0.9999394100237486,0
+INDIE,Mega,Mega,0.9999494038173993,1
+Brat summer,Micro,Micro,0.999952428470434,1
+bimbocore,Micro,Micro,0.9999561412216491,1
+barbiecore,Micro,Micro,0.9999577082341297,1
+streetwear,Mega,Mega,0.9999612671897974,1
+BuisnessCausal,Micro,Micro,0.9999647503427068,1
+MOMJEANS,Mega,Mega,0.9999656223440981,1
+Tumblr Grunge,Mega,Mega,0.9999678621616866,1
+hipster fashion,Mega,Mega,0.9999727951747122,1
+boyfriend jeans,Mega,Mega,0.9999728293674021,1
+TUMBLR,Mega,Mega,0.9999768806480912,1
+ripepdjeans,Mega,Mega,0.999979394104799,1
+jeggins,Mega,Mega,0.999981232964331,1
+galaxyprint,Micro,Micro,0.9999838034932538,1
+Euphoriafashion,Macro,Micro,0.9999957555282906,0
