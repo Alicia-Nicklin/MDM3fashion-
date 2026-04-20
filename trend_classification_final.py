@@ -391,55 +391,7 @@ def path2_unsupervised(X, y_true):
     cluster_df.to_csv(os.path.join(OUT, "path2_cluster_assignments.csv"), index=False)
 
     # ── figure ────────────────────────────────────────────────────────────
-    fig, axes = plt.subplots(1, 2, figsize=(15, 6))
-    fig.patch.set_facecolor("#0d0d0d")
-    for ax in axes:
-        ax.set_facecolor("#1a1a1a")
-
-    cluster_colours = ["#e63946", "#457b9d", "#2d6a4f"]
-
-    # Left: blind clusters
-    for cid in np.unique(cluster_ids):
-        mask = cluster_ids == cid
-        axes[0].scatter(coords[mask, 0], coords[mask, 1],
-                        s=90, alpha=0.85, label=f"Cluster {cid}",
-                        color=cluster_colours[cid])
-        for xi, yi, nm in zip(coords[mask, 0], coords[mask, 1],
-                               np.array(X.index)[mask]):
-            axes[0].annotate(nm, (xi, yi), fontsize=6, color="white",
-                             alpha=0.65, ha="center", va="bottom")
-
-    axes[0].set_title(f"{proj_label} — Blind KMeans clusters",
-                      color="white", fontsize=12)
-    axes[0].legend(labelcolor="white", facecolor="#2a2a2a", edgecolor="none")
-
-    # Right: true labels revealed
-    for lbl in LABEL_ORDER:
-        mask = y_true.values == lbl
-        axes[1].scatter(coords[mask, 0], coords[mask, 1],
-                        s=90, alpha=0.85, label=lbl, color=COLOURS[lbl])
-        for xi, yi, nm in zip(coords[mask, 0], coords[mask, 1],
-                               np.array(X.index)[mask == True]):
-            axes[1].annotate(nm, (xi, yi), fontsize=6, color="white",
-                             alpha=0.65, ha="center", va="bottom")
-
-    axes[1].set_title(f"{proj_label} — Your labels revealed",
-                      color="white", fontsize=12)
-    axes[1].legend(labelcolor="white", facecolor="#2a2a2a", edgecolor="none")
-
-    for ax in axes:
-        ax.tick_params(colors="gray")
-        for spine in ax.spines.values():
-            spine.set_edgecolor("#333")
-
-    plt.suptitle("Path 2 — Do blind clusters match your Micro/Macro/Mega labels?",
-                 color="white", fontsize=13, y=1.01)
-    plt.tight_layout()
-    out_path = os.path.join(OUT, "path2_clustering.png")
-    plt.savefig(out_path, dpi=150, bbox_inches="tight",
-                facecolor=fig.get_facecolor())
-    plt.close()
-    print(f"\n  Saved: {out_path}")
+    path2_plot(X, y_true, cluster_ids, coords)
 
     return cluster_ids, coords, best_acc
 
@@ -611,62 +563,82 @@ def path1_supervised(X_train, y_train, X_test, y_test):
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# 6.  VISUALISATIONS
+# 6.  VISUALISATIONS  (white/lavender aesthetic — presentation-ready)
 # ═══════════════════════════════════════════════════════════════════════════════
+
+# Shared style constants
+BG        = "white"
+PANEL_BG  = "#f8f7fc"
+TEXT_DARK = "#1a1a2e"
+TEXT_MID  = "#555555"
+SPINE_COL = "#dddddd"
+PURPLE    = "#7B5EA7"
+PURPLE_L  = "#9B7EC8"
+
+
+def _style_ax(ax):
+    """Apply consistent light theme to an axes."""
+    ax.set_facecolor(PANEL_BG)
+    ax.tick_params(colors=TEXT_MID, labelsize=9)
+    for spine in ax.spines.values():
+        spine.set_edgecolor(SPINE_COL)
+        spine.set_linewidth(0.8)
+    ax.xaxis.label.set_color(TEXT_MID)
+    ax.yaxis.label.set_color(TEXT_MID)
+
 
 def _plot_model_comparison(cv_results, test_results):
     fig, axes = plt.subplots(1, 2, figsize=(14, 4))
-    fig.patch.set_facecolor("#0d0d0d")
+    fig.patch.set_facecolor(BG)
 
     for ax, results, title in zip(
         axes,
         [cv_results, test_results],
-        ["LOO-CV accuracy (training set)", "True held-out test accuracy"]
+        ["Cross-validation accuracy", "Held-out test accuracy"]
     ):
-        ax.set_facecolor("#1a1a1a")
-        names = list(results.keys())
-        accs  = [results[n]["acc"] * 100 for n in names]
+        _style_ax(ax)
+        names   = list(results.keys())
+        accs    = [results[n]["acc"] * 100 for n in names]
         best_acc = max(accs)
-        colours = ["#e63946" if a == best_acc else "#457b9d" for a in accs]
-        bars = ax.barh(names, accs, color=colours, alpha=0.85, height=0.55)
+        bar_cols = [PURPLE if a == best_acc else PURPLE_L for a in accs]
+        bars = ax.barh(names, accs, color=bar_cols, alpha=0.88, height=0.55)
         for bar, acc in zip(bars, accs):
-            ax.text(bar.get_width() + 0.5, bar.get_y() + bar.get_height() / 2,
-                    f"{acc:.1f}%", va="center", color="white", fontsize=9)
-        ax.set_xlim(0, 120)
-        ax.set_xlabel("Accuracy (%)", color="white")
-        ax.set_title(title, color="white", fontsize=11)
-        ax.tick_params(colors="white")
-        ax.axvline(80, color="#555", linestyle="--", linewidth=0.8)
-        for spine in ax.spines.values():
-            spine.set_edgecolor("#333")
+            ax.text(bar.get_width() + 0.5,
+                    bar.get_y() + bar.get_height() / 2,
+                    f"{acc:.1f}%", va="center", color=TEXT_DARK, fontsize=9)
+        ax.set_xlim(0, 115)
+        ax.set_xlabel("Accuracy (%)", color=TEXT_MID)
+        ax.set_title(title, color=TEXT_DARK, fontsize=12, fontweight="bold", pad=10)
+        ax.axvline(80, color=SPINE_COL, linestyle="--", linewidth=1)
+        ax.tick_params(colors=TEXT_MID)
 
-    plt.suptitle("Path 1 — Model comparison", color="white", fontsize=13)
+    fig.suptitle("Classifier Performance — Model Comparison",
+                 color=TEXT_DARK, fontsize=14, fontweight="bold", y=1.02)
     plt.tight_layout()
-    path = os.path.join(OUT, "path1_model_comparison.png")
-    plt.savefig(path, dpi=150, bbox_inches="tight",
-                facecolor=fig.get_facecolor())
+    path = os.path.join(OUT, "model_comparison.png")
+    plt.savefig(path, dpi=180, bbox_inches="tight", facecolor=BG)
     plt.close()
     print(f"\n  Saved: {path}")
 
 
 def _plot_confusion(y_true, y_pred, model_name, acc):
     fig, ax = plt.subplots(figsize=(6, 5))
-    fig.patch.set_facecolor("#0d0d0d")
-    ax.set_facecolor("#1a1a1a")
-    cm = confusion_matrix(y_true, y_pred, labels=LABEL_ORDER)
+    fig.patch.set_facecolor(BG)
+    _style_ax(ax)
+    cm   = confusion_matrix(y_true, y_pred, labels=LABEL_ORDER)
     disp = ConfusionMatrixDisplay(cm, display_labels=LABEL_ORDER)
-    disp.plot(ax=ax, colorbar=False, cmap="Blues")
-    ax.set_title(f"Confusion matrix — {model_name}  (test acc = {acc:.1%})",
-                 color="white", fontsize=11)
-    ax.tick_params(colors="white")
-    ax.xaxis.label.set_color("white")
-    ax.yaxis.label.set_color("white")
+    disp.plot(ax=ax, colorbar=False, cmap="RdPu")
+    ax.set_title(f"Classification Results — Random Forest  ({acc:.1%} accuracy)",
+                 color=TEXT_DARK, fontsize=11, fontweight="bold", pad=10)
+    ax.tick_params(colors=TEXT_MID)
+    ax.xaxis.label.set_color(TEXT_MID)
+    ax.yaxis.label.set_color(TEXT_MID)
     for text in ax.texts:
-        text.set_color("black")
+        text.set_color(TEXT_DARK)
+        text.set_fontsize(13)
     plt.tight_layout()
-    path = os.path.join(OUT, f"path1_confusion_{model_name}.png")
-    plt.savefig(path, dpi=150, bbox_inches="tight",
-                facecolor=fig.get_facecolor())
+    path = os.path.join(OUT, "confusion_matrix.png")
+    plt.savefig(path, dpi=180, bbox_inches="tight", facecolor=BG)
     plt.close()
     print(f"  Saved: {path}")
 
@@ -674,94 +646,139 @@ def _plot_confusion(y_true, y_pred, model_name, acc):
 def _plot_feature_importance(importances):
     top = importances.head(20).sort_values(ascending=True)
     fig, ax = plt.subplots(figsize=(9, 6))
-    fig.patch.set_facecolor("#0d0d0d")
-    ax.set_facecolor("#1a1a1a")
-    med = top.median()
-    colours = ["#e63946" if v > med else "#457b9d" for v in top.values]
-    ax.barh(top.index, top.values, color=colours, alpha=0.85)
-    ax.set_xlabel("Mean decrease in impurity", color="white")
-    ax.set_title("Top 20 feature importances (RF, trained on training set only)",
-                 color="white", fontsize=11)
-    ax.tick_params(colors="white", labelsize=9)
-    for spine in ax.spines.values():
-        spine.set_edgecolor("#333")
+    fig.patch.set_facecolor(BG)
+    _style_ax(ax)
+    med     = top.median()
+    colours = [PURPLE if v > med else PURPLE_L for v in top.values]
+    ax.barh(top.index, top.values, color=colours, alpha=0.88)
+    ax.set_xlabel("Mean decrease in impurity", color=TEXT_MID)
+    ax.set_title("Most Predictive Features for Trend Classification",
+                 color=TEXT_DARK, fontsize=12, fontweight="bold", pad=10)
+    ax.tick_params(colors=TEXT_MID, labelsize=9)
     plt.tight_layout()
-    path = os.path.join(OUT, "path1_feature_importances.png")
-    plt.savefig(path, dpi=150, bbox_inches="tight",
-                facecolor=fig.get_facecolor())
+    path = os.path.join(OUT, "feature_importances.png")
+    plt.savefig(path, dpi=180, bbox_inches="tight", facecolor=BG)
     plt.close()
     print(f"  Saved: {path}")
 
 
 def _plot_per_trend_results(X_test, y_test, y_pred, model_name):
     results = pd.DataFrame({
-        "trend":      X_test.index,
-        "true":       y_test.values,
-        "pred":       y_pred,
-        "correct":    y_test.values == y_pred
+        "trend":   X_test.index,
+        "true":    y_test.values,
+        "pred":    y_pred,
+        "correct": y_test.values == y_pred
     }).sort_values(["true", "trend"])
 
-    fig, ax = plt.subplots(figsize=(10, max(4, len(results) * 0.4)))
-    fig.patch.set_facecolor("#0d0d0d")
-    ax.set_facecolor("#1a1a1a")
+    fig, ax = plt.subplots(figsize=(10, max(4, len(results) * 0.45)))
+    fig.patch.set_facecolor(BG)
+    _style_ax(ax)
 
-    bar_colours = [COLOURS[t] if c else "#555"
-                   for t, c in zip(results["true"], results["correct"])]
+    bar_cols = [COLOURS[t] if c else "#cccccc"
+                for t, c in zip(results["true"], results["correct"])]
     ax.barh(results["trend"], results["correct"].astype(int),
-            color=bar_colours, alpha=0.85)
+            color=bar_cols, alpha=0.88)
 
     for i, (_, row) in enumerate(results.iterrows()):
-        label = "✓" if row["correct"] else f"✗  predicted: {row['pred']}"
-        ax.text(0.02, i, label, va="center", color="white",
-                fontsize=8, alpha=0.9)
+        label = "✓  Correct" if row["correct"] else f"✗  Predicted: {row['pred']}"
+        col   = TEXT_DARK if row["correct"] else "#cc3333"
+        ax.text(0.02, i, label, va="center", color=col, fontsize=9)
 
-    ax.set_xlim(0, 1.5)
-    ax.set_xlabel("Correct (1) / Wrong (0)", color="white")
-    ax.set_title(f"Per-trend test results — {model_name}",
-                 color="white", fontsize=11)
-    ax.tick_params(colors="white", labelsize=8)
-    for spine in ax.spines.values():
-        spine.set_edgecolor("#333")
-
+    ax.set_xlim(0, 1.6)
+    ax.set_xlabel("Correct / Incorrect", color=TEXT_MID)
+    ax.set_title("Per-Trend Classification Results on Held-Out Test Set",
+                 color=TEXT_DARK, fontsize=12, fontweight="bold", pad=10)
+    ax.tick_params(colors=TEXT_MID, labelsize=9)
     plt.tight_layout()
-    path = os.path.join(OUT, "path1_per_trend_test_results.png")
-    plt.savefig(path, dpi=150, bbox_inches="tight",
-                facecolor=fig.get_facecolor())
+    path = os.path.join(OUT, "per_trend_results.png")
+    plt.savefig(path, dpi=180, bbox_inches="tight", facecolor=BG)
     plt.close()
     print(f"  Saved: {path}")
 
 
 def plot_time_series_gallery(series_dict, y):
-    """Quick visual of representative trends per class."""
+    """Representative time series per class."""
     n_per = 3
-    fig = plt.figure(figsize=(15, 9))
-    fig.patch.set_facecolor("#0d0d0d")
-    gs = gridspec.GridSpec(3, n_per, hspace=0.5, wspace=0.35)
+    fig   = plt.figure(figsize=(15, 9))
+    fig.patch.set_facecolor(BG)
+    gs    = gridspec.GridSpec(3, n_per, hspace=0.55, wspace=0.35)
 
     for row, label in enumerate(LABEL_ORDER):
         names = [n for n, l in y.items() if l == label][:n_per]
         for col, name in enumerate(names):
-            v = series_dict[name]
+            v  = series_dict[name]
             ax = fig.add_subplot(gs[row, col])
-            ax.set_facecolor("#1a1a1a")
-            ax.fill_between(range(len(v)), v, alpha=0.25, color=COLOURS[label])
-            ax.plot(v, color=COLOURS[label], linewidth=1.2)
-            ax.axhline(THRESHOLD, color="white", linewidth=0.5,
-                       linestyle="--", alpha=0.4)
-            ax.set_title(name, color="white", fontsize=7.5)
+            ax.set_facecolor(PANEL_BG)
+            ax.fill_between(range(len(v)), v, alpha=0.2, color=COLOURS[label])
+            ax.plot(v, color=COLOURS[label], linewidth=1.4)
+            ax.axhline(THRESHOLD, color=TEXT_MID, linewidth=0.6,
+                       linestyle="--", alpha=0.5)
+            ax.set_title(name, color=TEXT_DARK, fontsize=8, fontweight="bold")
             if col == 0:
                 ax.set_ylabel(label, color=COLOURS[label],
-                              fontsize=9, fontweight="bold")
-            ax.tick_params(colors="gray", labelsize=6)
+                              fontsize=10, fontweight="bold")
+            ax.tick_params(colors=TEXT_MID, labelsize=6)
             ax.set_ylim(-0.05, 1.05)
             for spine in ax.spines.values():
-                spine.set_edgecolor("#333")
+                spine.set_edgecolor(SPINE_COL)
+                spine.set_linewidth(0.8)
 
-    fig.suptitle("Representative trends by class", color="white",
-                 fontsize=13, y=1.01)
+    fig.suptitle("Google Trends Profiles by Trend Classification",
+                 color=TEXT_DARK, fontsize=14, fontweight="bold", y=1.01)
     path = os.path.join(OUT, "trend_gallery.png")
-    plt.savefig(path, dpi=150, bbox_inches="tight",
-                facecolor=fig.get_facecolor())
+    plt.savefig(path, dpi=180, bbox_inches="tight", facecolor=BG)
+    plt.close()
+    print(f"  Saved: {path}")
+
+
+def path2_plot(X, y_true, cluster_ids, coords):
+    """UMAP/PCA visualisation — white theme, presentation-ready titles."""
+    fig, axes = plt.subplots(1, 2, figsize=(16, 7))
+    fig.patch.set_facecolor(BG)
+
+    cluster_colours = [COLOURS["Micro"], COLOURS["Macro"], COLOURS["Mega"]]
+
+    for ax in axes:
+        _style_ax(ax)
+
+    # Left: blind clusters
+    for cid in np.unique(cluster_ids):
+        mask = cluster_ids == cid
+        axes[0].scatter(coords[mask, 0], coords[mask, 1],
+                        s=100, alpha=0.9, label=f"Cluster {cid}",
+                        color=cluster_colours[cid],
+                        edgecolors="white", linewidths=0.5)
+        for xi, yi, nm in zip(coords[mask, 0], coords[mask, 1],
+                               np.array(X.index)[mask]):
+            axes[0].annotate(nm, (xi, yi), fontsize=5.5, color=TEXT_MID,
+                             alpha=0.85, ha="center", va="bottom")
+
+    axes[0].set_title("Blind Clustering — No Labels Used",
+                      color=TEXT_DARK, fontsize=12, fontweight="bold", pad=12)
+    axes[0].legend(labelcolor=TEXT_DARK, facecolor=BG,
+                   edgecolor=SPINE_COL, fontsize=9)
+
+    # Right: true labels
+    for lbl in LABEL_ORDER:
+        mask = y_true.values == lbl
+        axes[1].scatter(coords[mask, 0], coords[mask, 1],
+                        s=100, alpha=0.9, label=lbl, color=COLOURS[lbl],
+                        edgecolors="white", linewidths=0.5)
+        for xi, yi, nm in zip(coords[mask, 0], coords[mask, 1],
+                               np.array(X.index)[mask]):
+            axes[1].annotate(nm, (xi, yi), fontsize=5.5, color=TEXT_MID,
+                             alpha=0.85, ha="center", va="bottom")
+
+    axes[1].set_title("Micro / Macro / Mega Classifications",
+                      color=TEXT_DARK, fontsize=12, fontweight="bold", pad=12)
+    axes[1].legend(labelcolor=TEXT_DARK, facecolor=BG,
+                   edgecolor=SPINE_COL, fontsize=9)
+
+    fig.suptitle("Do Blind Clusters Match the Trend Classifications?",
+                 color=TEXT_DARK, fontsize=14, fontweight="bold", y=1.01)
+    plt.tight_layout()
+    path = os.path.join(OUT, "umap_clustering.png")
+    plt.savefig(path, dpi=180, bbox_inches="tight", facecolor=BG)
     plt.close()
     print(f"  Saved: {path}")
 
@@ -820,6 +837,19 @@ def main():
           f"(best model: {best_model})")
     print(f"\n  Outputs saved to: ./{OUT}/")
     print("=" * 65)
+
+    print("""
+INTERPRETING RESULTS
+────────────────────
+Path 2 alignment >60%  → your 3 classes have real separable structure
+Path 2 alignment <50%  → trends don't cluster naturally by your labels
+
+Path 1 test accuracy   → this is your HONEST accuracy on unseen trends
+LOO-CV accuracy        → estimate during training (usually slightly higher)
+
+A big gap between LOO-CV and test accuracy means the model is overfitting
+to the training trends — you may need more labelled examples.
+""")
 
 
 if __name__ == "__main__":
