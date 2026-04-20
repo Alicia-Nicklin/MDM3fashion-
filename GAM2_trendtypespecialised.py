@@ -24,11 +24,8 @@ How to run:
     python gam2_specialist.py
     (run gam1_generalist.py first — needed for the comparison figure)
 
-Required data files (same as GAM 1):
-    data/Microtrends/microtrends_combined.csv
-    data/Macrotrends/macrotrends_combined.csv
-    data/MegaTrends/megatrends_combined.csv
-    data/trend_validation_results.csv
+Required data files:
+    data/all_trends_with_classes.csv
 
 Outputs (written to gam_output/):
     gam2_results.csv
@@ -61,10 +58,7 @@ plt.rcParams.update({
 
 # ── CONFIG ────────────────────────────────────────────────────────────────────
 
-MICRO_CSV = os.path.join("data", "Microtrends", "microtrends_combined.csv")
-MACRO_CSV = os.path.join("data", "Macrotrends", "macrotrends_combined.csv")
-MEGA_CSV  = os.path.join("data", "MegaTrends",  "megatrends_combined.csv")
-VAL_CSV   = "trend_validation_results.csv"
+ALL_TRENDS_CSV = os.path.join("data", "all_trends_with_classes.csv")
 
 TEST_TRENDS = {
     "Micro": ["teddycoat", "vsco", "coastalgrandmother"],
@@ -86,18 +80,11 @@ FEATURE_COLS = ["t_rel", "month_sin", "month_cos",
 # ── DATA (identical to GAM 1) ─────────────────────────────────────────────────
 
 def load_data():
-    micro = pd.read_csv(MICRO_CSV); micro["src"] = "Micro"
-    macro = pd.read_csv(MACRO_CSV); macro["src"] = "Macro"
-    mega  = pd.read_csv(MEGA_CSV);  mega["src"]  = "Mega"
-    df = pd.concat([micro, macro, mega], ignore_index=True)
+    df = pd.read_csv(ALL_TRENDS_CSV)
     df["date"] = pd.to_datetime(df["date"])
-    val = pd.read_csv(VAL_CSV)[[
-        "trend_name", "computed_label",
-        "main_trend_start", "main_trend_duration_months"
-    ]]
-    val["main_trend_start"] = pd.to_datetime(val["main_trend_start"])
-    df = df.merge(val, on="trend_name", how="left")
-    df["category"] = df["computed_label"].fillna(df["src"])
+    df["category"] = df["trend_class"]
+    print(f"  {df['trend_name'].nunique()} trends loaded")
+    print(f"  Categories: {df['category'].value_counts().to_dict()}")
     return df
 
 
@@ -107,8 +94,13 @@ def add_features(df):
     parts = []
     for _, grp in df.groupby("trend_name", sort=False):
         grp = grp.sort_values("date").copy()
-        start = grp["main_trend_start"].iloc[0]
-        dur   = max(float(grp["main_trend_duration_months"].iloc[0]), 1.0)
+        active = grp[grp["value_norm"] > 0]["date"]
+        if len(active) >= 2:
+            start = active.iloc[0]
+            dur   = max((active.iloc[-1] - start).days / 30.44, 1.0)
+        else:
+            start = grp["date"].iloc[0]
+            dur   = 1.0
         grp["t_rel"]       = (((grp["date"] - start).dt.days / 30.44) / dur).clip(-0.5, 2.5)
         m = grp["date"].dt.month
         grp["month_sin"]   = np.sin(2 * np.pi * m / 12)

@@ -23,9 +23,6 @@ How to run:
 
 Required files:
     data/all_trends_combined.csv
-    data/trend_validation_results.csv   (used ONLY for main_trend_start
-                                         and main_trend_duration_months
-                                         to compute t_rel — no labels used)
 
 Outputs (written to gam_output/):
     gam1_results.csv
@@ -59,10 +56,6 @@ plt.rcParams.update({
 # Single combined CSV — no category column, completely label-free
 ALL_TRENDS_CSV = os.path.join("data", "all_trends_combined.csv")
 
-# Lifecycle metadata only — main_trend_start and main_trend_duration_months
-# NO category/label columns are read from this file
-VAL_CSV = "trend_validation_results.csv"
-
 # Held-out test trends — removed entirely from training
 # The model does not know these are split by category
 TEST_TRENDS = [
@@ -90,50 +83,26 @@ FEATURE_COLS = ["t_rel", "month_sin", "month_cos",
 # ── DATA ──────────────────────────────────────────────────────────────────────
 
 def load_data():
-    """
-    Load all_trends_combined.csv — single file, no category column.
-    Merge with validation CSV for lifecycle metadata only.
-    Explicitly drops computed_label so no category info leaks into training.
-    """
     df = pd.read_csv(ALL_TRENDS_CSV)
     df["date"] = pd.to_datetime(df["date"])
-
-    # Load ONLY the two metadata columns needed for t_rel
-    val = pd.read_csv(VAL_CSV)[
-        ["trend_name", "main_trend_start", "main_trend_duration_months"]
-    ]
-    val["main_trend_start"] = pd.to_datetime(val["main_trend_start"])
-
-    df = df.merge(val, on="trend_name", how="left")
-
     print(f"  {df['trend_name'].nunique()} trends loaded")
     print(f"  Date range: {df['date'].min().date()} to {df['date'].max().date()}")
-    print(f"  Columns used by model: {FEATURE_COLS}")
-    print(f"  No category column present — model is label-free")
     return df
 
 
 def add_features(df):
-    """
-    Compute all features per trend.
-
-    t_rel:        relative lifecycle position (0=trend start, 1=trend end).
-                  Key feature — lets GAM learn a universal curve shape
-                  that generalises across trends of different lengths.
-    month_sin/cos: cyclical seasonality encoding.
-    lag_1/3:      short and medium-term momentum.
-    roll_mean_3:  trend stability.
-    roll_std_3:   trend volatility.
-
-    None of these features encode or imply category.
-    """
     df = df.copy()
     df["value_norm"] = df["value_norm"].fillna(0).clip(0, 1)
     parts = []
     for _, grp in df.groupby("trend_name", sort=False):
         grp = grp.sort_values("date").copy()
-        start = grp["main_trend_start"].iloc[0]
-        dur   = max(float(grp["main_trend_duration_months"].iloc[0]), 1.0)
+        active = grp[grp["value_norm"] > 0]["date"]
+        if len(active) >= 2:
+            start = active.iloc[0]
+            dur   = max((active.iloc[-1] - start).days / 30.44, 1.0)
+        else:
+            start = grp["date"].iloc[0]
+            dur   = 1.0
         grp["t_rel"]       = (((grp["date"] - start).dt.days / 30.44) / dur).clip(-0.5, 2.5)
         m = grp["date"].dt.month
         grp["month_sin"]   = np.sin(2 * np.pi * m / 12)
