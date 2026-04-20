@@ -1,6 +1,6 @@
 trend,cluster,true_label
 70sfashion,2,Mega
-Bikeshorts,1,Macro
+Bikeshorts,1,Micro
 Bomber jacket,1,Macro
 Brat summer,0,Micro
 BuisnessCausal,0,Micro
@@ -14,13 +14,13 @@ INDIE,1,Mega
 MAXI dress,2,Mega
 MOMJEANS,1,Mega
 Normcore,1,Macro
-PENDULUMTOPS,1,Mega
-Pastelgrunge,1,Micro
-SCENEFASHION,0,Macro
+PENDULUMTOPS,1,Macro
+Pastelgrunge,1,Mega
+SCENEFASHION,0,Micro
 SKINNYJEANS,2,Mega
 Skaterfashion,1,Mega
-TUMBLR,1,Macro
-Tumblr Grunge,1,Macro
+TUMBLR,1,Mega
+Tumblr Grunge,1,Mega
 barbiecore,0,Micro
 bimbocore,0,Micro
 blokecore,0,Micro
@@ -28,19 +28,19 @@ boyfriend jeans,2,Mega
 chokers,1,Macro
 chunkyshoes,1,Macro
 coastalgrandmother,0,Micro
-disco fashion,2,Mega
-flaredjeans,1,Macro
+disco fashion,2,Macro
+flaredjeans,1,Mega
 galaxyprint,0,Micro
-goblincore,1,Micro
-hipster fashion,1,Macro
+goblincore,1,Macro
+hipster fashion,1,Mega
 ivyleague,0,Micro
 jeggins,2,Mega
 mini skirts,1,Macro
 officesiren,1,Micro
-ripepdjeans,2,Macro
-softgirlaesthetic,1,Micro
+ripepdjeans,2,Mega
+softgirlaesthetic,1,Macro
 streetwear,2,Mega
-teddycoat,1,Macro
-tiedye,1,Macro
+teddycoat,1,Micro
+tiedye,1,Micro
 vsco,0,Micro
-y2kaesthetic,1,Micro
+y2kaesthetic,1,Macro
