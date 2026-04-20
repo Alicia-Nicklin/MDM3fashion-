@@ -9,9 +9,8 @@ import numpy as np
 DATA_FOLDER = r"data"
 OUTPUT_FILE = "trend_validation_results.csv"
 
-THRESHOLD = 0.35       # lowered from 0.50 — captures sustained interest, not just the sharp peak
-# Classification boundaries: Micro < 6m, Macro 6–36m, Mega > 36m
-# Adjusted from original (9/24) to match where the data actually clusters
+THRESHOLD = 0.35
+# Classification boundaries: Micro <= 6m, Macro 7–36m, Mega > 36m
 GAP_TOLERANCE = 1
 
 DATE_COL_CANDIDATES = ["Month", "Date", "date", "month", "Week", "Time"]
@@ -20,7 +19,6 @@ DATE_COL_CANDIDATES = ["Month", "Date", "date", "month", "Week", "Time"]
 # =========================================================
 # CLASSIFICATION RULES
 # =========================================================
-
 def classify_trend(months):
     if months <= 6:
         return "Micro"
@@ -28,7 +26,6 @@ def classify_trend(months):
         return "Macro"
     else:
         return "Mega"
-
 
 
 # =========================================================
@@ -44,17 +41,18 @@ def find_date_column(df):
 def find_value_column(df, date_col):
     """
     Returns the first column that is numeric (or can be coerced to numeric),
-    excluding the date column and any boolean/flag columns like 'isPartial'.
-    Previously this just grabbed the first non-date column, which could
-    silently pick up metadata columns and produce wrong results.
+    excluding the date column and metadata/flag columns.
     """
     for col in df.columns:
         if col == date_col:
             continue
+
         coerced = pd.to_numeric(df[col], errors="coerce")
+
         # Require that at least half the rows are valid numbers
         if coerced.notna().sum() >= len(df) * 0.5:
             return col
+
     return None
 
 
@@ -215,10 +213,17 @@ def analyse_trend(file_path):
 # =========================================================
 def main():
     files = (
-            glob.glob(os.path.join(DATA_FOLDER, "Macrotrends", "*.csv")) +
-            glob.glob(os.path.join(DATA_FOLDER, "MegaTrends", "*.csv")) +
-            glob.glob(os.path.join(DATA_FOLDER, "Microtrends", "*.csv"))
+        glob.glob(os.path.join(DATA_FOLDER, "Macrotrends", "*.csv")) +
+        glob.glob(os.path.join(DATA_FOLDER, "MegaTrends", "*.csv")) +
+        glob.glob(os.path.join(DATA_FOLDER, "Microtrends", "*.csv"))
     )
+
+    # Exclude combined/output files so only raw trend CSVs are validated
+    files = [
+        f for f in files
+        if "combined" not in os.path.basename(f).lower()
+        and "with_classes" not in os.path.basename(f).lower()
+    ]
 
     if not files:
         raise FileNotFoundError(
