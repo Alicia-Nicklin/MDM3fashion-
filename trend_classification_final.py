@@ -838,19 +838,6 @@ def main():
     print(f"\n  Outputs saved to: ./{OUT}/")
     print("=" * 65)
 
-    print("""
-INTERPRETING RESULTS
-────────────────────
-Path 2 alignment >60%  → your 3 classes have real separable structure
-Path 2 alignment <50%  → trends don't cluster naturally by your labels
-
-Path 1 test accuracy   → this is your HONEST accuracy on unseen trends
-LOO-CV accuracy        → estimate during training (usually slightly higher)
-
-A big gap between LOO-CV and test accuracy means the model is overfitting
-to the training trends — you may need more labelled examples.
-""")
-
 
 if __name__ == "__main__":
     main()
