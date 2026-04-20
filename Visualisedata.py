@@ -26,8 +26,8 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 # =========================================================
 # COLOURS
 # =========================================================
-PURPLE = "#7B2CBF"
-LIGHT_PURPLE = "#CDB4F8"
+PURPLE = "#7B2CBF"        # main line
+LIGHT_PINK = "#F7A8C4"    # background lines
 PINK = "#FF4D6D"
 DARK_PURPLE = "#5A189A"
 
@@ -222,7 +222,7 @@ mega_curves, mega_names, mega_durations = build_class_curves(mega_df)
 # =========================================================
 # PLOT 1: CLASS SHAPE COMPARISON
 # =========================================================
-fig, axes = plt.subplots(1, 3, figsize=(15, 4.8), sharey=True)
+fig, axes = plt.subplots(1, 3, figsize=(15, 4.8), sharey=False)
 
 class_data = [
     ("Micro Trends", micro_curves),
@@ -239,13 +239,14 @@ for ax, (title, curves) in zip(axes, class_data):
         continue
 
     for curve in curves:
-        ax.plot(x, curve, color=LIGHT_PURPLE, alpha=0.08, linewidth=1)
+        ax.plot(x, curve, color=LIGHT_PINK, alpha=0.6, linewidth=1)
 
     mean_curve = curves.mean(axis=0)
     ax.plot(x, mean_curve, color=PURPLE, linewidth=4)
 
     ax.set_title(title, fontsize=13, fontweight="bold")
     ax.set_xlabel("% of Active Duration")
+    ax.set_ylabel("Normalised Interest")
     ax.set_xlim(0, 100)
     ax.set_ylim(0, 1.05)
     ax.grid(alpha=0.25)
@@ -320,7 +321,7 @@ plt.fill_between(
     example_trend_df["value_norm"],
     where=mask,
     alpha=0.35,
-    color=LIGHT_PURPLE,
+    color=LIGHT_PINK,
     label="Active Window"
 )
 

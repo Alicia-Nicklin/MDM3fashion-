@@ -5,8 +5,10 @@ tiedye,268,100.0,8,5,2020-04-01,2020-08-01,Micro,data\Macrotrends\tiedye.csv
 SCENEFASHION,268,100.0,15,5,2006-02-01,2006-06-01,Micro,data\Microtrends\SCENEFASHION.csv
 teddycoat,268,100.0,20,5,2018-10-01,2019-02-01,Micro,data\Microtrends\teddycoat.csv
 Euphoriafashion,268,100.0,4,4,2022-01-01,2022-04-01,Micro,data\Macrotrends\Euphoriafashion.csv
+megatrends_combined,4020,100.0,2062,4,2015-06-01,2015-09-01,Micro,data\MegaTrends\megatrends_combined.csv
 bimbocore,268,100.0,4,4,2008-03-01,2008-06-01,Micro,data\Microtrends\bimbocore.csv
 vsco,268,100.0,4,4,2019-07-01,2019-10-01,Micro,data\Microtrends\vsco.csv
+macrotrends_combined,4020,100.0,708,3,2026-01-01,2026-03-01,Micro,data\Macrotrends\macrotrends_combined.csv
 Brat summer,268,100.0,3,3,2024-07-01,2024-09-01,Micro,data\Microtrends\Brat summer.csv
 coastalgrandmother,268,100.0,4,3,2022-06-01,2022-08-01,Micro,data\Microtrends\coastalgrandmother.csv
 barbiecore,268,100.0,2,2,2023-06-01,2023-07-01,Micro,data\Microtrends\barbiecore.csv
@@ -14,6 +16,7 @@ blokecore,268,100.0,2,1,2022-05-01,2022-05-01,Micro,data\Microtrends\blokecore.c
 BuisnessCausal,268,100.0,1,1,2004-09-01,2004-09-01,Micro,data\Microtrends\BuisnessCausal.csv
 galaxyprint,268,100.0,1,1,2026-02-01,2026-02-01,Micro,data\Microtrends\galaxyprint.csv
 ivyleague,268,100.0,3,1,2010-11-01,2010-11-01,Micro,data\Microtrends\ivyleague.csv
+microtrends_combined,4020,100.0,169,1,2024-07-01,2024-07-01,Micro,data\Microtrends\microtrends_combined.csv
 Cleangirl,268,100.0,44,35,2023-06-01,2026-04-01,Macro,data\Macrotrends\Cleangirl.csv
 PENDULUMTOPS,268,100.0,53,35,2012-07-01,2015-05-01,Macro,data\Macrotrends\PENDULUMTOPS.csv
 y2kaesthetic,268,100.0,48,35,2021-07-01,2024-05-01,Macro,data\Macrotrends\y2kaesthetic.csv
