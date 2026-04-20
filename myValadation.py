@@ -20,6 +20,7 @@ DATE_COL_CANDIDATES = ["Month", "Date", "date", "month", "Week", "Time"]
 # =========================================================
 # CLASSIFICATION RULES
 # =========================================================
+
 def classify_trend(months):
     if months <= 6:
         return "Micro"
@@ -27,6 +28,7 @@ def classify_trend(months):
         return "Macro"
     else:
         return "Mega"
+
 
 
 # =========================================================

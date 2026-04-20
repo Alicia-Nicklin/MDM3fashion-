@@ -3,9 +3,30 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
-data_folder = "/Users/rose/Desktop/new fashion3/data/"
-files = ["cottagecore.csv", "dark_academia.csv", "millennial_pink.csv", "soft_grunge.csv"]
+# =========================================================
+# 1) SETUP
+# =========================================================
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+OUTPUT_DIR = os.path.join(BASE_DIR, "output")
+
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+threshold = 0.35
+buffer = 5
+
+files = [
+    ("Microtrends", "barbiecore.csv"),
+    ("Macrotrends", "Cottagecore.csv"),
+    ("MegaTrends", "INDIE.csv")
+]
+
+np.random.seed(42)
+
+# =========================================================
+# 2) ABM FUNCTION
+# =========================================================
 
 def simulate_trend(
     n_people=1000,
@@ -17,7 +38,9 @@ def simulate_trend(
     peak_height=2.0,
     start_share=0.01,
     late_drop=0.08,
-    noise=0.01
+    noise=0.005,
+    start_delay=0,
+    trend_type="Macrotrends"
 ):
     state = np.zeros(n_people)
     state[:int(start_share * n_people)] = 1
@@ -25,36 +48,46 @@ def simulate_trend(
 
     series = np.zeros(n_steps)
 
-    uptake_weight = np.random.uniform(0.8, 1.2, n_people)
+    uptake_weight = np.random.uniform(0.9, 1.1, n_people)
     fade_weight = np.random.uniform(0.9, 1.1, n_people)
 
     t = np.arange(n_steps)
 
-    main_peak = 1 + peak_height * np.exp(-((t - n_steps * peak_pos) / 5) ** 2)
-    bump_1 = 0.18 * np.exp(-((t - n_steps * (peak_pos + 0.12)) / 3) ** 2)
-    bump_2 = 0.10 * np.exp(-((t - n_steps * (peak_pos + 0.25)) / 4) ** 2)
+    # Different wave shape for Mega trends
+    if trend_type == "MegaTrends":
+        wave = 1 + 0.6 * (1 / (1 + np.exp(-0.05 * (t - n_steps * 0.3))))
+    else:
+        main_peak = 1 + peak_height * np.exp(-((t - n_steps * peak_pos) / 3.0) ** 2)
+        bump_1 = 0.05 * np.exp(-((t - n_steps * (peak_pos + 0.08)) / 4.0) ** 2)
+        bump_2 = 0.03 * np.exp(-((t - n_steps * (peak_pos + 0.18)) / 5.0) ** 2)
+        wave = main_peak + bump_1 + bump_2
 
-    wave = main_peak + bump_1 + bump_2
-    wave = wave * (1 + np.random.normal(0, 0.03, n_steps))
-    wave = np.clip(wave, 0.2, None)
-
-    time_drag = (t / n_steps) ** 2
+    wave = wave * (1 + np.random.normal(0, 0.01, n_steps))
+    wave = np.clip(wave, 0.15, None)
 
     peak_step = int(peak_pos * n_steps)
-    fade_start = peak_step + int(0.1 * n_steps)
 
     for i in range(n_steps):
+        if i < start_delay:
+            series[i] = 0
+            continue
+
         current_share = state.mean()
 
         join_rate = (start_chance + social_weight * (current_share ** 1.1)) * wave[i]
         join_rate += np.random.normal(0, noise)
 
-        if i > fade_start:
-            extra_fade = late_drop * ((i - fade_start) / (n_steps - fade_start))
+        # after the peak, new adoption slows sharply
+        if i > peak_step:
+            join_rate *= 0.15
+
+        # after the peak, fading increases
+        if i > peak_step:
+            extra_fade = late_drop * 3.0 * ((i - peak_step) / max(1, (n_steps - peak_step)))
         else:
             extra_fade = 0.0
 
-        leave_rate = fade_base + 0.28 * time_drag[i] + extra_fade
+        leave_rate = fade_base + extra_fade
         leave_rate += np.random.normal(0, noise / 2)
 
         join_prob = np.clip(join_rate * uptake_weight, 0, 0.95)
@@ -65,61 +98,107 @@ def simulate_trend(
 
         new_join = (state == 0) & (draw_join < join_prob)
         new_leave = (state == 1) & (draw_leave < leave_prob)
+
         state[new_join] = 1
         state[new_leave] = 0
+
         series[i] = state.mean()
+
     if series.max() > 0:
         series = series / series.max()
 
     return series
 
+# =========================================================
+# 3) PARAMETERS BY TREND CLASS
+# =========================================================
 
-for name in files:
-    path = os.path.join(data_folder, name)
+param_map = {
+    "Microtrends": {
+        "social_weight": 0.18,
+        "fade_base": 0.10,
+        "late_drop": 0.35,
+        "peak_height": 3.8
+    },
+    "Macrotrends": {
+        "social_weight": 0.35,
+        "fade_base": 0.045,
+        "late_drop": 0.16,
+        "peak_height": 2.4
+    },
+    "MegaTrends": {
+        "social_weight": 0.50,
+        "fade_base": 0.025,
+        "late_drop": 0.08,
+        "peak_height": 1.9
+    }
+}
+
+# =========================================================
+# 4) LOAD, CLIP, PLOT, SAVE
+# =========================================================
+
+for folder_name, file_name in files:
+    path = os.path.join(DATA_DIR, folder_name, file_name)
+
     df = pd.read_csv(path)
-    real = df.iloc[:, 1].fillna(0).values
+    real = df.iloc[:, 1].fillna(0).values.astype(float)
 
     if real.max() > 0:
         real = real / real.max()
 
     n_steps = len(real)
+    params = param_map[folder_name]
+
+    active_idx = np.where(real >= threshold)[0]
+
+    if len(active_idx) == 0:
+        print(f"{file_name}: no values above threshold {threshold}")
+        continue
+
+    start_idx = max(0, active_idx[0] - buffer)
+    end_idx = min(n_steps - 1, active_idx[-1] + buffer)
+
     peak_guess = np.argmax(real) / n_steps
+    start_delay = max(0, active_idx[0] - 2)
 
-    best_mse = 10**9
-    best_line = None
-    best_set = None
+    fake = simulate_trend(
+        n_people=1000,
+        n_steps=n_steps,
+        social_weight=params["social_weight"],
+        fade_base=params["fade_base"],
+        late_drop=params["late_drop"],
+        peak_height=params["peak_height"],
+        peak_pos=np.clip(peak_guess, 0.1, 0.9),
+        start_delay=start_delay,
+        trend_type=folder_name
+    )
 
-    for social_weight in [0.3, 0.5, 0.7]:
-        for fade_base in [0.02, 0.03, 0.04]:
-            for peak_shift in [-0.08, -0.04, 0, 0.04]:
-                for late_drop in [0.04, 0.08, 0.12]:
-                    fake = simulate_trend(
-                        n_people=1000,
-                        n_steps=n_steps,
-                        social_weight=social_weight,
-                        fade_base=fade_base,
-                        peak_pos=np.clip(peak_guess + peak_shift, 0.05, 0.9),
-                        late_drop=late_drop
-                    )
+    real_clip = real[start_idx:end_idx + 1]
+    fake_clip = fake[start_idx:end_idx + 1]
+    x_clip = np.arange(start_idx, end_idx + 1)
 
-                    mse = np.mean((fake - real) ** 2)
-
-                    if mse < best_mse:
-                        best_mse = mse
-                        best_line = fake
-                        best_set = (social_weight, fade_base, peak_shift, late_drop)
-
-    label = name.replace(".csv", "").replace("_", " ").title()
-
-    print(f"{label} | best = {best_set} | mse = {best_mse:.4f}")
+    label = file_name.replace(".csv", "").replace("_", " ").title()
+    clean_name = file_name.replace(".csv", "").replace(" ", "_").lower()
 
     plt.figure(figsize=(10, 5))
-    plt.plot(real, label="Real", linewidth=2)
-    plt.plot(best_line, label="Model", linestyle="--", linewidth=2)
-    plt.title(f"Trend Fit: {label}", fontsize=12)
+    plt.plot(x_clip, real_clip, label="Real trend", linewidth=2)
+    plt.plot(x_clip, fake_clip, label="ABM simulation", linestyle="--", linewidth=2)
+    plt.axhline(threshold, color="grey", linestyle=":", linewidth=1, label="Threshold = 0.35")
+
+    plt.title(
+        f"{label} — Diffusion of trend interest through a population (ABM)",
+        fontsize=11
+    )
     plt.xlabel("Weeks")
-    plt.ylabel("Normalized Interest")
+    plt.ylabel("Normalised interest")
     plt.legend()
     plt.grid(True, alpha=0.3)
     plt.tight_layout()
+
+    save_path = os.path.join(OUTPUT_DIR, f"{folder_name}_{clean_name}.png")
+    print("Saving to:", save_path)
+    plt.savefig(save_path, dpi=200)
+
     plt.show()
+    plt.close()

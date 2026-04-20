@@ -6,15 +6,15 @@ Cottagecore,Macro,Macro,True
 Darkacademia,Macro,Macro,True
 EMOfashio,Macro,Macro,True
 Euphoriafashion,Macro,Micro,False
-Fairycore,Macro,Macro,True
+Fairycore,Macro,Mega,False
 Normcore,Macro,Macro,True
 PENDULUMTOPS,Macro,Macro,True
 chokers,Macro,Macro,True
-disco fashion,Macro,Macro,True
+disco fashion,Macro,Mega,False
 mini skirts,Macro,Macro,True
-tiedye,Macro,Micro,False
+tiedye,Macro,Macro,True
 y2kaesthetic,Macro,Macro,True
-70sfashion,Mega,Mega,True
+70sfashion,Mega,Macro,False
 INDIE,Mega,Mega,True
 MAXI dress,Mega,Mega,True
 MOMJEANS,Mega,Mega,True
@@ -22,7 +22,7 @@ Pastelgrunge,Mega,Macro,False
 SKINNYJEANS,Mega,Mega,True
 Skaterfashion,Mega,Mega,True
 TUMBLR,Mega,Mega,True
-Tumblr Grunge,Mega,Mega,True
+Tumblr Grunge,Mega,Macro,False
 boyfriend jeans,Mega,Mega,True
 flaredjeans,Mega,Mega,True
 hipster fashion,Mega,Mega,True

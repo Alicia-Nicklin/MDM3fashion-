@@ -318,8 +318,22 @@ def plot_cumulative_penetration(results_dict, df):
 
 def main():
     print("Loading processed_trends.csv...")
-    df = pd.read_csv('output/processed_trends.csv')
+    df = pd.read_csv('all_trends_combined.csv')
+
+    # Rename columns to match what the Bass code expects
+    df = df.rename(columns={
+        'trend_name': 'trend',
+        'value_norm': 'normalised'
+    })
+
+    # Ensure correct types
     df['date'] = pd.to_datetime(df['date'])
+
+    # Sort properly (VERY important for time series)
+    df = df.sort_values(['trend', 'date']).reset_index(drop=True)
+
+    # OPTIONAL: add a dummy era column if you don’t have one
+    df['era'] = 'Unknown'
 
     trend_names = df['trend'].unique()
     print(f"Trends found: {list(trend_names)}\n")

@@ -1,46 +1,46 @@
 trend,cluster,true_label
 Bikeshorts,0,Macro
 Bomber jacket,0,Macro
-chokers,0,Macro
+chokers,2,Macro
 Cleangirl,0,Macro
 Cottagecore,0,Macro
 Darkacademia,0,Macro
 disco fashion,0,Macro
 EMOfashio,0,Macro
-Euphoriafashion,0,Macro
+Euphoriafashion,2,Macro
 Fairycore,0,Macro
-mini skirts,0,Macro
-Normcore,0,Macro
+mini skirts,2,Macro
+Normcore,2,Macro
 PENDULUMTOPS,0,Macro
-tiedye,0,Macro
+tiedye,2,Macro
 y2kaesthetic,0,Macro
-70sfashion,1,Mega
-boyfriend jeans,1,Mega
+70sfashion,0,Mega
+boyfriend jeans,0,Mega
 flaredjeans,0,Mega
 hipster fashion,0,Mega
 INDIE,0,Mega
-jeggins,1,Mega
+jeggins,0,Mega
 MAXI dress,0,Mega
 MOMJEANS,0,Mega
 Pastelgrunge,0,Mega
-ripepdjeans,1,Mega
+ripepdjeans,0,Mega
 Skaterfashion,0,Mega
-SKINNYJEANS,1,Mega
-streetwear,1,Mega
+SKINNYJEANS,0,Mega
+streetwear,0,Mega
 Tumblr Grunge,0,Mega
 TUMBLR,0,Mega
-barbiecore,2,Micro
-bimbocore,0,Micro
-blokecore,0,Micro
-Brat summer,2,Micro
-BuisnessCausal,2,Micro
+barbiecore,1,Micro
+bimbocore,2,Micro
+blokecore,2,Micro
+Brat summer,1,Micro
+BuisnessCausal,1,Micro
 chunkyshoes,0,Micro
 coastalgrandmother,2,Micro
-galaxyprint,2,Micro
+galaxyprint,1,Micro
 goblincore,0,Micro
-ivyleague,2,Micro
-officesiren,0,Micro
-SCENEFASHION,0,Micro
+ivyleague,1,Micro
+officesiren,2,Micro
+SCENEFASHION,2,Micro
 softgirlaesthetic,0,Micro
 teddycoat,0,Micro
 vsco,2,Micro
