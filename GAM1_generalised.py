@@ -64,7 +64,9 @@ TEST_TRENDS = [
     "hipster fashion", "TUMBLR", "Pastelgrunge",   # (Mega)
 ]
 
-ROLLOUT_FRAC = 0.4   # seed on first 40%, forecast remaining 60%
+ROLLOUT_FRAC  = 0.4   # seed on first 40% of active window, forecast remaining 60%
+ACTIVE_BUFFER = 3     # months either side of active window kept for training context
+THRESHOLD     = 0.35  # active window = value_norm >= 0.35, consistent with myValadation.py
 
 # ── CONSTANTS ─────────────────────────────────────────────────────────────────
 
@@ -96,7 +98,7 @@ def add_features(df):
     parts = []
     for _, grp in df.groupby("trend_name", sort=False):
         grp = grp.sort_values("date").copy()
-        active = grp[grp["value_norm"] > 0]["date"]
+        active = grp[grp["value_norm"] >= THRESHOLD]["date"]
         if len(active) >= 2:
             start = active.iloc[0]
             dur   = max((active.iloc[-1] - start).days / 30.44, 1.0)
@@ -112,6 +114,21 @@ def add_features(df):
         grp["roll_mean_3"] = grp["value_norm"].shift(1).rolling(3, min_periods=1).mean().fillna(0)
         grp["roll_std_3"]  = grp["value_norm"].shift(1).rolling(3, min_periods=1).std().fillna(0)
         parts.append(grp)
+    return pd.concat(parts, ignore_index=True)
+
+
+def trim_to_active(df, buffer=ACTIVE_BUFFER):
+    """Trim each trend to its active window plus a small buffer either side.
+    Prevents the model being dominated by flat-zero rows outside the trend."""
+    parts = []
+    for _, grp in df.groupby("trend_name", sort=False):
+        grp = grp.sort_values("date").reset_index(drop=True).copy()
+        active_idx = grp[grp["value_norm"] >= THRESHOLD].index.tolist()
+        if len(active_idx) == 0:
+            continue
+        lo = max(0, active_idx[0] - buffer)
+        hi = min(len(grp) - 1, active_idx[-1] + buffer)
+        parts.append(grp.iloc[lo:hi + 1])
     return pd.concat(parts, ignore_index=True)
 
 
@@ -148,34 +165,47 @@ def fit_gam(X, y):
 
 def rollout(gam, trend_df):
     """
-    Seed on first ROLLOUT_FRAC of observed data.
-    Predict step-by-step for the rest — each predicted value feeds
-    back as the lag feature for the next step.
+    Seed on first 40% of the active window, forecast remaining 60%.
+    RMSE computed on forecast portion of active window only.
     """
-    grp    = trend_df.sort_values("date").copy()
-    n      = len(grp)
-    n_seed = max(5, int(n * ROLLOUT_FRAC))
+    grp    = trend_df.sort_values("date").reset_index(drop=True).copy()
     actual = grp["value_norm"].values.copy()
     pred   = actual.copy()
 
-    for i in range(n_seed, n):
+    active_idx = grp[grp["value_norm"] >= THRESHOLD].index.tolist()
+    if len(active_idx) >= 2:
+        first_pos = active_idx[0]
+        last_pos  = active_idx[-1]
+    else:
+        first_pos, last_pos = 0, len(grp) - 1
+
+    active_len = last_pos - first_pos + 1
+    n_seed     = max(2, int(active_len * ROLLOUT_FRAC))
+    seed_end   = first_pos + n_seed
+
+    for i in range(seed_end, last_pos + 1):
         lag1 = pred[i-1] if i >= 1 else 0
         lag3 = pred[i-3] if i >= 3 else 0
         w    = pred[max(0, i-3):i]
         rm3  = float(np.mean(w)) if len(w) > 0 else 0
         rs3  = float(np.std(w))  if len(w) > 1 else 0
-        X = np.array([[
+        X    = np.array([[
             grp["t_rel"].iloc[i], grp["month_sin"].iloc[i],
             grp["month_cos"].iloc[i], lag1, lag3, rm3, rs3
         ]])
         pred[i] = np.clip(float(gam.predict(X)[0]), 0, 1)
 
+    fc_actual = actual[seed_end:last_pos + 1]
+    fc_pred   = pred[seed_end:last_pos + 1]
+
     return {
-        "pred":   pred,
-        "actual": actual,
-        "n_seed": n_seed,
-        "rmse":   float(np.sqrt(mean_squared_error(actual[n_seed:], pred[n_seed:]))),
-        "mae":    float(mean_absolute_error(actual[n_seed:], pred[n_seed:])),
+        "pred":      pred,
+        "actual":    actual,
+        "first_pos": first_pos,
+        "seed_end":  seed_end,
+        "last_pos":  last_pos,
+        "rmse":      float(np.sqrt(mean_squared_error(fc_actual, fc_pred))),
+        "mae":       float(mean_absolute_error(fc_actual, fc_pred)),
     }
 
 
@@ -192,14 +222,14 @@ def plot_fits(forecasts, results):
         cat  = KNOWN_CATS.get(name, "Unknown")   # only for plot colour
         col  = CAT_COLOURS.get(cat, "#888")
         t    = np.arange(len(r["actual"]))
-        ns   = r["n_seed"]
         rmse = results[results["trend_name"] == name]["RMSE"].iloc[0]
 
-        ax.axvspan(0, ns, alpha=0.07, color="steelblue")
-        ax.axvline(ns, color="steelblue", lw=1, linestyle=":", alpha=0.6)
-        ax.plot(t,      r["actual"],    color=col,      lw=1.8, alpha=0.6, label="Observed")
-        ax.plot(t[:ns], r["pred"][:ns], color="black",  lw=2,   linestyle="--", label="GAM fit (seed)")
-        ax.plot(t[ns:], r["pred"][ns:], color="crimson",lw=2,   linestyle="--",
+        fp = r["first_pos"]; se = r["seed_end"]; lp = r["last_pos"]
+        ax.axvspan(fp, se, alpha=0.07, color="steelblue")
+        ax.axvline(se, color="steelblue", lw=1, linestyle=":", alpha=0.6)
+        ax.plot(t,       r["actual"],     color=col,      lw=1.8, alpha=0.6, label="Observed")
+        ax.plot(t[fp:se], r["pred"][fp:se], color="black", lw=2, linestyle="--", label="GAM fit (seed)")
+        ax.plot(t[se:lp+1], r["pred"][se:lp+1], color="crimson", lw=2, linestyle="--",
                 label=f"Forecast RMSE={rmse:.3f}")
         ax.text(0.97, 0.97, cat, transform=ax.transAxes, fontsize=8,
                 ha="right", va="top", color=col, fontweight="bold",
@@ -304,35 +334,38 @@ def main():
     train_df = df[~df["trend_name"].isin(TEST_TRENDS)].copy()
     test_df  = df[ df["trend_name"].isin(TEST_TRENDS)].copy()
 
-    print(f"\nTrain: {train_df['trend_name'].nunique()} trends (no labels)")
+    # Trim training data to active windows — stops zeros dominating the fit
+    train_trimmed = trim_to_active(train_df)
+    print(f"\nTrain: {train_df['trend_name'].nunique()} trends — "
+          f"{len(train_df)} rows → {len(train_trimmed)} rows after trimming to active windows")
     print(f"Test:  {sorted(test_df['trend_name'].unique())}")
 
     print("\nFitting generalist GAM...")
-    gam = fit_gam(train_df[FEATURE_COLS].values,
-                  train_df["value_norm"].values)
+    gam = fit_gam(train_trimmed[FEATURE_COLS].values,
+                  train_trimmed["value_norm"].values)
     print(f"  Pseudo-R²: {gam.statistics_['pseudo_r2']['McFadden']:.3f}")
 
-    print("\nRollout forecast (seed 40% → predict 60%)...")
+    print("\nRollout forecast (seed 40% of active window → forecast 60%)...")
     records = {}; forecasts = {}
     for name, grp in test_df.groupby("trend_name"):
         r = rollout(gam, grp)
         forecasts[name] = r
         records[name] = {
-            "trend_name": name,
-            "n_total":    len(grp),
-            "n_seed":     r["n_seed"],
-            "RMSE":       round(r["rmse"], 4),
-            "MAE":        round(r["mae"],  4),
-            "model":      "GAM1_generalist",
+            "trend_name":    name,
+            "active_months": r["last_pos"] - r["first_pos"] + 1,
+            "n_seed":        r["seed_end"] - r["first_pos"],
+            "RMSE":          round(r["rmse"], 4),
+            "MAE":           round(r["mae"],  4),
+            "model":         "GAM1_generalist",
         }
 
     results = pd.DataFrame(records.values())
+    results["category"] = results["trend_name"].map(
+        lambda n: KNOWN_CATS.get(n, "Unknown"))
     results.to_csv("gam_output/gam1_results.csv", index=False)
 
     print("\nResults:")
-    results["category"] = results["trend_name"].map(
-        lambda n: KNOWN_CATS.get(n, "Unknown"))
-    print(results[["trend_name", "category", "RMSE", "MAE"]].to_string(index=False))
+    print(results[["trend_name", "category", "active_months", "n_seed", "RMSE", "MAE"]].to_string(index=False))
     print("\nAverage RMSE by category (reference only):")
     print(results.groupby("category")[["RMSE", "MAE"]].mean().round(3).to_string())
     print("\nSaved: gam_output/gam1_results.csv")
