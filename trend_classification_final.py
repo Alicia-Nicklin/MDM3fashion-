@@ -11,10 +11,6 @@ Bias fixes vs previous versions:
   - Feature selection runs INSIDE the cross-validation loop (no leakage)
   - Labels never seen during feature extraction
   - Held-out test set (9 trends) completely withheld until final evaluation
-
-USAGE:
-  pip install scikit-learn umap-learn matplotlib scipy pandas xgboost
-  python trend_classifier.py
 """
 
 import os
@@ -584,12 +580,14 @@ PURPLE_L  = "#9B7EC8"
 def _style_ax(ax):
     """Apply consistent light theme to an axes."""
     ax.set_facecolor(PANEL_BG)
-    ax.tick_params(colors=TEXT_MID, labelsize=9)
+    ax.tick_params(colors=TEXT_MID, labelsize=14)
     for spine in ax.spines.values():
         spine.set_edgecolor(SPINE_COL)
         spine.set_linewidth(0.8)
     ax.xaxis.label.set_color(TEXT_MID)
     ax.yaxis.label.set_color(TEXT_MID)
+    ax.xaxis.label.set_size(14)
+    ax.yaxis.label.set_size(14)
 
 
 def _plot_model_comparison(cv_results, test_results):
@@ -610,15 +608,15 @@ def _plot_model_comparison(cv_results, test_results):
         for bar, acc in zip(bars, accs):
             ax.text(bar.get_width() + 0.5,
                     bar.get_y() + bar.get_height() / 2,
-                    f"{acc:.1f}%", va="center", color=TEXT_DARK, fontsize=9)
+                    f"{acc:.1f}%", va="center", color=TEXT_DARK, fontsize=14)
         ax.set_xlim(0, 115)
-        ax.set_xlabel("Accuracy (%)", color=TEXT_MID)
-        ax.set_title(title, color=TEXT_DARK, fontsize=12, fontweight="bold", pad=10)
+        ax.set_xlabel("Accuracy (%)", color=TEXT_MID, fontsize=14)
+        ax.set_title(title, color=TEXT_DARK, fontsize=16, fontweight="bold", pad=10)
         ax.axvline(80, color=SPINE_COL, linestyle="--", linewidth=1)
-        ax.tick_params(colors=TEXT_MID)
+        ax.tick_params(colors=TEXT_MID, labelsize=14)
 
-    fig.suptitle("Classifier Performance — Model Comparison",
-                 color=TEXT_DARK, fontsize=14, fontweight="bold", y=1.02)
+    fig.suptitle("Classifier Performance - Model Comparison",
+                 color=TEXT_DARK, fontsize=18, fontweight="bold", y=1.02)
     plt.tight_layout()
     path = os.path.join(OUT, "model_comparison.png")
     plt.savefig(path, dpi=180, bbox_inches="tight", facecolor=BG)
@@ -627,20 +625,22 @@ def _plot_model_comparison(cv_results, test_results):
 
 
 def _plot_confusion(y_true, y_pred, model_name, acc):
-    fig, ax = plt.subplots(figsize=(6, 5))
+    fig, ax = plt.subplots(figsize=(7, 6))
     fig.patch.set_facecolor(BG)
     _style_ax(ax)
     cm   = confusion_matrix(y_true, y_pred, labels=LABEL_ORDER)
     disp = ConfusionMatrixDisplay(cm, display_labels=LABEL_ORDER)
     disp.plot(ax=ax, colorbar=False, cmap="RdPu")
-    ax.set_title(f"Classification Results — {model_name}  ({acc:.1%} accuracy)",
-                 color=TEXT_DARK, fontsize=11, fontweight="bold", pad=10)
-    ax.tick_params(colors=TEXT_MID)
+    ax.set_title(f"Classification Results - {model_name}  ({acc:.1%} accuracy)",
+                 color=TEXT_DARK, fontsize=14, fontweight="bold", pad=10)
+    ax.tick_params(colors=TEXT_MID, labelsize=14)
     ax.xaxis.label.set_color(TEXT_MID)
+    ax.xaxis.label.set_size(14)
     ax.yaxis.label.set_color(TEXT_MID)
+    ax.yaxis.label.set_size(14)
     for text in ax.texts:
         text.set_color(TEXT_DARK)
-        text.set_fontsize(13)
+        text.set_fontsize(16)
     plt.tight_layout()
     path = os.path.join(OUT, "confusion_matrix.png")
     plt.savefig(path, dpi=180, bbox_inches="tight", facecolor=BG)
@@ -650,16 +650,16 @@ def _plot_confusion(y_true, y_pred, model_name, acc):
 
 def _plot_feature_importance(importances, model_name="Best Model"):
     top = importances.head(20).sort_values(ascending=True)
-    fig, ax = plt.subplots(figsize=(9, 6))
+    fig, ax = plt.subplots(figsize=(11, 8))
     fig.patch.set_facecolor(BG)
     _style_ax(ax)
     med     = top.median()
     colours = [PURPLE if v > med else PURPLE_L for v in top.values]
     ax.barh(top.index, top.values, color=colours, alpha=0.88)
-    ax.set_xlabel("Mean decrease in impurity", color=TEXT_MID)
+    ax.set_xlabel("Mean decrease in impurity", color=TEXT_MID, fontsize=14)
     ax.set_title(f"Most Predictive Features for Trend Classification ({model_name})",
-                 color=TEXT_DARK, fontsize=12, fontweight="bold", pad=10)
-    ax.tick_params(colors=TEXT_MID, labelsize=9)
+                 color=TEXT_DARK, fontsize=14, fontweight="bold", pad=10)
+    ax.tick_params(colors=TEXT_MID, labelsize=13)
     plt.tight_layout()
     path = os.path.join(OUT, "feature_importances.png")
     plt.savefig(path, dpi=180, bbox_inches="tight", facecolor=BG)
@@ -685,15 +685,15 @@ def _plot_per_trend_results(X_test, y_test, y_pred, model_name):
             color=bar_cols, alpha=0.88)
 
     for i, (_, row) in enumerate(results.iterrows()):
-        label = "✓  Correct" if row["correct"] else f"✗  Predicted: {row['pred']}"
+        label = "Correct" if row["correct"] else f"Predicted: {row['pred']}"
         col   = TEXT_DARK if row["correct"] else "#cc3333"
-        ax.text(0.02, i, label, va="center", color=col, fontsize=9)
+        ax.text(0.02, i, label, va="center", color=col, fontsize=13)
 
     ax.set_xlim(0, 1.6)
-    ax.set_xlabel("Correct / Incorrect", color=TEXT_MID)
-    ax.set_title(f"Per-Trend Classification Results — {model_name}  (Held-Out Test Set)",
-                 color=TEXT_DARK, fontsize=12, fontweight="bold", pad=10)
-    ax.tick_params(colors=TEXT_MID, labelsize=9)
+    ax.set_xlabel("Correct / Incorrect", color=TEXT_MID, fontsize=14)
+    ax.set_title(f"Per-Trend Classification Results - {model_name}  (Held-Out Test Set)",
+                 color=TEXT_DARK, fontsize=14, fontweight="bold", pad=10)
+    ax.tick_params(colors=TEXT_MID, labelsize=13)
     plt.tight_layout()
     path = os.path.join(OUT, "per_trend_results.png")
     plt.savefig(path, dpi=180, bbox_inches="tight", facecolor=BG)
@@ -718,11 +718,11 @@ def plot_time_series_gallery(series_dict, y):
             ax.plot(v, color=COLOURS[label], linewidth=1.4)
             ax.axhline(THRESHOLD, color=TEXT_MID, linewidth=0.6,
                        linestyle="--", alpha=0.5)
-            ax.set_title(name, color=TEXT_DARK, fontsize=8, fontweight="bold")
+            ax.set_title(name, color=TEXT_DARK, fontsize=11, fontweight="bold")
             if col == 0:
                 ax.set_ylabel(label, color=COLOURS[label],
-                              fontsize=10, fontweight="bold")
-            ax.tick_params(colors=TEXT_MID, labelsize=6)
+                              fontsize=13, fontweight="bold")
+            ax.tick_params(colors=TEXT_MID, labelsize=10)
             ax.set_ylim(-0.05, 1.05)
             for spine in ax.spines.values():
                 spine.set_edgecolor(SPINE_COL)
@@ -755,13 +755,13 @@ def path2_plot(X, y_true, cluster_ids, coords):
                         edgecolors="white", linewidths=0.5)
         for xi, yi, nm in zip(coords[mask, 0], coords[mask, 1],
                                np.array(X.index)[mask]):
-            axes[0].annotate(nm, (xi, yi), fontsize=5.5, color=TEXT_MID,
+            axes[0].annotate(nm, (xi, yi), fontsize=8, color=TEXT_MID,
                              alpha=0.85, ha="center", va="bottom")
 
-    axes[0].set_title("Blind Clustering — No Labels Used",
-                      color=TEXT_DARK, fontsize=12, fontweight="bold", pad=12)
+    axes[0].set_title("Blind Clustering - No Labels Used",
+                      color=TEXT_DARK, fontsize=15, fontweight="bold", pad=12)
     axes[0].legend(labelcolor=TEXT_DARK, facecolor=BG,
-                   edgecolor=SPINE_COL, fontsize=9)
+                   edgecolor=SPINE_COL, fontsize=13)
 
     # Right: true labels
     for lbl in LABEL_ORDER:
@@ -771,16 +771,16 @@ def path2_plot(X, y_true, cluster_ids, coords):
                         edgecolors="white", linewidths=0.5)
         for xi, yi, nm in zip(coords[mask, 0], coords[mask, 1],
                                np.array(X.index)[mask]):
-            axes[1].annotate(nm, (xi, yi), fontsize=5.5, color=TEXT_MID,
+            axes[1].annotate(nm, (xi, yi), fontsize=8, color=TEXT_MID,
                              alpha=0.85, ha="center", va="bottom")
 
     axes[1].set_title("Micro / Macro / Mega Classifications",
-                      color=TEXT_DARK, fontsize=12, fontweight="bold", pad=12)
+                      color=TEXT_DARK, fontsize=15, fontweight="bold", pad=12)
     axes[1].legend(labelcolor=TEXT_DARK, facecolor=BG,
-                   edgecolor=SPINE_COL, fontsize=9)
+                   edgecolor=SPINE_COL, fontsize=13)
 
     fig.suptitle("Do Blind Clusters Match the Trend Classifications?",
-                 color=TEXT_DARK, fontsize=14, fontweight="bold", y=1.01)
+                 color=TEXT_DARK, fontsize=18, fontweight="bold", y=1.01)
     plt.tight_layout()
     path = os.path.join(OUT, "umap_clustering.png")
     plt.savefig(path, dpi=180, bbox_inches="tight", facecolor=BG)
