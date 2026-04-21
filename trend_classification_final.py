@@ -539,23 +539,27 @@ def path1_supervised(X_train, y_train, X_test, y_test):
     print(f"\n  Best on test: {best_test_name}  "
           f"({test_results[best_test_name]['acc']:.1%})")
 
-    # ── Step D: Feature importances (trained on full training set) ─────────
-    rf_final = RandomForestClassifier(
-        n_estimators=500, max_features="sqrt",
-        class_weight="balanced", random_state=SEED, n_jobs=-1
-    )
-    scaler_final = StandardScaler()
-    X_train_scaled = scaler_final.fit_transform(X_train.values)
-    rf_final.fit(X_train_scaled, y_train_enc)
+    # ── Step D: Feature importances from best test model ──────────────────
+    # Refit the best model pipeline on full training set, then extract importances
+    if best_test_name in models:
+        best_model_pipeline = models[best_test_name]
+        best_model_pipeline.fit(X_train.values, y_train_enc)
+        clf_final = best_model_pipeline.named_steps["clf"]
+    else:
+        # RF_tuned fallback — refit tuned RF
+        best_model_pipeline = search.best_estimator_
+        best_model_pipeline.fit(X_train.values, y_train_enc)
+        clf_final = best_model_pipeline.named_steps["clf"]
+
     importances = pd.Series(
-        rf_final.feature_importances_, index=X_train.columns
+        clf_final.feature_importances_, index=X_train.columns
     ).sort_values(ascending=False)
 
     # ── Plots ─────────────────────────────────────────────────────────────
     _plot_model_comparison(cv_results, test_results)
     _plot_confusion(y_test, test_results[best_test_name]["y_pred"],
                     best_test_name, test_results[best_test_name]["acc"])
-    _plot_feature_importance(importances)
+    _plot_feature_importance(importances, best_test_name)
     _plot_per_trend_results(X_test, y_test,
                             test_results[best_test_name]["y_pred"],
                             best_test_name)
@@ -629,7 +633,7 @@ def _plot_confusion(y_true, y_pred, model_name, acc):
     cm   = confusion_matrix(y_true, y_pred, labels=LABEL_ORDER)
     disp = ConfusionMatrixDisplay(cm, display_labels=LABEL_ORDER)
     disp.plot(ax=ax, colorbar=False, cmap="RdPu")
-    ax.set_title(f"Classification Results — Random Forest  ({acc:.1%} accuracy)",
+    ax.set_title(f"Classification Results — {model_name}  ({acc:.1%} accuracy)",
                  color=TEXT_DARK, fontsize=11, fontweight="bold", pad=10)
     ax.tick_params(colors=TEXT_MID)
     ax.xaxis.label.set_color(TEXT_MID)
@@ -644,7 +648,7 @@ def _plot_confusion(y_true, y_pred, model_name, acc):
     print(f"  Saved: {path}")
 
 
-def _plot_feature_importance(importances):
+def _plot_feature_importance(importances, model_name="Best Model"):
     top = importances.head(20).sort_values(ascending=True)
     fig, ax = plt.subplots(figsize=(9, 6))
     fig.patch.set_facecolor(BG)
@@ -653,7 +657,7 @@ def _plot_feature_importance(importances):
     colours = [PURPLE if v > med else PURPLE_L for v in top.values]
     ax.barh(top.index, top.values, color=colours, alpha=0.88)
     ax.set_xlabel("Mean decrease in impurity", color=TEXT_MID)
-    ax.set_title("Most Predictive Features for Trend Classification",
+    ax.set_title(f"Most Predictive Features for Trend Classification ({model_name})",
                  color=TEXT_DARK, fontsize=12, fontweight="bold", pad=10)
     ax.tick_params(colors=TEXT_MID, labelsize=9)
     plt.tight_layout()
@@ -687,7 +691,7 @@ def _plot_per_trend_results(X_test, y_test, y_pred, model_name):
 
     ax.set_xlim(0, 1.6)
     ax.set_xlabel("Correct / Incorrect", color=TEXT_MID)
-    ax.set_title("Per-Trend Classification Results on Held-Out Test Set",
+    ax.set_title(f"Per-Trend Classification Results — {model_name}  (Held-Out Test Set)",
                  color=TEXT_DARK, fontsize=12, fontweight="bold", pad=10)
     ax.tick_params(colors=TEXT_MID, labelsize=9)
     plt.tight_layout()
